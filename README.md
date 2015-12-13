@@ -1,7 +1,7 @@
 # nicolas-coutin-fr
 
 [![Build Status](https://travis-ci.org/Ilshidur/nicolas-coutin.fr.svg)](https://travis-ci.org/Ilshidur/nicolas-coutin.fr)
-[![Circle CI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt/master.svg)](https://circleci.com/gh/Ilshidur/nicolas-coutin.fr)
+[![Circle CI](https://img.shields.io/circleci/project/Ilshidur/nicolas-coutin.fr/dev.svg)](https://circleci.com/gh/Ilshidur/nicolas-coutin.fr)
 
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 3.0.2.
 
