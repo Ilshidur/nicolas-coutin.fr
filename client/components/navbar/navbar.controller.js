@@ -7,11 +7,14 @@ class NavbarController {
             'title': 'Accueil',
             'state': 'main'
         }, {
+            'title': 'Mes projets',
+            'state': 'projects'
+        }, {
             'title': 'Blog',
             'state': 'blog'
         }, {
-            'title': 'Mes projets',
-            'state': 'projects'
+            'title': 'À propos',
+            'state': 'about'
         }
     ];
 
