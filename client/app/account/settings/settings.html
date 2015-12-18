@@ -3,13 +3,13 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Change Password</h1>
+      <h1>Changement de mot de passe</h1>
     </div>
     <div class="col-sm-12">
       <form class="form" name="form" ng-submit="vm.changePassword(form)" novalidate>
 
         <div class="form-group">
-          <label>Current Password</label>
+          <label>Mots de passe</label>
 
           <input type="password" name="password" class="form-control" ng-model="vm.user.oldPassword"
                  mongoose-error/>
@@ -19,19 +19,19 @@
         </div>
 
         <div class="form-group">
-          <label>New Password</label>
+          <label>Nouveau mot de passe</label>
 
           <input type="password" name="newPassword" class="form-control" ng-model="vm.user.newPassword"
                  ng-minlength="3"
                  required/>
           <p class="help-block"
              ng-show="(form.newPassword.$error.minlength || form.newPassword.$error.required) && (form.newPassword.$dirty || vm.submitted)">
-            Password must be at least 3 characters.
+            Votre mot de passe doit contenir plus de 3 caractères (c'est peu, il faut faire un effort).
           </p>
         </div>
 
         <div class="form-group">
-          <label>Confirm New Password</label>
+          <label>Confirmation de mot de passe</label>
 
           <input type="password" name="confirmPassword" class="form-control" ng-model="vm.user.confirmPassword"
                  match="vm.user.newPassword"
@@ -39,14 +39,14 @@
                  required=""/>
           <p class="help-block"
              ng-show="form.confirmPassword.$error.match && vm.submitted">
-            Passwords must match.
+            Les mots de passe ne correspondent pas.
           </p>
 
         </div>
 
         <p class="help-block"> {{ vm.message }} </p>
 
-        <button class="btn btn-lg btn-primary" type="submit">Save changes</button>
+        <button class="btn btn-lg btn-primary" type="submit">Sauvegarder</button>
       </form>
     </div>
   </div>
