@@ -1,5 +1,6 @@
 TODOS :
 
 - Authentifications OAuth
+- Titles
 - Une bonne page 404
-- Résoudre les test unitaires
+- http://nicolas-coutin.fr/ n'est pas résolu. Voir les CNAME sur OVH ? Voir les DNS secondaires sur Kimsufi ?
