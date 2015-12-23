@@ -4,3 +4,26 @@ TODOS :
 - Titles
 - Une bonne page 404
 - http://nicolas-coutin.fr/ n'est pas résolu. Voir les CNAME sur OVH ? Voir les DNS secondaires sur Kimsufi ?
+- Mêmes paramètres Nginx pour le blog et l'accueil
+- Accès à /blog => ne doit pas être une route côté client (pour la redirection vers blog.nicolas-coutin.fr)
+
+portfolio :
+
+- « Projets | Nicolas COUTIN »
+
+- commentaires avec Angular
+
+blog :
+
+- avec React : https://github.com/kriasoft/react-starter-kit (installer : https://www.npmjs.com/package/generator-react-fullstack)
+  et https://www.npmjs.com/package/bloggy
+
+- Atom plugins pour React : https://github.com/kriasoft/react-starter-kit/blob/master/docs/how-to-configure-text-editors.md#atom
+
+- sommaire avec des #
+
+- « Tuto | Je code avec le <ul> »
+
+- commentaires avec : https://publishers.disqus.com/ (voir : https://github.com/kriasoft/react-starter-kit/blob/master/docs/recipes/how-to-integrate-disqus.md)
+
+- (rss) Flux RSS
