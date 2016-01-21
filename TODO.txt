@@ -1,5 +1,13 @@
 TODOS :
 
+- Accès à /blog => ne doit pas être une route côté client (pour la redirection vers blog.nicolas-coutin.fr)
 - Authentifications OAuth
+- Titles
 - Une bonne page 404
-- Résoudre les test unitaires
+- Mêmes paramètres Nginx pour le blog et l'accueil
+
+portfolio :
+
+- « Projets | Nicolas COUTIN »
+
+- commentaires avec Angular

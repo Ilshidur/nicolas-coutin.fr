@@ -10,11 +10,11 @@ class NavbarController {
             'title': 'Mes projets',
             'state': 'projects'
         }, {
+            'title': 'CV',
+            'state': 'cv'
+        }, {
             'title': 'Blog',
             'state': 'blog'
-        }, {
-            'title': 'À propos',
-            'state': 'about'
         }
     ];
 

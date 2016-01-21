@@ -72,6 +72,12 @@ module.exports = function(app) {
     app.use(favicon(path.join(config.root, 'client', 'favicon.ico')));
     app.use(express.static(app.get('appPath')));
     app.use(morgan('dev'));
+    app.use(function(req, res, next) {
+        if(!req.secure) {
+            return res.redirect('https://www.nicolas-coutin.fr');
+        }
+        next();
+    });
   }
 
   if ('development' === env) {
