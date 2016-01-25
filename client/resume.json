@@ -1,0 +1,285 @@
+{
+  "name": "Nicolas COUTIN",
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.1.0"
+  },
+  "info": {
+    "label": "Développeur web et application",
+    "brief": "*Développeur web fullstack et application* ",
+    "image": "https://www.nicolas-coutin.fr/profile_pic.jpg"
+  },
+  "contact": {
+    "website": "https://www.nicolas-coutin.fr",
+    "phone": "+33 (0)6 27 07 17 90",
+    "email": "nicolas-coutin@outlook.com",
+    "other": []
+  },
+  "location": {
+    "address": "334 chemin du Pertuiset",
+    "city": "Faverges",
+    "region": "Haute Savoie",
+    "code": "74210",
+    "country": "FR"
+  },
+  "social": [
+    {
+      "label": "",
+      "network": "GitHub",
+      "user": "ilshidur",
+      "url": "https://github.com/ilshidur"
+    }
+  ],
+  "employment": {
+    "summary": "Développeur d'application",
+    "history": [
+      {
+        "employer": "TIMET Savoie",
+        "url": "http://www.timet.com",
+        "position": "Développeur d`application",
+        "summary": "Développement d'un [MES](https://fr.wikipedia.org/wiki/Manufacturing_execution_system) et d'une application d'aide à l'optimisation (VB .NET).",
+        "start": "2014-07",
+        "end": "2015-12",
+        "keywords": [
+          ".NET",
+          "WinForms",
+          "SQL Server",
+          "Visual Studio",
+          "Linq",
+          "Unit tests",
+          "MVC"
+        ],
+        "highlights": [
+          "Établissement d'un cachier des charges, écoute des besoins de tous les utilisateurs",
+          "Développement itératif",
+          "Intégration continue avec tests unitaires"
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Portfolio",
+      "category": "Web",
+      "url": "https://www.nicolas-coutin.org",
+      "repo": "https://github.com/Ilshidur/nicolas-coutin.fr",
+      "media": [],
+      "role": "Développeur, webmaster, sysadmin",
+      "summary": "Portfolio personnel sur serveur dédié",
+      "description": "Présentation de participations à divers projets, CV et blog.",
+      "highlights": [
+        "Administration d'un serveur dédié sous Debian",
+        "Gestion de noms de domaine avec NginX",
+        "Mise en production et maintient de sites PHP/Node.js"
+      ],
+      "keywords": [
+        "Node.js",
+        "Angular",
+        "React",
+        "Javascript",
+        "HTML5",
+        "CSS3/SASS/LESS",
+        "Bootstrap",
+        "Linux",
+        "NginX"
+      ]
+    },
+    {
+      "title": "LoL item sets",
+      "category": "Web",
+      "url": "http://www.lol-item-sets-generator.org",
+      "repo": "https://github.com/Ilshidur/LoL-item-sets",
+      "media": [],
+      "role": "Développeur, webmaster",
+      "summary": "Site web et application .NET",
+      "description": "Conception d'un site de téléchargement de statistiques issues de data mining depuis une API.",
+      "highlights": [
+        "Webcrawling régulier et automatique",
+        "Application de mise à jour des fichiers téléchargés",
+        "Feedback auprès des utilisateurs"
+      ],
+      "keywords": [
+        "PHP",
+        "C#",
+        "HTML5",
+        "CSS3/SASS/LESS",
+        "Bootstrap",
+        "jQuery",
+        "Linux"
+      ]
+    },
+    {
+      "title": "MJo peintures",
+      "category": "Web",
+      "url": "https://www.mjo-peintures.fr",
+      "repo": "https://github.com/Ilshidur/mjo-peintures.fr",
+      "media": [],
+      "role": "Développeur, webmaster, sysadmin",
+      "summary": "Site web d'expositions de peintures",
+      "description": "Conception d'un site avec Meteor.js",
+      "highlights": [
+        "Création de maquettes de présentation",
+        "Page d'administration",
+        "Présentation responsive"
+      ],
+      "keywords": [
+        "Meteor.js",
+        "HTML5",
+        "CSS3/SASS/LESS",
+        "Bootstrap",
+        "Linux",
+        "MongoDB"
+      ]
+    }
+  ],
+  "education": {
+    "summary": "Développeur cross-plateformes",
+    "level": "Bac +3",
+    "degree": "Licence pro Développeur Informatique Multisupports",
+    "history": [
+      {
+        "institution": "*CCI Formation Digital*, Annecy",
+        "title": "Licence Professionnelle",
+        "url": "http://www.formation-cci.fr/formations-diplomantes-en-alternance/nos-formations-en-alternance/digital",
+        "start": "2014-09",
+        "end": "2015-03",
+        "grade": "",
+        "summary": "Formation au développement cross-plateformes et stage en entreprise de 2 mois.",
+        "curriculum": [
+          "Node.js",
+          "Angular",
+          "NoSQL",
+          "C",
+          "Java",
+          "Objective-C",
+          "ASP .NET",
+          "HTML5",
+          "CSS3/SASS/LESS"
+        ]
+      },
+      {
+        "institution": "*IUT Annecy*, Université de Savoie",
+        "title": "DUT Informatique",
+        "url": "https://www.iut-acy.univ-smb.fr/departement_info/le_departement_info/",
+        "start": "2012-09",
+        "end": "2014-06",
+        "grade": "",
+        "summary": "Formation à la programmation informatique et projet tutoré.",
+        "curriculum": [
+          "Linux",
+          "Javascript",
+          "C",
+          "Java",
+          "HTML5",
+          "CSS3/SASS/LESS",
+          "Merise/UML",
+          "SQL",
+          "Oracle/PG-SQL/PostGreSQL/MySQL"
+        ]
+      },
+      {
+        "institution": "*Lycée René Perrin*, Ugine",
+        "title": "Bac STI Spécialité Génie Électronique",
+        "url": "http://www.ac-grenoble.fr/ugine/joomla/",
+        "start": "2012-06",
+        "end": "2009-06",
+        "grade": "",
+        "summary": "Formation générale, circuits imprimés, construction, physique et programmation de micro-processeurs",
+        "curriculum": [
+          "Basic",
+          "C",
+          "IDE",
+          "Électronique"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Développement web",
+        "level": "advanced",
+        "skills": [
+          "JavaScript",
+          "HTML5",
+          "CSS3/SASS/LESS",
+          "Meteor.js"
+        ]
+      },
+      {
+        "name": "Javascript",
+        "level": "intermediate",
+        "skills": [
+          "Node.js",
+          "Angular.js",
+          "React.js",
+          "jQuery"
+        ]
+      },
+      {
+        "name": "Database",
+        "level": "intermediate",
+        "skills": [
+          "MySQL",
+          "MongoDB",
+          "ORM",
+          "Merise"
+        ]
+      },
+      {
+        "name": "Application",
+        "level": "advanced",
+        "skills": [
+          ".NET",
+          "Linq",
+          "MVC",
+          "UML",
+          "Unit tests"
+        ]
+      },
+      {
+        "name": "Mobile",
+        "level": "intermediate",
+        "skills": [
+          "Android",
+          "iOS",
+          "Windows Phone"
+        ]
+      },
+      {
+        "name": "OS",
+        "level": "advanced",
+        "skills": [
+          "Windows",
+          "Linux"
+        ]
+      }
+    ],
+    "list": []
+  },
+  "references": [
+    {
+      "name": "Julien Guillard",
+      "category": "professional",
+      "role": "Analyste développeur @ TIMET Savoie",
+      "private": false,
+      "summary": "Analyste développeur à TIMET Savoie, maître d`apprentissage",
+      "contact": [
+        {
+          "flavor": "email",
+          "value": "julien.guillard@timet.com"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Français",
+      "level": "native"
+    },
+    {
+      "language": "English",
+      "level": "intermediate"
+    }
+  ]
+}
