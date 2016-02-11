@@ -5,16 +5,20 @@ class NavbarController {
     menu = [
         {
             'title': 'Accueil',
-            'state': 'main'
+            'state': 'main',
+            'clientRoute': true
         }, {
             'title': 'Mes projets',
-            'state': 'projects'
+            'state': 'projects',
+            'clientRoute': true
         }, {
             'title': 'CV',
-            'state': 'cv'
+            'state': 'cv',
+            'clientRoute': true
         }, {
             'title': 'Blog',
-            'state': 'blog'
+            'state': 'blog',
+            'clientRoute': false
         }
     ];
 
