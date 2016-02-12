@@ -6,6 +6,10 @@ angular.module('nicolasCoutinFrApp')
       .state('cv', {
         url: '/cv',
         templateUrl: 'app/cv/cv.html',
-        controller: 'CvCtrl'
+        controller: 'CvCtrl',
+        resolve: {
+          // Constant title
+          $title: function() { return 'CV'; }
+        }
       });
   });
