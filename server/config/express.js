@@ -74,7 +74,7 @@ module.exports = function(app) {
     app.use(morgan('dev'));
     app.use(function(req, res, next) {
         if(!req.secure) {
-            return res.redirect('https://www.nicolas-coutin.fr');
+            return res.redirect('https://' + process.env.DOMAIN);
         }
         next();
     });
