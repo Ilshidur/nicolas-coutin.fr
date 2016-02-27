@@ -12,7 +12,7 @@
     <meta name="description" content="Nicolas COUTIN - Développeur .NET et JavaScript">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Nicolas COUTIN">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- TODO: Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
       <!-- endbower -->
@@ -23,6 +23,7 @@
       <!-- endinjector -->
     <!-- endbuild -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/latest/superhero/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -59,6 +60,8 @@
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
       <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
       <script src="bower_components/angular-ui-router-title/angular-ui-router-title.js"></script>
+      <script src="bower_components/marked/lib/marked.js"></script>
+      <script src="bower_components/angular-marked/dist/angular-marked.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js(.tmp) app/app.js -->
@@ -67,7 +70,7 @@
       <script src="app/admin/admin.module.js"></script>
       <script src="components/auth/auth.module.js"></script>
       <script src="components/util/util.module.js"></script>
-      <script src="app/main/main.js"></script>
+      <script src="app/main/main.controller.js"></script>
       <script src="app/account/settings/settings.controller.js"></script>
       <script src="app/account/signup/signup.controller.js"></script>
       <script src="app/admin/admin.controller.js"></script>
@@ -78,13 +81,14 @@
       <script src="app/blog/blog.js"></script>
       <script src="app/contact/contact.controller.js"></script>
       <script src="app/contact/contact.js"></script>
+      <script src="app/cv-old/cv-old.controller.js"></script>
+      <script src="app/cv-old/cv-old.js"></script>
       <script src="app/cv/cv.controller.js"></script>
       <script src="app/cv/cv.js"></script>
-      <script src="app/main/main.controller.js"></script>
       <script src="app/about/about.js"></script>
+      <script src="app/main/main.js"></script>
       <script src="app/projects/projects.controller.js"></script>
       <script src="app/projects/projects.js"></script>
-      <script src="app/state/state.service.js"></script>
       <script src="app/account/account.js"></script>
       <script src="components/auth/auth.service.js"></script>
       <script src="components/auth/interceptor.service.js"></script>
