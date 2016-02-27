@@ -60,7 +60,7 @@ sudo bower install
 echo "Installed dependencies !"
 
 echo "Building ..."
-grunt build
+grunt build --production
 echo "Building : done !"
 
 ## Run with pm2 (and Grunt via run.sh)
