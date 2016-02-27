@@ -11,7 +11,8 @@ angular.module('nicolasCoutinFrApp', [
   'ui.bootstrap',
   'validation.match',
   'ng',
-  'ui.router.title'
+  'ui.router.title',
+  'hc.marked'
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
