@@ -1,14 +1,37 @@
 <navbar></navbar>
 
 <header class="hero-unit" id="banner">
-    <div class="container">
-        <h1>Mes projets</h1>
-        <p class="lead">En construction.</p>
-    </div>
+  <div class="container">
+    <h1>Mes projets</h1>
+    <p class="lead">En construction.</p>
+  </div>
 </header>
 
 <div class="container">
-    <p>Description incoming ... and stuff.</p>
+  <p>Description incoming ... and stuff.</p>
+  <ul class="projects-list">
+    <li class="projects-list-element" ng-repeat="project in projects">
+      <div class="project" ng-if="project.show">
+        <h2>{{project.name}}</h2>
+        <img class="project-preview" src="{{project.previewLink}}" alt="[Preview : {{project.name}}]" />
+        <div class="project-description">
+          <div marked="project.description">
+          </div>
+        </div>
+        <a href="{{project.link}}" target="_blank">Démo du projet</a>
+        <div class="project-source">
+          <p>
+            Source : <span class="project-source-link" marked="project.source"></span>
+          </p>
+        </div>
+        <ul class="project-tags">
+          <li class="project-tag" ng-repeat="tag in project.tags">
+            <span class="label label-warning">{{tag}}</span>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
 </div>
 
 <footer></footer>

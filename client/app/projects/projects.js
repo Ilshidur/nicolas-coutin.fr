@@ -9,7 +9,10 @@ angular.module('nicolasCoutinFrApp')
         controller: 'ProjectsCtrl',
         resolve: {
           // Constant title
-          $title: function() { return 'Projets'; }
+          $title: function() { return 'Projets'; },
+          projects: ['$http', function($http) {
+            return $http.get('/api/projects');
+          }]
         }
       });
   });
