@@ -14,12 +14,12 @@
       <div class="project container" ng-if="project.show">
         <h2>{{project.name}}</h2>
         <div class="row">
-          <div class="">
+          <div class="project-preview">
             <a href="{{project.link}}" target="_blank">
-              <img class="project-preview" src="{{project.previewLink}}" alt="[Preview : {{project.name}}]" />
+              <img class="project-preview-inner" src="{{project.previewLink}}" alt="[Preview : {{project.name}}]" />
             </a>
           </div>
-          <div class="">
+          <div class="project-notes">
             <div class="project-description">
               <div marked="project.description">
               </div>
@@ -31,7 +31,7 @@
             </div>
             <ul class="project-tags">
               <li class="project-tag" ng-repeat="tag in project.tags">
-                <span class="label label-warning">{{tag}}</span>
+                <span class="project-tag-inner">{{tag}}</span>
               </li>
             </ul>
           </div>

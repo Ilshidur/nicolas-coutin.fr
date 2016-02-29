@@ -42,7 +42,7 @@ Project.find({}).removeAsync()
       previewLink: '/assets/images/preview_blog.jpg',
       link: 'https://blog.nicolas-coutin.fr',
       tags: ['web', 'node.js', 'react 0.14'],
-      description: 'Une application monopage .  \nHébergé sur serveur dédié.',
+      description: 'Une application web monopage où sont publiés tutoriels et discussions.  \nHébergé sur serveur dédié.',
       source: '[https://github.com/Ilshidur/blog.nicolas-coutin.fr](https://github.com/Ilshidur/blog.nicolas-coutin.fr)',
       show: true
     }, {
@@ -50,7 +50,7 @@ Project.find({}).removeAsync()
       previewLink: '/assets/images/preview_lisg.jpg',
       link: 'http://lol-item-sets-generator.org',
       tags: ['web', 'php', 'jquery 1.10.2'],
-      description: 'Un outil de statistiques sur le jeu vidéo *League of Legends*. Il propose de télécharger des contenus générés depuis une API. Ces contenus sont utilisables dans le jeu.  \nUne application permet de mettre ces données à jour automatiquement.',
+      description: 'Un outil de statistiques sur le jeu vidéo *League of Legends*. Il propose de télécharger des contenus générés depuis une API RESTful (Riot Games). Ces contenus sont utilisables dans le jeu.  \nUne application permet de mettre à jour ces données automatiquement.',
       source: '* site : **privée**  \n* application : [https://github.com/Ilshidur/LoL-item-sets](https://github.com/Ilshidur/LoL-item-sets)',
       show: true
     }, {

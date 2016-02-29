@@ -7,7 +7,16 @@
 }
 
 .project-preview {
+  @extend .col-sm-6;
+}
 
+.project-notes {
+  @extend .col-sm-6;
+  margin-top: 20px;
+}
+
+.project-preview-inner {
+  @extend .img-thumbnail;
 }
 
 .project-description {
@@ -30,4 +39,10 @@
   list-style-type: none;
   display: inline;
   font-size: 18px;
+}
+
+.project-tag-inner {
+  @extend .label;
+  @extend .label-warning;
+  color: rgb(93, 62, 9) !important;
 }
