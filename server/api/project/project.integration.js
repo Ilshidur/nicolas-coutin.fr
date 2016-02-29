@@ -35,8 +35,13 @@ describe('Project API:', function() {
       request(app)
         .post('/api/projects')
         .send({
-          name: 'New Project',
-          info: 'This is the brand new project!!!'
+          name: 'Project name',
+          previewLink: 'Preview link',
+          link: 'http://link.com',
+          tags: ['tag1', 'tag2', 'tag3'],
+          description: 'Project description',
+          source: 'http://source-code.github.com',
+          show: true
         })
         .expect(201)
         .expect('Content-Type', /json/)
@@ -50,8 +55,13 @@ describe('Project API:', function() {
     });
 
     it('should respond with the newly created project', function() {
-      newProject.name.should.equal('New Project');
-      newProject.info.should.equal('This is the brand new project!!!');
+      newProject.name.should.equal('Project name');
+      newProject.previewLink.should.equal('Preview link');
+      newProject.link.should.equal('http://link.com');
+      newProject.tags.should.eql(['tag1', 'tag2', 'tag3']);
+      newProject.description.should.equal('Project description');
+      newProject.source.should.equal('http://source-code.github.com');
+      newProject.show.should.equal(true);
     });
 
   });
@@ -78,8 +88,13 @@ describe('Project API:', function() {
     });
 
     it('should respond with the requested project', function() {
-      project.name.should.equal('New Project');
-      project.info.should.equal('This is the brand new project!!!');
+      project.name.should.equal('Project name');
+      project.previewLink.should.equal('Preview link');
+      project.link.should.equal('http://link.com');
+      project.tags.should.eql(['tag1', 'tag2', 'tag3']);
+      project.description.should.equal('Project description');
+      project.source.should.equal('http://source-code.github.com');
+      project.show.should.equal(true);
     });
 
   });
@@ -91,8 +106,13 @@ describe('Project API:', function() {
       request(app)
         .put('/api/projects/' + newProject._id)
         .send({
-          name: 'Updated Project',
-          info: 'This is the updated project!!!'
+          name: 'Project name:update',
+          previewLink: 'Preview link:update',
+          link: 'http://link.com/update',
+          tags: ['tag1:update', 'tag2:update', 'tag3:update'],
+          description: 'Project description:update',
+          source: 'http://source-code.github.com/update',
+          show: false
         })
         .expect(200)
         .expect('Content-Type', /json/)
@@ -110,8 +130,13 @@ describe('Project API:', function() {
     });
 
     it('should respond with the updated project', function() {
-      updatedProject.name.should.equal('Updated Project');
-      updatedProject.info.should.equal('This is the updated project!!!');
+      updatedProject.name.should.equal('Project name:update');
+      updatedProject.previewLink.should.equal('Preview link:update');
+      updatedProject.link.should.equal('http://link.com/update');
+      updatedProject.tags.should.eql(['tag1:update', 'tag2:update', 'tag3:update']);
+      updatedProject.description.should.equal('Project description:update');
+      updatedProject.source.should.equal('http://source-code.github.com/update');
+      updatedProject.show.should.equal(false);
     });
 
   });
