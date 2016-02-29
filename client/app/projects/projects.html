@@ -11,24 +11,32 @@
   <p>Description incoming ... and stuff.</p>
   <ul class="projects-list">
     <li class="projects-list-element" ng-repeat="project in projects">
-      <div class="project" ng-if="project.show">
+      <div class="project container" ng-if="project.show">
         <h2>{{project.name}}</h2>
-        <img class="project-preview" src="{{project.previewLink}}" alt="[Preview : {{project.name}}]" />
-        <div class="project-description">
-          <div marked="project.description">
+        <div class="row">
+          <div class="">
+            <a href="{{project.link}}" target="_blank">
+              <img class="project-preview" src="{{project.previewLink}}" alt="[Preview : {{project.name}}]" />
+            </a>
+          </div>
+          <div class="">
+            <div class="project-description">
+              <div marked="project.description">
+              </div>
+            </div>
+            <div class="project-source">
+              <p>
+                Source : <span class="project-source-link" marked="project.source"></span>
+              </p>
+            </div>
+            <ul class="project-tags">
+              <li class="project-tag" ng-repeat="tag in project.tags">
+                <span class="label label-warning">{{tag}}</span>
+              </li>
+            </ul>
           </div>
         </div>
-        <a href="{{project.link}}" target="_blank">Démo du projet</a>
-        <div class="project-source">
-          <p>
-            Source : <span class="project-source-link" marked="project.source"></span>
-          </p>
-        </div>
-        <ul class="project-tags">
-          <li class="project-tag" ng-repeat="tag in project.tags">
-            <span class="label label-warning">{{tag}}</span>
-          </li>
-        </ul>
+        <hr/>
       </div>
     </li>
   </ul>
