@@ -16,6 +16,6 @@ describe('Controller: CvOldCtrl', function () {
   }));
 
   it('should ...', function () {
-    1.should.equal(1);
+    // 1.should.equal(1);
   });
 });

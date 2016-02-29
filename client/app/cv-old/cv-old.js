@@ -9,7 +9,11 @@ angular.module('nicolasCoutinFrApp')
         controller: 'CvOldCtrl',
         resolve: {
           // Constant title
-          $title: function() { return 'Ancien CV'; }
+          $title: function() { return 'Ancien CV'; },
+          resolve: {
+            // Constant title
+            $title: function() { return 'Projets'; }
+          }
         }
       });
   });

@@ -7,7 +7,7 @@ angular.module('nicolasCoutinFrApp')
     $stateProvider
       .state('cv', {
         url: '/cv',
-        templateUrl: 'app/cv/cv-content.html',
+        templateUrl: 'app/cv/cv.html',
         controller: 'CvCtrl',
         resolve: {
           // Constant title
