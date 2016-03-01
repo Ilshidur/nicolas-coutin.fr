@@ -24,7 +24,7 @@ fi
 
 # PM2
 echo "Cheking PM2 ..."
-if sudo npm list -g | grep pm2
+if sudo npm list -g | grep -q "pm2"
 then
 	echo "PM2 already installed."
 else
@@ -34,7 +34,7 @@ else
 fi
 # Bower
 echo "Cheking Bower ..."
-if sudo npm list -g | grep bower
+if sudo npm list -g | grep -q "bower"
 then
 	echo "Bower already installed."
 else
@@ -44,7 +44,7 @@ else
 fi
 # Grunt-cli
 echo "Cheking Grunt ..."
-if sudo npm list -g | grep grunt-cli
+if sudo npm list -g | grep -q "grunt-cli"
 then
 	echo "Grunt already installed."
 else
