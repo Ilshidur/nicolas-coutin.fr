@@ -3,16 +3,15 @@
 <header class="hero-unit" id="banner">
   <div class="container">
     <h1>Mes projets</h1>
-    <p class="lead">En construction.</p>
   </div>
 </header>
 
 <div class="container">
-  <p>Description incoming ... and stuff.</p>
+  <p class="lead">Mes projets web</p>
   <ul class="projects-list">
     <li class="projects-list-element" ng-repeat="project in projects">
       <div class="project container" ng-if="project.show">
-        <h2>{{project.name}}</h2>
+        <h2 class="project-title">{{project.name}}</h2> <span class="project-date">{{project.date}}</span>
         <div class="row">
           <div class="project-preview">
             <a href="{{project.link}}" target="_blank">
@@ -40,6 +39,10 @@
       </div>
     </li>
   </ul>
+  <p class="lead">Mes autres projets</p>
+  <p>
+    Contenu à venir ...
+  </p>
 </div>
 
 <footer></footer>

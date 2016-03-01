@@ -8,6 +8,7 @@ var ProjectSchema = new mongoose.Schema({
   link: String,
   tags: [String],
   description: String,
+  date: String,
   source: String,
   show: Boolean
 });

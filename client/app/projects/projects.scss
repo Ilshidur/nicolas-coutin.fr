@@ -6,6 +6,14 @@
   list-style-type: none;
 }
 
+.project-title {
+  display: inline-block;
+}
+
+.project-date {
+  margin-left: 14px;
+}
+
 .project-preview {
   @extend .col-sm-6;
 }
