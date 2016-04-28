@@ -40,7 +40,7 @@ describe('Project API:', function() {
           link: 'http://link.com',
           tags: ['tag1', 'tag2', 'tag3'],
           description: 'Project description',
-          iconLink: 'http://link.com',
+          iconLink: 'http://link.com/icon',
           date: 'Project date',
           source: 'http://source-code.github.com',
           show: true

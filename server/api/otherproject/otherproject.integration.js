@@ -62,7 +62,7 @@ describe('Otherproject API:', function() {
       newOtherproject.link.should.equal('http://link.com');
       newOtherproject.tags.should.eql(['tag1', 'tag2', 'tag3']);
       newOtherproject.description.should.equal('Project description');
-      newOtherproject.iconLink.should.equal('http://link.com');
+      newOtherproject.iconLink.should.equal('http://link.com/icon');
       newOtherproject.date.should.equal('Project date');
       newOtherproject.source.should.equal('http://source-code.github.com');
       newOtherproject.show.should.equal(true);
@@ -97,7 +97,7 @@ describe('Otherproject API:', function() {
       otherproject.link.should.equal('http://link.com');
       otherproject.tags.should.eql(['tag1', 'tag2', 'tag3']);
       otherproject.description.should.equal('Project description');
-      otherproject.iconLink.should.equal('http://link.com');
+      otherproject.iconLink.should.equal('http://link.com/icon');
       otherproject.date.should.equal('Project date');
       otherproject.source.should.equal('http://source-code.github.com');
       otherproject.show.should.equal(true);
@@ -143,7 +143,7 @@ describe('Otherproject API:', function() {
       updatedOtherproject.link.should.equal('http://link.com/update');
       updatedOtherproject.tags.should.eql(['tag1:update', 'tag2:update', 'tag3:update']);
       updatedOtherproject.description.should.equal('Project description:update');
-      updatedOtherproject.link.should.equal('http://link.com/icon/update');
+      updatedOtherproject.iconLink.should.equal('http://link.com/icon/update');
       updatedOtherproject.date.should.equal('Project date:update');
       updatedOtherproject.source.should.equal('http://source-code.github.com/update');
       updatedOtherproject.show.should.equal(false);
