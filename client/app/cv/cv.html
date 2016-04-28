@@ -2,40 +2,65 @@
 
 <header class="hero-unit" id="banner">
   <div class="container">
-    <h1>CV</h1>
+    <h1 class="page-title">CV</h1>
+    <div class="cv-download">
+      <a target="_self" href="/assets/pdf/cv.pdf" download="CV_Nicolas_COUTIN.pdf"><img src="/assets/images/pdf.png" alt="Téléchargez mon CV" /></a>
+    </div>
   </div>
 </header>
 
 <div class="container">
-  <p class="lead">Mes compétences</p>
-  <hr/>
-  <p>
-    En construction ...
+  <div class="cv-element">
+    <p class="lead">Mes compétences professionnelles</p>
+    <hr/>
+    <div class="container">
+      <div class="col-sm-4" ng-repeat="skill_list in skills">
+        <p>{{skill_list.type}}</p>
+        <div class="skills-list">
+          <ul>
+            <li ng-repeat="skill in skill_list.list" class="row">
+              <div class="skill-container">
+                <div class="skill-name" ng-repeat="text in skill.skills">
+                  <img ng-if="text.img_url !== ''" class="skill-image" src="{{text.img_url}}" alt="{{text.name}}" title="{{text.name}}" data-balloon="{{text.name}}" data-balloon-pos="up" />
+                  <span ng-if="text.img_url === ''" class="skill-text">{{text.name}}</span>
+                </div>
+                <div class="">
+                  <uib-progressbar value="skill.percentage" type="{{getType(skill.percentage)}}">
+                    <span><b>{{skill.percentage}}%</b></span>
+                  </uib-progressbar>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <p>Autre :</p>
+        <ul>
+          <li><span class="skill-text" ng-repeat="skill in ['.NET', 'Java', 'C', 'C++']">{{skill}}</span></li>
+          <li><span class="skill-text" ng-repeat="skill in ['Atom', 'Visual Studio', 'Sublime Text', 'WebStorm']">{{skill}}</span></li>
+          <li><span class="skill-text" ng-repeat="skill in ['GIMP']">{{skill}}</span></li>
+          <li><span class="skill-text" ng-repeat="skill in ['Windows', 'Linux']">{{skill}}</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="cv-element">
     <!-- // TODO : JS => Polyvalent : autant en front qu'en back -->
-  </p>
-  <!--<p>
-    Blah
-  </p>
-  <p>
-    Blah
-  </p>
-  <p>
-    Blah
-  </p>-->
-  <p class="lead">Mon cursur professionnel</p>
-  <hr/>
-  <!--<p>
-    En construction ...
-  </p>
-  <p>
-    Blah
-  </p>
-  <p>
-    Blah
-  </p>
-  <p>
-    Blah
-  </p>-->
+    <p class="lead">Mon cursur professionnel</p>
+    <hr/>
+    <div class="container">
+      <div class="employment" ng-repeat="employment in employments">
+        <div class="">
+          <h3 class="employment-title"><i class="fa fa-briefcase" aria-hidden="true"></i> {{employment.title}}</h3>
+          <span class="employment-date">{{employment.date}}</span>
+        </div>
+        <div class="employment-description" marked="employment.description">
+        </div>
+        <span class="employment-place"><i>{{employment.place}}</i></span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <footer></footer>

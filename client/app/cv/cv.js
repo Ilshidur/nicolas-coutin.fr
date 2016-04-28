@@ -11,7 +11,13 @@ angular.module('nicolasCoutinFrApp')
         controller: 'CvCtrl',
         resolve: {
           // Constant title
-          $title: function() { return 'CV'; }
+          $title: function() { return 'CV'; },
+          skills: ['$http', function($http) {
+            return $http.get('/api/skills');
+          }],
+          employments: ['$http', function($http) {
+            return $http.get('/api/employments');
+          }]
         }
       });
   });
