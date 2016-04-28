@@ -1,9 +1,16 @@
 .projects-list {
+}
+
+.projects-list-content {
   list-style-type: none;
 }
 
 .projects-list-element {
   list-style-type: none;
+}
+
+.project-favicon {
+  height: 32px;
 }
 
 .project-title {
@@ -27,16 +34,23 @@
   @extend .img-thumbnail;
 }
 
-.project-description {
+.project-preview-inner-none {
+  width: 100%;
+  text-align: center;
+  @extend .img-thumbnail;
+}
 
+.project-description {
 }
 
 .project-source {
+}
 
+.project-source {
+  margin-left: 5px;
 }
 
 .project-source-link {
-
 }
 
 .project-tags {

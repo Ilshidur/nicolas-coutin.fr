@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('nicolasCoutinFrApp')
-  .controller('ProjectsCtrl', ['$scope', 'projects', function ($scope, projects) {
+  .controller('ProjectsCtrl', function ($scope, projects, otherProjects) {
     $scope.projects = projects.data;
-  }]);
+    $scope.otherProjects = otherProjects.data;
+  });

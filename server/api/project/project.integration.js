@@ -40,6 +40,7 @@ describe('Project API:', function() {
           link: 'http://link.com',
           tags: ['tag1', 'tag2', 'tag3'],
           description: 'Project description',
+          iconLink: 'http://link.com',
           date: 'Project date',
           source: 'http://source-code.github.com',
           show: true
@@ -61,6 +62,7 @@ describe('Project API:', function() {
       newProject.link.should.equal('http://link.com');
       newProject.tags.should.eql(['tag1', 'tag2', 'tag3']);
       newProject.description.should.equal('Project description');
+      newProject.iconLink.should.equal('http://link.com/icon');
       newProject.date.should.equal('Project date');
       newProject.source.should.equal('http://source-code.github.com');
       newProject.show.should.equal(true);
@@ -95,6 +97,7 @@ describe('Project API:', function() {
       project.link.should.equal('http://link.com');
       project.tags.should.eql(['tag1', 'tag2', 'tag3']);
       project.description.should.equal('Project description');
+      project.iconLink.should.equal('http://link.com/icon');
       project.date.should.equal('Project date');
       project.source.should.equal('http://source-code.github.com');
       project.show.should.equal(true);
@@ -114,6 +117,7 @@ describe('Project API:', function() {
           link: 'http://link.com/update',
           tags: ['tag1:update', 'tag2:update', 'tag3:update'],
           description: 'Project description:update',
+          iconLink: 'http://link.com/icon/update',
           date: 'Project date:update',
           source: 'http://source-code.github.com/update',
           show: false
@@ -139,6 +143,7 @@ describe('Project API:', function() {
       updatedProject.link.should.equal('http://link.com/update');
       updatedProject.tags.should.eql(['tag1:update', 'tag2:update', 'tag3:update']);
       updatedProject.description.should.equal('Project description:update');
+      updatedProject.iconLink.should.equal('http://link.com/icon/update');
       updatedProject.date.should.equal('Project date:update');
       updatedProject.source.should.equal('http://source-code.github.com/update');
       updatedProject.show.should.equal(false);

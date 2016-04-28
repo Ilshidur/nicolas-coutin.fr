@@ -7,40 +7,45 @@
 </header>
 
 <div class="container">
-  <p class="lead">Mes projets web</p>
-  <ul class="projects-list">
-    <li class="projects-list-element" ng-repeat="project in projects">
-      <div class="project container" ng-if="project.show">
-        <h2 class="project-title">{{project.name}}</h2><span class="project-date">{{project.date}}</span>
-        <div class="row">
-          <div class="project-preview">
-            <a href="{{project.link}}" target="_blank">
-              <img class="project-preview-inner" src="{{project.previewLink}}" alt="[Preview : {{project.name}}]" />
-            </a>
-          </div>
-          <div class="project-notes">
-            <div class="project-description">
-              <div marked="project.description">
+  <div class="projects-list" ng-repeat="projectList in [{title: 'Mes projets web', list: projects}, {title: 'Mes autres projets', list: otherProjects}]">
+    <p class="lead">{{projectList.title}}</p>
+    <ul class="projects-list-content">
+      <li class="projects-list-element" ng-repeat="project in projectList.list">
+        <div class="project container" ng-if="project.show">
+          <h2 class="project-title">
+            <img src="{{project.iconLink}}" alt="" class="project-favicon"/>
+            <span>{{project.name}}</span>
+          </h2>
+          <span class="project-date">{{project.date}}</span>
+          <div class="row">
+            <div class="project-preview">
+              <a href="{{project.link}}" target="_blank">
+                <div class="">
+                  <img ng-if="project.previewLink != ''" class="project-preview-inner" src="{{project.previewLink}}" alt="[Preview : {{project.name}}]" />
+                  <h3 ng-if="project.previewLink == ''" class="project-preview-inner-none"><i class="fa fa-picture-o" aria-hidden="true"></i> Aperçu non disponible</h3>
+                </div>
+              </a>
+            </div>
+            <div class="project-notes">
+              <div class="project-description">
+                <div marked="project.description">
+                </div>
               </div>
+              <div class="project-source">
+                <p>
+                  <i class="fa fa-code-fork" aria-hidden="true"></i><span class="project-source">Source : <span class="project-source-link" marked="project.source"></span></span>
+                </p>
+              </div>
+              <ul class="project-tags">
+                <li class="project-tag" ng-repeat="tag in project.tags"><span class="project-tag-inner">{{tag}}</span></li>
+              </ul>
             </div>
-            <div class="project-source">
-              <p>
-                Source : <span class="project-source-link" marked="project.source"></span>
-              </p>
-            </div>
-            <ul class="project-tags">
-              <li class="project-tag" ng-repeat="tag in project.tags"><span class="project-tag-inner">{{tag}}</span></li>
-            </ul>
           </div>
+          <hr/>
         </div>
-        <hr/>
-      </div>
-    </li>
-  </ul>
-  <p class="lead">Mes autres projets</p>
-  <p>
-    Contenu à venir ...
-  </p>
+      </li>
+    </ul>
+  </div>
 </div>
 
 <footer></footer>
