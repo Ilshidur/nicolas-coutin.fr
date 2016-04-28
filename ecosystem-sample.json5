@@ -2,12 +2,12 @@
   "apps": [
 
     {
-      "name": "nicolas-coutin.fr",
+      "name": "nicolas-coutin",
       "script": "dist/server/index.js",
       "env_production": {
         "NODE_ENV": "production",
         "PORT": 9000,
-        "DOMAIN": "www.nicolas-coutin.fr"
+        "DOMAIN": "domain.com"
       },
       "args": ["--release"],
       "port": 9000,
