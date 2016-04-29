@@ -33,7 +33,8 @@ Run `grunt build` for building and `grunt serve` for preview.
 ## Testing
 
 Running `npm test` will run the unit tests with karma.
+## Notes
 
-## LICENSES
+The ["blog" subdomain](https://blog.nicolas-coutin.fr) is located in the [Ilshidur/blog.nicolas-coutin.fr](https://github.com/Ilshidur/blog.nicolas-coutin.fr) repo.## LICENSES
 
 PDF icon : [Gomez Hyuuga](http://www.softicons.com/designers/gomez-hyuuga)
