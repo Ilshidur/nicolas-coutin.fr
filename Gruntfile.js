@@ -99,7 +99,7 @@ module.exports = function (grunt) {
         files: [
           '{.tmp,<%= yeoman.client %>}/{app,components}/**/*.{css,html}',
           '{.tmp,<%= yeoman.client %>}/{app,components}/**/!(*.spec|*.mock).js',
-          '<%= yeoman.client %>/assets/images/{,*//*}*.{png,jpg,jpeg,gif,webp,svg}'
+          '<%= yeoman.client %>/assets/images/{,*//*}*.{png,jpg,jpeg,gif,webp,svg,ico}'
         ],
         options: {
           livereload: true
@@ -252,7 +252,7 @@ module.exports = function (grunt) {
         src: [
           // TODO: Rename assets
           // '<%= yeoman.dist %>/<%= yeoman.client %>/!(bower_components){,*/}*.{js,css}',
-          // '<%= yeoman.dist %>/<%= yeoman.client %>/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          // '<%= yeoman.dist %>/<%= yeoman.client %>/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg,ico}',
           // '<%= yeoman.dist %>/<%= yeoman.client %>/assets/fonts/*'
         ]
       }
@@ -281,7 +281,7 @@ module.exports = function (grunt) {
         // This is so we update image references in our ng-templates
         patterns: {
           js: [
-            [/(assets\/images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JS to reference our revved images']
+            [/(assets\/images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg|ico))/gm, 'Update the JS to reference our revved images']
           ]
         }
       }
@@ -293,7 +293,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.client %>/assets/images',
-          src: '{,*/}*.{png,jpg,jpeg,gif,svg}',
+          src: '{,*/}*.{png,jpg,jpeg,gif,svg,ico}',
           dest: '<%= yeoman.dist %>/<%= yeoman.client %>/assets/images'
         }]
       }
@@ -380,6 +380,7 @@ module.exports = function (grunt) {
             'bower_components/**/*',
             'assets/images/{,*/}*.{webp}',
             'assets/fonts/**/*',
+            'assets/pdf/**/*',
             'index.html'
           ]
         }, {
