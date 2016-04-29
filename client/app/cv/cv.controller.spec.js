@@ -15,7 +15,4 @@ describe('Controller: CvCtrl', function () {
     });
   }));
 
-  it('should ...', function () {
-    // 1.should.equal(1);
-  });
 });

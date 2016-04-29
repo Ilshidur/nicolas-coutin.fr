@@ -3,15 +3,22 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html ng-app="nicolasCoutinFrApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <base href="/">
-    <title></title>
-    <meta name="description" content="Nicolas COUTIN - Développeur .NET et JavaScript">
+    <title ng-bind="($title || 'Accueil') + ' - Nicolas COUTIN'">Nicolas COUTIN</title>
+    <meta name="description" content="Nicolas COUTIN - Développeur JavaScript et .NET">
     <meta name="viewport" content="width=device-width">
-    <meta name="author" content="COUTIN Nicolas">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta name="author" content="Nicolas COUTIN">
+    <meta property="og:title" content="Nicolas COUTIN - Développeur JavaScript et .NET" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.nicolas-coutin.fr" />
+    <meta property="og:image" content="/og_image.jpg" />
+    <meta property="og:description" content="Nicolas COUTIN - CV, projets et blog ..." />
+    <meta property="fb:admins" content="100001093118785" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
       <!-- endbower -->
@@ -21,14 +28,14 @@
       <!-- injector:css -->
       <!-- endinjector -->
     <!-- endbuild -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/latest/superhero/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   </head>
-  <body ng-app="nicolasCoutinFrApp">
+  <body>
     <!--[if lt IE 7]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
     <div ui-view=""></div>
 
     <!-- Google Analytics -->
@@ -57,6 +64,9 @@
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
       <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
+      <script src="bower_components/angular-ui-router-title/angular-ui-router-title.js"></script>
+      <script src="bower_components/marked/lib/marked.js"></script>
+      <script src="bower_components/angular-marked/dist/angular-marked.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js(.tmp) app/app.js -->
@@ -76,10 +86,14 @@
       <script src="app/blog/blog.js"></script>
       <script src="app/contact/contact.controller.js"></script>
       <script src="app/contact/contact.js"></script>
+      <script src="app/cv-old/cv-old.controller.js"></script>
+      <script src="app/cv-old/cv-old.js"></script>
       <script src="app/cv/cv.controller.js"></script>
       <script src="app/cv/cv.js"></script>
       <script src="app/main/main.controller.js"></script>
       <script src="app/about/about.js"></script>
+      <script src="app/matchbaking/matchbaking.controller.js"></script>
+      <script src="app/matchbaking/matchbaking.js"></script>
       <script src="app/projects/projects.controller.js"></script>
       <script src="app/projects/projects.js"></script>
       <script src="app/account/account.js"></script>

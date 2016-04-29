@@ -6,6 +6,10 @@ angular.module('nicolasCoutinFrApp')
       .state('blog', {
         url: '/blog',
         templateUrl: 'app/blog/blog.html',
-        controller: 'BlogCtrl'
+        controller: 'BlogCtrl',
+        resolve: {
+          // Constant title
+          $title: function() { return 'Blog'; }
+        }
       });
   });

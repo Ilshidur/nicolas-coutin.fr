@@ -9,7 +9,10 @@ angular.module('nicolasCoutinFrApp', [
   'ngSanitize',
   'ui.router',
   'ui.bootstrap',
-  'validation.match'
+  'validation.match',
+  'ng',
+  'ui.router.title',
+  'hc.marked'
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider

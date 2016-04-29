@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('nicolasCoutinFrApp')
-  .controller('ProjectsCtrl', function ($scope) {
-    $scope.message = 'Hello';
+  .controller('ProjectsCtrl', function ($scope, projects, otherProjects) {
+    $scope.projects = projects.data;
+    $scope.otherProjects = otherProjects.data;
   });

@@ -14,8 +14,5 @@ describe('Controller: ProjectsCtrl', function () {
       $scope: scope
     });
   }));
-
-  it('should ...', function () {
-    // 1.should.equal(1);
-  });
+  
 });

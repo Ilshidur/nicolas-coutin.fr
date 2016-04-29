@@ -4,17 +4,17 @@ class NavbarController {
     //start-non-standard
     menu = [
         {
-            'title': 'Accueil',
-            'state': 'main'
-        }, {
             'title': 'Mes projets',
-            'state': 'projects'
+            'state': 'projects',
+            'clientRoute': true
         }, {
             'title': 'CV',
-            'state': 'cv'
+            'state': 'cv',
+            'clientRoute': true
         }, {
             'title': 'Blog',
-            'state': 'blog'
+            'state': 'blog',
+            'clientRoute': false
         }
     ];
 
