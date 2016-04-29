@@ -11,11 +11,11 @@ angular.module('nicolasCoutinFrApp')
         controller: 'ProjectsCtrl',
         resolve: {
           // Constant title
-          $title: function() { return 'Projets'; },
-          projects: ['$http', function($http) {
+          $title: function () { return 'Projets'; },
+          projects: ['$http', function ($http) {
             return $http.get('/api/projects');
           }],
-          otherProjects: ['$http', function($http) {
+          otherProjects: ['$http', function ($http) {
             return $http.get('/api/otherprojects');
           }]
         }
