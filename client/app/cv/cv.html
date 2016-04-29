@@ -55,9 +55,12 @@
           <h3 class="employment-title"><i class="fa fa-briefcase" aria-hidden="true"></i> {{employment.title}}</h3>
           <span class="employment-date">{{employment.date}}</span>
         </div>
+        <span class="employment-place"><i>{{employment.place}}</i></span>
         <div class="employment-description" marked="employment.description">
         </div>
-        <span class="employment-place"><i>{{employment.place}}</i></span>
+        <ul class="employment-tags">
+          <li class="employment-tag" ng-repeat="tag in employment.tags"><span class="employment-tag-inner">{{tag}}</span></li>
+        </ul>
       </div>
     </div>
   </div>

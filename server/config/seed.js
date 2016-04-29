@@ -178,14 +178,16 @@ Skill.find({}).removeAsync()
 
 Employment.find({}).removeAsync().then(function () {
   Employment.createAsync({
-    title: 'Développeur VB .NET',
+    title: 'Développeur .NET',
     date: 'Juillet 2014 - Décembre 2015',
     place: 'TIMET Savoie (Ugine, 73400)',
-    description: `* Développement d'un logiciel d'aide à l'optimisation/déçision  \n* Développement d'un MES (Manufacturing Execution System) dans une entreprise de production de titane  \nStage de 2 mois, apprentissage de 1 an puis CDD de 6 mois.`
+    description: `* Développement d'un logiciel d'aide à l'optimisation/déçision  \n* Développement d'un MES (Manufacturing Execution System) dans une entreprise de production de titane  \nStage de 2 mois, apprentissage de 1 an puis CDD de 6 mois.`,
+    tags: ['VB .NET', 'WinForms', 'SQL Server', 'Visual Studio', 'Linq', 'Unit tests', 'MVC']
   }, {
-    title: 'Développeur Java',
+    title: 'Développeur Android',
     date: 'Avril 2015 - Juin 2015',
-    place: 'IUT Annecy (Annecy, 74000)',
-    description: `Développement d'une interface graphique en Java pour un jeu Android lors d'un project tuteuré (équipe de 5).`
+    place: 'IUT d\'Annecy (74000)',
+    description: `Développement d'une interface graphique en Java pour un jeu Android lors d'un project tuteuré (équipe de 5).`,
+    tags: ['Java', 'Android', 'eclipse']
   });
 });

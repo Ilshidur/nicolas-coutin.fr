@@ -69,3 +69,21 @@
 .employment-description {
   margin-top: 10px;
 }
+
+.employment-tags {
+  list-style-type: none;
+}
+
+.employment-tag {
+  list-style-type: none;
+  display: inline;
+  font-size: 18px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.employment-tag-inner {
+  @extend .label;
+  @extend .label-warning;
+  color: rgb(93, 62, 9) !important;
+}

@@ -38,7 +38,8 @@ describe('Employment API:', function() {
           title: 'Employment title',
           date: 'Employment date',
           place: 'Employment place',
-          description: 'Employment description'
+          description: 'Employment description',
+          tags: ['tag1', 'tag2', 'tag3']
         })
         .expect(201)
         .expect('Content-Type', /json/)
@@ -56,6 +57,7 @@ describe('Employment API:', function() {
       newEmployment.date.should.equal('Employment date');
       newEmployment.place.should.equal('Employment place');
       newEmployment.description.should.equal('Employment description');
+      newEmployment.tags.should.eql(['tag1', 'tag2', 'tag3']);
     });
 
   });
@@ -86,6 +88,7 @@ describe('Employment API:', function() {
       employment.date.should.equal('Employment date');
       employment.place.should.equal('Employment place');
       employment.description.should.equal('Employment description');
+      employment.tags.should.eql(['tag1', 'tag2', 'tag3']);
     });
 
   });
@@ -100,7 +103,8 @@ describe('Employment API:', function() {
           title: 'Employment title update',
           date: 'Employment date update',
           place: 'Employment place update',
-          description: 'Employment description update'
+          description: 'Employment description update',
+          tags: ['tag1:update', 'tag2:update', 'tag3:update']
         })
         .expect(200)
         .expect('Content-Type', /json/)
@@ -122,6 +126,7 @@ describe('Employment API:', function() {
       updatedEmployment.date.should.equal('Employment date update');
       updatedEmployment.place.should.equal('Employment place update');
       updatedEmployment.description.should.equal('Employment description update');
+      updatedEmployment.tags.should.eql(['tag1:update', 'tag2:update', 'tag3:update']);
     });
 
   });

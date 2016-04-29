@@ -6,7 +6,8 @@ var EmploymentSchema = new mongoose.Schema({
   title: String,
   date: String,
   place: String,
-  description: String
+  description: String,
+  tags: [String]
 });
 
 export default mongoose.model('Employment', EmploymentSchema);
