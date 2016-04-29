@@ -180,14 +180,20 @@ Employment.find({}).removeAsync().then(function () {
   Employment.createAsync({
     title: 'Développeur .NET',
     date: 'Juillet 2014 - Décembre 2015',
-    place: 'TIMET Savoie (Ugine, 73400)',
-    description: `* Développement d'un logiciel d'aide à l'optimisation/déçision  \n* Développement d'un MES (Manufacturing Execution System) dans une entreprise de production de titane  \nStage de 2 mois, apprentissage de 1 an puis CDD de 6 mois.`,
-    tags: ['VB .NET', 'WinForms', 'SQL Server', 'Visual Studio', 'Linq', 'Unit tests', 'MVC']
+    place: 'TIMET Savoie (73400, Ugine)',
+    description: `* Développement d'un logiciel d'aide à l'optimisation/déçision  \n* Développement d'un MES (Manufacturing Execution System)  \nStage de 2 mois, apprentissage de 1 an puis CDD de 6 mois.`,
+    tags: ['VB .NET', 'WinForms', 'SQL Server']
+  }, {
+    title: 'Développeur Back End',
+    date: 'Avril 2015 - Juin 2015',
+    place: 'CCI Formation Digital (74000, Annecy)',
+    description: `Serveur d’hébergement de jeux + librairie pour le multi-joueurs (équipe de 3).`,
+    tags: ['Node.js', 'Socket.io', 'MySQL']
   }, {
     title: 'Développeur Android',
-    date: 'Avril 2015 - Juin 2015',
-    place: 'IUT d\'Annecy (74000)',
+    date: 'Avril 2014 - Juin 2014',
+    place: 'IUT d\'Annecy (74940, Annecy-le-Vieux)',
     description: `Développement d'une interface graphique en Java pour un jeu Android lors d'un project tuteuré (équipe de 5).`,
-    tags: ['Java', 'Android', 'eclipse']
+    tags: ['Java', 'Android', 'Eclipse']
   });
 });

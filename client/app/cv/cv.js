@@ -11,11 +11,11 @@ angular.module('nicolasCoutinFrApp')
         controller: 'CvCtrl',
         resolve: {
           // Constant title
-          $title: function() { return 'CV'; },
-          skills: ['$http', function($http) {
+          $title: function () { return 'CV'; },
+          skills: ['$http', function ($http) {
             return $http.get('/api/skills');
           }],
-          employments: ['$http', function($http) {
+          employments: ['$http', function ($http) {
             return $http.get('/api/employments');
           }]
         }
