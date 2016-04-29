@@ -55,8 +55,8 @@ fi
 
 ## Install dependencies
 echo "Installing dependencies ..."
-sudo npm install
-sudo bower install
+npm install
+bower install
 echo "Installed dependencies !"
 
 echo "Building ..."
@@ -65,6 +65,6 @@ echo "Building : done !"
 
 ## Run with pm2 (and Grunt via run.sh)
 echo "Running PM2 ..."
-sudo pm2 startOrRestart ecosystem.json5 --env production
+pm2 startOrRestart ecosystem.json5 --env production
 
 echo "Deployed successfully !"
