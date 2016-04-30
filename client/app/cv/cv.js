@@ -1,7 +1,5 @@
 'use strict';
 
-// TODO: Dynamicly serve the HTML file (via https://github.com/Quantumplation/resume-server/ ?)
-
 angular.module('nicolasCoutinFrApp')
   .config(function ($stateProvider) {
     $stateProvider

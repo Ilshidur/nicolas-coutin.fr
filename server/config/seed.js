@@ -102,17 +102,29 @@ Otherproject.find({}).removeAsync()
 Skill.find({}).removeAsync()
   .then(function () {
     Skill.createAsync({
-      type: '',
+      type: 'Back End',
       list: [{
         skills: [{
-          name: '',
-          img_url: ''
+          name: 'Node.js',
+          img_url: '/assets/images/icons/nodejs.png'
         }],
-        percentage: 100
+        percentage: 90
       }, {
         skills: [{
-          name: '',
+          name: 'PHP',
+          img_url: '/assets/images/icons/php.png'
+        }],
+        percentage: 50
+      }, {
+        skills: [{
+          name: 'MySQL',
+          img_url: '/assets/images/icons/mysql.png'
+        }, {
+          name: 'SQL Server',
           img_url: ''
+        }, {
+          name: 'MongoDB',
+          img_url: '/assets/images/icons/mongodb.png'
         }],
         percentage: 80
       }]
@@ -128,6 +140,9 @@ Skill.find({}).removeAsync()
         }, {
           name: 'SCSS',
           img_url: '/assets/images/icons/sass.png'
+        }, {
+          name: 'Vanilla',
+          img_url: '/assets/images/icons/javascript.png'
         }],
         percentage: 90
       }, {
@@ -150,26 +165,53 @@ Skill.find({}).removeAsync()
         percentage: 75
       }]
     }, {
-      type: 'Javascript',
+      type: 'Divers',
       list: [{
         skills: [{
-          name: 'Vanilla',
-          img_url: '/assets/images/icons/javascript.png'
+          name: 'MERISE',
+          img_url: ''
+        }, {
+          name: 'UML',
+          img_url: '/assets/images/icons/uml.png'
         }],
-        percentage: 90
+        percentage: 95
       }, {
         skills: [{
-          name: 'Node.JS',
-          img_url: '/assets/images/icons/nodejs.png'
+          name: 'Atom',
+          img_url: '/assets/images/icons/atom.png'
+        }, {
+          name: 'Visual Studio',
+          img_url: '/assets/images/icons/visual-studio.png'
+        }, {
+          name: 'WebStorm',
+          img_url: '/assets/images/icons/webstorm.png'
+        }, {
+          name: 'Sublime',
+          img_url: ''
+        }, {
+          name: 'Eclipse',
+          img_url: '/assets/images/icons/eclipse.png'
         }],
-        percentage: 90
+        percentage: 95
       }]
     }, {
       type: 'Autre',
       list: [{
         skills: [{
-          name: 'PHP',
-          img_url: '/assets/images/icons/php.png'
+          name: 'Windows',
+          img_url: '/assets/images/icons/windows.png'
+        }],
+        percentage: 100
+      }, {
+        skills: [{
+          name: 'Linux',
+          img_url: '/assets/images/icons/linux.png'
+        }],
+        percentage: 80
+      }, {
+        skills: [{
+          name: 'OS X',
+          img_url: '/assets/images/icons/macosx.png'
         }],
         percentage: 70
       }]
