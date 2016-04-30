@@ -195,7 +195,7 @@ Skill.find({}).removeAsync()
         percentage: 95
       }]
     }, {
-      type: 'Autre',
+      type: 'OS',
       list: [{
         skills: [{
           name: 'Windows',
