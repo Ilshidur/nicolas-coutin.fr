@@ -1,4 +1,4 @@
-.page-title {
+.cv-page-title {
   float: left;
 }
 
@@ -13,6 +13,12 @@
   margin-bottom: 20px;
 }
 
+.skills-list-container {
+  @extend .col-sm-4;
+  padding: 20px;
+  min-height: 360px;
+}
+
 .skills-list {
   @extend .row;
   ul {
@@ -25,29 +31,42 @@
   margin-right: 5px;
 }
 
+.skills-list-ul {
+  padding: 0;
+}
+
 .skill-container {
 }
 
+.skill-title {
+  height: 50px;
+  .skill-name {
+    display: inline;
+    height: 50px;
+  }
+}
+
 .skill-name {
-  display: inline;
-}
-
-.skill-image {
-  height: 40px;
-  max-width: 140px;
-  margin: 2px 2px 5px 2px;
-  filter: drop-shadow(3px 3px 3px rgb(159, 161, 190));
-  // z-index: -1;
-}
-
-.skill-text {
-  display: inline;
+  display: inline-block;
   &:before {
     content: ", ";
   }
   &:first-child:before {
     content: "";
   }
+}
+
+.skill-image {
+  height: 40px;
+  max-width: 140px;
+  margin: 2px 6px 5px 6px;
+  @extend .img-thumbnail;
+  background-color: #ffffcc;
+}
+
+.skill-text {
+  display: inline;
+  vertical-align: middle;
 }
 
 .employment {
