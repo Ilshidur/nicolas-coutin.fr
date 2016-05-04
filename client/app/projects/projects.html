@@ -19,7 +19,7 @@
           <span class="project-date">{{project.date}}</span>
           <div class="row">
             <div class="project-preview">
-              <a href="{{project.link}}" target="_blank">
+              <a href="{{project.link}}" target="_blank" rel="noopener noreferrer">
                 <div class="">
                   <img ng-if="project.previewLink != ''" class="project-preview-inner" src="{{project.previewLink}}" alt="[Preview : {{project.name}}]" />
                   <h3 ng-if="project.previewLink == ''" class="project-preview-inner-none"><i class="fa fa-picture-o" aria-hidden="true"></i> Aperçu non disponible</h3>
