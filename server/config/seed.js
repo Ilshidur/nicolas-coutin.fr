@@ -62,7 +62,7 @@ Project.find({}).removeAsync()
       description: 'Un outil de statistiques sur le jeu vidéo *League of Legends*. Il propose de télécharger des contenus générés depuis une [API RESTful](https://developer.riotgames.com/api/methods) (Riot Games). Ces contenus sont utilisables dans le jeu.  \nUne application permet de mettre à jour ces données automatiquement.',
       iconLink: '/assets/images/projects/favicon_lisg.ico',
       date: 'Mars 2015',
-      source: '* site : **privée**  \n* générateur : **privée**  \n* application : [https://github.com/Ilshidur/LoL-item-sets](https://github.com/Ilshidur/LoL-item-sets)',
+      source: '* site : ***privée***  \n* générateur : ***privée***  \n* application : [https://github.com/Ilshidur/LoL-item-sets](https://github.com/Ilshidur/LoL-item-sets)',
       show: true
     }, {
       name: 'MJo Peintures',
