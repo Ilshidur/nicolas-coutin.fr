@@ -89,6 +89,26 @@ Otherproject.find({}).removeAsync()
       date: 'Mars 2016',
       source: '* serveur : [https://github.com/Ilshidur/matchbaking](https://github.com/Ilshidur/matchbaking)  \n* client : [https://github.com/Ilshidur/matchbaking-client](https://github.com/Ilshidur/matchbaking-client)',
       show: true
+    }, {
+      name: 'Hived',
+      previewLink: '/assets/images/projects/preview_hived.jpg',
+      link: '',
+      tags: ['node.js', 'socket.io'],
+      description: 'Serveur d’hébergement de jeux + librairie pour le multi-joueurs dans le cadre d\'un projet organisé par la CCI Formation Digital (en équipe de 3).  \n* Cible : développeurs de jeux  \n* Objectif :  \n  * offrir un hébergement de jeux aux développeurs (accessible par FTP)  \n  * abstraire la couche "communication" et "scalabilité" des jeux pour faciliter le développement avec des SDKs  \n  * offrir ces librairies sur plusieurs plateformes pour facilement étendre l\'influence des jeux  \n  * permettre aux joueurs de regarder en direct des parties sur leur navigateur (non implémenté)  \nChaque membre du projet travaillait sur une des trois parties : serveur/client Web, SDK Android et site Web.',
+      iconLink: '',
+      date: 'Avril 2015 - 3 mois',
+      source: '***indisponible***',
+      show: true
+    }, {
+      name: 'CSS-contest',
+      previewLink: '/assets/images/projects/preview_css-contest.jpg',
+      link: '/CSS-contest',
+      tags: ['css3'],
+      description: 'Mise en forme d\'un fichier HTML dans le cadre d\'un concours de l\'IUT d\'Annecy, avec récompenses selon le genre (vainqueur du "grand prix du qui-pique-les-yeux"). **Mise en garde** : contient des images et couleurs clignotant rapidement.',
+      iconLink: '',
+      date: '2013',
+      source: '[https://github.com/Ilshidur/CSS-contest](https://github.com/Ilshidur/CSS-contest)',
+      show: true
     });
   });
 
