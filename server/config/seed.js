@@ -58,7 +58,7 @@ Project.find({}).removeAsync()
       name: 'LoL item sets',
       previewLink: '/assets/images/projects/preview_lisg.jpg',
       link: 'https://lol-item-sets-generator.org/',
-      tags: ['PHP', 'jQuery 1.10.2', 'C#', 'WinForms'],
+      tags: ['PHP', 'jQuery 1.10.2', 'C#', 'WinForms', 'node.js'],
       description: 'Un outil de statistiques sur le jeu vidéo *League of Legends*. Il propose de télécharger des contenus générés depuis une [API RESTful](https://developer.riotgames.com/api/methods) (Riot Games). Ces contenus sont utilisables dans le jeu.  \nUne application permet de mettre à jour ces données automatiquement.',
       iconLink: '/assets/images/projects/favicon_lisg.ico',
       date: 'Mars 2015',
