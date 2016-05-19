@@ -92,13 +92,6 @@ Otherproject.find({}).removeAsync()
     });
   });
 
-// Javascript
-// Node.JS
-// Meteor.JS
-// Angular, React, jQuery
-// HTML5, CSS3, SCSS,
-// Bootstrap
-
 Skill.find({}).removeAsync()
   .then(function () {
     Skill.createAsync({
