@@ -18,7 +18,8 @@ module.exports = function (grunt) {
     protractor: 'grunt-protractor-runner',
     buildcontrol: 'grunt-build-control',
     istanbul_check_coverage: 'grunt-mocha-istanbul',
-    ngconstant: 'grunt-ng-constant'
+    ngconstant: 'grunt-ng-constant',
+    favicon: 'grunt-real-favicon'
   });
 
   // Time how long tasks take. Can help when optimizing build times
@@ -653,6 +654,54 @@ module.exports = function (grunt) {
         }
       }
     },
+    realFavicon: {
+      favicons: {
+        src: '<%= yeoman.client %>/profile-draw.png',
+        dest: '<%= yeoman.client %>/',
+        options: {
+          iconsPath: '/',
+          html: [ '<%= yeoman.client %>/index.html' ],
+          design: {
+            ios: {
+              pictureAspect: 'backgroundAndMargin',
+              backgroundColor: '#4e5d6c',
+              margin: '7%'
+            },
+            desktopBrowser: {},
+            windows: {
+              pictureAspect: 'noChange',
+              backgroundColor: '#4e5d6c',
+              onConflict: 'override'
+            },
+            androidChrome: {
+              pictureAspect: 'noChange',
+              themeColor: '#000000',
+              manifest: {
+                name: 'Nicolas COUTIN',
+                display: 'browser',
+                orientation: 'notSet',
+                onConflict: 'override',
+                declared: true
+              }
+            },
+            safariPinnedTab: {
+              pictureAspect: 'blackAndWhite',
+              threshold: 50,
+              themeColor: '#5bbad5'
+            }
+          },
+          settings: {
+            compression: 5,
+            scalingAlgorithm: 'Cubic',
+            errorOnImageTooSmall: false
+          },
+          versioning: {
+            paramName: 'v',
+            paramValue: '2bbqja3GAP'
+          }
+        }
+      }
+    }
   });
 
   // Used for delaying livereload until after server has restarted
