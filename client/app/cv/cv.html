@@ -52,7 +52,12 @@
           <h3 class="employment-title"><i class="fa fa-briefcase" aria-hidden="true"></i> {{employment.title}}</h3>
           <span class="employment-date">{{employment.date}}</span>
         </div>
-        <span class="employment-place"><i>{{employment.place}}</i></span>
+        <span class="employment-employer">
+          <i>
+            <a ng-if="employment.employerLink != ''" href="{{employment.employerLink}}">{{employment.employer}}</a>
+            <span ng-if="employment.employerLink == ''">{{employment.employer}}</span>
+          </i>
+        </span>
         <div class="employment-description" marked="employment.description">
         </div>
         <ul class="employment-tags">

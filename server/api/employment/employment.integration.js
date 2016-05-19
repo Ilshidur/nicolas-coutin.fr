@@ -37,7 +37,8 @@ describe('Employment API:', function() {
         .send({
           title: 'Employment title',
           date: 'Employment date',
-          place: 'Employment place',
+          employer: 'Employment employer',
+          employerLink: 'Employment employer link',
           description: 'Employment description',
           tags: ['tag1', 'tag2', 'tag3']
         })
@@ -55,7 +56,8 @@ describe('Employment API:', function() {
     it('should respond with the newly created employment', function() {
       newEmployment.title.should.equal('Employment title');
       newEmployment.date.should.equal('Employment date');
-      newEmployment.place.should.equal('Employment place');
+      newEmployment.employer.should.equal('Employment employer');
+      newEmployment.employerLink.should.equal('Employment employer link');
       newEmployment.description.should.equal('Employment description');
       newEmployment.tags.should.eql(['tag1', 'tag2', 'tag3']);
     });
@@ -86,7 +88,8 @@ describe('Employment API:', function() {
     it('should respond with the requested employment', function() {
       employment.title.should.equal('Employment title');
       employment.date.should.equal('Employment date');
-      employment.place.should.equal('Employment place');
+      employment.employer.should.equal('Employment employer');
+      employment.employerLink.should.equal('Employment employer link');
       employment.description.should.equal('Employment description');
       employment.tags.should.eql(['tag1', 'tag2', 'tag3']);
     });
@@ -102,7 +105,8 @@ describe('Employment API:', function() {
         .send({
           title: 'Employment title update',
           date: 'Employment date update',
-          place: 'Employment place update',
+          employer: 'Employment employer update',
+          employerLink: 'Employment employer link update',
           description: 'Employment description update',
           tags: ['tag1:update', 'tag2:update', 'tag3:update']
         })
@@ -124,7 +128,8 @@ describe('Employment API:', function() {
     it('should respond with the updated employment', function() {
       updatedEmployment.title.should.equal('Employment title update');
       updatedEmployment.date.should.equal('Employment date update');
-      updatedEmployment.place.should.equal('Employment place update');
+      updatedEmployment.employer.should.equal('Employment employer update');
+      updatedEmployment.employerLink.should.equal('Employment employer link update');
       updatedEmployment.description.should.equal('Employment description update');
       updatedEmployment.tags.should.eql(['tag1:update', 'tag2:update', 'tag3:update']);
     });

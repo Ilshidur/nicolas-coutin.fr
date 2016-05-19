@@ -222,19 +222,23 @@ Employment.find({}).removeAsync().then(function () {
   Employment.createAsync({
     title: 'Développeur .NET',
     date: 'Juillet 2014 - Décembre 2015',
-    place: 'TIMET Savoie (73400, Ugine)',
+    employer: 'TIMET Savoie (73400, Ugine)',
+    employerLink: 'http://www.timet.com/',
+
     description: `* Développement d'un logiciel d'aide à l'optimisation/déçision  \n* Développement d'un MES (Manufacturing Execution System)  \nStage de 2 mois, apprentissage de 1 an puis CDD de 6 mois.`,
     tags: ['VB .NET', 'WinForms', 'SQL Server']
   }, {
     title: 'Développeur Back End',
     date: 'Avril 2015 - Juin 2015',
-    place: 'CCI Formation Digital (74000, Annecy)',
+    employer: 'CCI Formation Digital (74000, Annecy)',
+    employerLink: 'http://www.formation-cci.fr/formations-diplomantes-en-alternance/nos-formations-en-alternance/digital/4-licence-professionnelle-developpeur-informatique-multisupports-dim',
     description: `Serveur d’hébergement de jeux + librairie pour le multi-joueurs (équipe de 3).`,
     tags: ['Node.js', 'Socket.io', 'MySQL']
   }, {
     title: 'Développeur Android',
     date: 'Avril 2014 - Juin 2014',
-    place: 'IUT d\'Annecy (74940, Annecy-le-Vieux)',
+    employer: 'IUT d\'Annecy (74940, Annecy-le-Vieux)',
+    employerLink: 'https://www.iut-acy.univ-smb.fr/departement_info/le_departement_info/',
     description: `Développement d'une interface graphique en Java pour un jeu Android lors d'un project tuteuré (équipe de 5).`,
     tags: ['Java', 'Android', 'Eclipse']
   });
