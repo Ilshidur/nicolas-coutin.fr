@@ -39,7 +39,7 @@ Project.find({}).removeAsync()
       previewLink: '/assets/images/projects/preview_portfolio.jpg',
       link: 'https://www.nicolas-coutin.fr',
       tags: ['node.js', 'angular 1.4'],
-      description: 'Un simple portfolio contruit grâce au générateur [Angular Fullstack](https://github.com/DaftMonk/generator-angular-fullstack).  \nIl a pour simple but de présenter mes compétences, mon parcours professionnel et mon <a href="/blog" target="_self">blog</a>.  \nHébergé sur serveur dédié.',
+      description: 'Un simple portfolio qui a pour simple but de présenter mes compétences, mon parcours professionnel et mon <a href="/blog" target="_self">blog</a>.  \nHébergé sur serveur dédié.',
       iconLink: '/assets/images/projects/favicon_portfolio.ico',
       date: 'Janvier 2016 - 2 mois',
       source: '[https://github.com/Ilshidur/nicolas-coutin.fr](https://github.com/Ilshidur/nicolas-coutin.fr)',
