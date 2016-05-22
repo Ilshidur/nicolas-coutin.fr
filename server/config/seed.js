@@ -90,6 +90,26 @@ Otherproject.find({}).removeAsync()
       source: '* serveur : [https://github.com/Ilshidur/matchbaking](https://github.com/Ilshidur/matchbaking)  \n* client : [https://github.com/Ilshidur/matchbaking-client](https://github.com/Ilshidur/matchbaking-client)',
       show: true
     }, {
+      name: 'Tribute page (FCC)',
+      previewLink: '/assets/images/projects/preview_tribute.jpg',
+      link: 'http://codepen.io/Ilshidur/full/KzjjEM/',
+      tags: ['html5', 'css3', 'javascript'],
+      description: 'Page créée pour le challenge ["Tribute page"](https://www.freecodecamp.com/challenges/build-a-tribute-page) de FreeCodeCamp.',
+      iconLink: '/assets/images/icons/codepen.svg',
+      date: 'Mai 2016',
+      source: '[http://codepen.io/Ilshidur/pen/KzjjEM](http://codepen.io/Ilshidur/pen/KzjjEM)',
+      show: true
+    }, {
+      name: 'CSS-contest',
+      previewLink: '/assets/images/projects/preview_css-contest.jpg',
+      link: '/CSS-contest',
+      tags: ['css3'],
+      description: 'Mise en forme d\'un fichier HTML dans le cadre d\'un concours de l\'IUT d\'Annecy, avec récompenses selon le genre (vainqueur du "grand prix du qui-pique-les-yeux"). **Mise en garde** : contient des images et couleurs clignotant rapidement.',
+      iconLink: '',
+      date: '2013',
+      source: '[https://github.com/Ilshidur/CSS-contest](https://github.com/Ilshidur/CSS-contest)',
+      show: true
+    }, {
       name: 'Hived',
       previewLink: '/assets/images/projects/preview_hived.jpg',
       link: '',
@@ -109,7 +129,7 @@ Otherproject.find({}).removeAsync()
       date: '2013',
       source: '[https://github.com/Ilshidur/CSS-contest](https://github.com/Ilshidur/CSS-contest)',
       show: true
-    });
+    });preview_tribute.jpg
   });
 
 Skill.find({}).removeAsync()
