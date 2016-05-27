@@ -102,6 +102,8 @@
   },
   "scripts": {
     "start": "grunt serve",
+    "build:dev": "grunt build",
+    "build:prod": "grunt build --production",
     "favicon": "grunt realFavicon",
     "test": "grunt test",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
