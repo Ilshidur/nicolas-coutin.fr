@@ -29,7 +29,7 @@ then
 	echo "PM2 already installed."
 else
 	echo "Installing PM2 ..."
-	sudo npm install pm2 -g
+	npm install pm2 -g
 	echo "Installed PM2 !"
 fi
 # Bower
@@ -39,7 +39,7 @@ then
 	echo "Bower already installed."
 else
 	echo "Installing Bower ..."
-	sudo npm install bower -g
+	npm install bower -g
 	echo "Installed Bower !"
 fi
 # Grunt-cli
@@ -49,7 +49,7 @@ then
 	echo "Grunt already installed."
 else
 	echo "Installing Grunt ..."
-	sudo npm install grunt-cli -g
+	npm install grunt-cli -g
 	echo "Installed Grunt !"
 fi
 
