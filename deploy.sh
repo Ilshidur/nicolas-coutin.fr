@@ -24,7 +24,7 @@ fi
 
 # PM2
 echo "Cheking PM2 ..."
-if sudo npm list -g | grep -q "pm2"
+if npm list -g | grep -q "pm2"
 then
 	echo "PM2 already installed."
 else
@@ -34,7 +34,7 @@ else
 fi
 # Bower
 echo "Cheking Bower ..."
-if sudo npm list -g | grep -q "bower"
+if npm list -g | grep -q "bower"
 then
 	echo "Bower already installed."
 else
@@ -44,7 +44,7 @@ else
 fi
 # Grunt-cli
 echo "Cheking Grunt ..."
-if sudo npm list -g | grep -q "grunt-cli"
+if npm list -g | grep -q "grunt-cli"
 then
 	echo "Grunt already installed."
 else
@@ -52,6 +52,10 @@ else
 	npm install grunt-cli -g
 	echo "Installed Grunt !"
 fi
+
+## TODO: Check if Ruby and Sass are installed
+## sudo apt-get install ruby-full
+## gem install sass
 
 ## Install dependencies
 echo "Installing dependencies ..."
