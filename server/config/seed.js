@@ -129,7 +129,7 @@ Otherproject.find({}).removeAsync()
       date: '2013',
       source: '[https://github.com/Ilshidur/CSS-contest](https://github.com/Ilshidur/CSS-contest)',
       show: true
-    });preview_tribute.jpg
+    });
   });
 
 Skill.find({}).removeAsync()
