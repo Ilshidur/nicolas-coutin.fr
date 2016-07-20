@@ -254,7 +254,7 @@ Skill.find({}).removeAsync()
 Employment.find({}).removeAsync().then(function () {
   Employment.createAsync({
     title: 'Développeur .NET',
-    date: 'Juillet 2014 - Décembre 2015',
+    date: 'Avril 2014 - Décembre 2015',
     employer: 'TIMET Savoie (73400, Ugine)',
     employerLink: 'http://www.timet.com/',
 
