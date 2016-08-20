@@ -6,7 +6,8 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/nicolas-coutin-fr-dev'
+    uri:  process.env.MONGO_URI_DEV ||
+          'mongodb://localhost/nicolas-coutin-fr-dev'
   },
 
   // Seed database on startup
