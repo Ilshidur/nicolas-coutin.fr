@@ -24,7 +24,7 @@ fi
 
 # PM2
 echo "Cheking PM2 ..."
-if npm list -g | grep -q "pm2"
+if npm list -g --depth=0 | grep -q "pm2"
 then
 	echo "PM2 already installed."
 else
@@ -34,7 +34,7 @@ else
 fi
 # Bower
 echo "Cheking Bower ..."
-if npm list -g | grep -q "bower"
+if npm list -g --depth=0 | grep -q "bower"
 then
 	echo "Bower already installed."
 else
@@ -44,7 +44,7 @@ else
 fi
 # Grunt-cli
 echo "Cheking Grunt ..."
-if npm list -g | grep -q "grunt-cli"
+if npm list -g --depth=0 | grep -q "grunt-cli"
 then
 	echo "Grunt already installed."
 else
