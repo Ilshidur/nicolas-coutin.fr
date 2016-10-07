@@ -66,14 +66,14 @@ Project.find({}).removeAsync()
       show: true
     }, {
       name: 'MJo Peintures',
-      previewLink: '/assets/images/projects/preview_mjopeintures.jpg',
+      previewLink: '/assets/images/projects/preview_mjo-peintures.jpg',
       link: 'https://mjo-peintures.fr',
-      tags: ['node.js', 'meteor', 'bootstrap 3.3.6'],
-      description: 'Une application monopage d\'exposition de peintures.  \nHébergé sur serveur dédié.',
+      tags: ['node.js', 'meteor 1.3', 'bootstrap 3.3.6'],
+      description: 'Une application monopage d\'exposition de peintures avec back office.  \nHébergé sur serveur dédié.',
       iconLink: '/assets/images/projects/favicon_mjopeintures.ico',
-      date: 'Février 2016 - 2 mois',
+      date: 'Avril 2016 - 2 mois',
       source: '[https://github.com/Ilshidur/mjo-peintures.fr](https://github.com/Ilshidur/mjo-peintures.fr)',
-      show: false
+      show: true
     });
   });
 
