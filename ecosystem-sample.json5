@@ -13,7 +13,8 @@
       },
       "args": ["--release"],
       "port": 9000,
-      "watch": false
+      "watch": false,
+      "append_env_to_name": true,
     }
 
   ]
