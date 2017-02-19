@@ -11,6 +11,13 @@
         "PORT": 9000,
         "DOMAIN": "domain.com"
       },
+      "env_development": {
+        "NODE_ENV": "development",
+        "MONGO_URI": "mongodb://localhost:27017/myapp",
+        "MONGO_URI_DEV": "mongodb://localhost:27017/myapp-dev",
+        "PORT": 9000,
+        "DOMAIN": "domain.com"
+      },
       "args": ["--release"],
       "port": 9000,
       "watch": false,
