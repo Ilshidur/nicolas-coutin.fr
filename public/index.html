@@ -4,37 +4,71 @@
     <meta charset="utf-8">
     <title>Nicolas COUTIN - Développeur Web</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="/styles/main.css">
   </head>
   <body>
-    <header>
+
+    <header id="accueil">
+
       <navbar>
         <ul>
-          <li class="nav__element"><a href="#accueil">Accueil</a></li>
-          <li class="nav__element"><a href="#mes-competences">Mes compétences</a></li>
-          <li class="nav__element"><a href="#mon-cursus">Mon cursus</a></li>
-          <li class="nav__element"><a href="#mes-projets">Mes projets</a></li>
+          <li class="nav__element">
+            <a data-scroll href="#accueil">Accueil</a>
+          </li>
+          <li class="nav__element">
+            <a data-scroll href="#mes-competences">Mes compétences</a>
+          </li>
+          <li class="nav__element">
+            <a data-scroll href="#mon-cursus">Mon cursus</a>
+          </li>
+          <li class="nav__element">
+            <a data-scroll href="#mes-projets">Mes projets</a>
+          </li>
         </ul>
       </navbar>
-    </header>
-    <main>
-      <div id="accueil">
 
+      <div>
+        <h1>Nicolas COUTIN</h1>
+        <h2>Développeur Web</h2>
       </div>
+
+    </header>
+
+    <main>
+
       <div id="mes-competences">
 
       </div>
+
       <div id="mon-cursus">
 
       </div>
+
       <div id="mes-projets">
 
       </div>
+
     </main>
+
     <footer>
+
       <div id="credits">
         <a href='http://www.freepik.com/free-vector/abstract-blue-background_859016.htm'>Background image designed by Freepik</a>
       </div>
+
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js" charset="utf-8"></script>
+
+    <script>
+      smoothScroll.init();
+      $(function () {
+        $.scrollUp();
+      });
+    </script>
+
   </body>
 </html>
