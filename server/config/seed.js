@@ -100,16 +100,6 @@ Otherproject.find({}).removeAsync()
       source: '[http://codepen.io/Ilshidur/pen/KzjjEM](http://codepen.io/Ilshidur/pen/KzjjEM)',
       show: true
     }, {
-      name: 'CSS-contest',
-      previewLink: '/assets/images/projects/preview_css-contest.jpg',
-      link: '/CSS-contest',
-      tags: ['css3'],
-      description: 'Mise en forme d\'un fichier HTML dans le cadre d\'un concours de l\'IUT d\'Annecy, avec récompenses selon le genre (vainqueur du "grand prix du qui-pique-les-yeux"). **Mise en garde** : contient des images et couleurs clignotant rapidement.',
-      iconLink: '',
-      date: '2013',
-      source: '[https://github.com/Ilshidur/CSS-contest](https://github.com/Ilshidur/CSS-contest)',
-      show: true
-    }, {
       name: 'Hived',
       previewLink: '/assets/images/projects/preview_hived.jpg',
       link: '',
