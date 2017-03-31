@@ -243,11 +243,17 @@ Skill.find({}).removeAsync()
 
 Employment.find({}).removeAsync().then(function () {
   Employment.createAsync({
+    title: 'Développeur Web',
+    date: 'Novembre 2016 - toujours en poste',
+    employer: 'DataXplorer (59200, Tourcoing)',
+    employerLink: 'https://dataxplorer.fr',
+    description: `* 3 mois de développement et de maintenance du site [Rapid Flyer](https://www.rapid-flyer.com)  \n* Développement d'interfaces d'analyse de données et de data mining`,
+    tags: ['MySQL/MongoDB', 'PHP/Symphony/Prestashop/CodeIgniter', 'Javascript/jQuery', 'Bootstrap/Materialize']
+  }, {
     title: 'Développeur .NET',
     date: 'Avril 2014 - Décembre 2015',
     employer: 'TIMET Savoie (73400, Ugine)',
-    employerLink: 'http://www.timet.com/',
-
+    employerLink: 'http://www.timet.com',
     description: `* Développement d'un logiciel d'aide à l'optimisation/déçision  \n* Développement d'un MES (Manufacturing Execution System)  \nStage de 2 mois, apprentissage de 1 an puis CDD de 6 mois.`,
     tags: ['VB .NET', 'WinForms', 'SQL Server']
   }, {
