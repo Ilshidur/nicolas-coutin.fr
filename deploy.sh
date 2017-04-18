@@ -29,11 +29,11 @@ then
 	echo "PM2 already installed."
 else
 	echo "Installing PM2 ..."
-  if which yarn > /dev/null; then
-		yarn global add pm2
-	else
-		npm install pm2 -g
-	fi
+  # if which yarn > /dev/null; then
+	# 	yarn global add pm2
+	# else
+	npm install pm2 -g
+	# fi
 	echo "Installed PM2 !"
 fi
 # Bower
@@ -43,11 +43,11 @@ then
 	echo "Bower already installed."
 else
 	echo "Installing Bower ..."
-  if which yarn > /dev/null; then
-		yarn global add bower
-	else
-		npm install bower -g
-	fi
+  # if which yarn > /dev/null; then
+	# 	yarn global add bower
+	# else
+	npm install bower -g
+	# fi
 	echo "Installed Bower !"
 fi
 # Grunt-cli
@@ -57,11 +57,11 @@ then
 	echo "Grunt already installed."
 else
 	echo "Installing Grunt ..."
-  if which yarn > /dev/null; then
-		yarn global add grunt-cli
-	else
-		npm install grunt-cli -g
-	fi
+  # if which yarn > /dev/null; then
+	# 	yarn global add grunt-cli
+	# else
+	npm install grunt-cli -g
+	# fi
 	echo "Installed Grunt !"
 fi
 
@@ -71,11 +71,11 @@ fi
 
 ## Install dependencies
 echo "Installing dependencies ..."
-if which yarn > /dev/null; then
-		yarn
-	else
-		npm install
-	fi
+# if which yarn > /dev/null; then
+# 		yarn
+# 	else
+	npm install
+	# fi
 bower install
 echo "Installed dependencies !"
 
