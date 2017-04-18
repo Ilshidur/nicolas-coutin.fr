@@ -38,10 +38,10 @@ Project.find({}).removeAsync()
       name: 'Portfolio',
       previewLink: '/assets/images/projects/preview_portfolio.jpg',
       link: 'https://www.nicolas-coutin.fr',
-      tags: ['node.js', 'angular 1.4'],
+      tags: ['node.js', 'angular 1.4', 'mongodb 3.2'],
       description: 'Un simple portfolio qui a pour simple but de présenter mes compétences, mon parcours professionnel et mon <a href="/blog" target="_self">blog</a>.  \nHébergé sur serveur dédié.',
       iconLink: '/assets/images/projects/favicon_portfolio.ico',
-      date: 'Janvier 2016 - 2 mois',
+      date: 'Janvier 2016',
       source: '[https://github.com/Ilshidur/nicolas-coutin.fr](https://github.com/Ilshidur/nicolas-coutin.fr)',
       show: true
     }, {
@@ -51,18 +51,18 @@ Project.find({}).removeAsync()
       tags: ['node.js', 'react 0.14', 'flux'],
       description: 'Une application web monopage où sont publiés tutoriels et discussions.  \nHébergé sur serveur dédié.',
       iconLink: '/assets/images/projects/favicon_blog.ico',
-      date: 'Janvier 2016 - 2 mois',
+      date: 'Janvier 2016',
       source: '[https://github.com/Ilshidur/blog.nicolas-coutin.fr](https://github.com/Ilshidur/blog.nicolas-coutin.fr)',
       show: true
     }, {
-      name: 'LoL item sets',
+      name: 'LoL item sets Generator',
       previewLink: '/assets/images/projects/preview_lisg.jpg',
       link: 'https://lol-item-sets-generator.org/',
-      tags: ['PHP', 'jQuery 1.10.2', 'C#', 'WinForms', 'node.js'],
-      description: 'Un outil de statistiques sur le jeu vidéo *League of Legends*. Il propose de télécharger des contenus générés depuis une [API RESTful](https://developer.riotgames.com/api/methods) (Riot Games). Ces contenus sont utilisables dans le jeu.  \nUne application permet de mettre à jour ces données automatiquement.',
+      tags: ['mongodb 3.2', 'meteor 1.4', 'bootstrap 3.3.6', 'C#', 'winforms', 'node.js'],
+      description: 'Un outil de statistiques sur le jeu vidéo *League of Legends*. Il propose de télécharger des contenus générés depuis une [API RESTful](https://developer.riotgames.com/api/methods) (Riot Games). Ces contenus sont utilisables dans le jeu.  \nUne application permet de mettre à jour ces données automatiquement.  \nComptabilise **plus d\'un million de téléchargement**.  \nHébergé sur serveur dédié.',
       iconLink: '/assets/images/projects/favicon_lisg.ico',
-      date: 'Mars 2015',
-      source: '* site : ***privée***  \n* générateur : ***privée***  \n* application : [https://github.com/Ilshidur/LoL-item-sets](https://github.com/Ilshidur/LoL-item-sets)',
+      date: 'Depuis Mars 2015',
+      source: '* site : [https://github.com/Ilshidur/lol-item-sets-generator.org](https://github.com/Ilshidur/lol-item-sets-generator.org)  \n* générateur : [https://github.com/Ilshidur/feeder.lol-item-sets-generator.org](https://github.com/Ilshidur/feeder.lol-item-sets-generator.org)  \n* application Windows : [https://github.com/Ilshidur/LoL-item-sets](https://github.com/Ilshidur/LoL-item-sets)',
       show: true
     }, {
       name: 'MJo Peintures',
@@ -71,8 +71,18 @@ Project.find({}).removeAsync()
       tags: ['node.js', 'meteor 1.3', 'bootstrap 3.3.6'],
       description: 'Une application monopage d\'exposition de peintures avec back office.  \nHébergé sur serveur dédié.',
       iconLink: '/assets/images/projects/favicon_mjopeintures.ico',
-      date: 'Avril 2016 - 2 mois',
+      date: 'Avril 2016',
       source: '[https://github.com/Ilshidur/mjo-peintures.fr](https://github.com/Ilshidur/mjo-peintures.fr)',
+      show: true
+    }, {
+      name: 'Portfolio Ciné Laurie Coutin',
+      previewLink: '/assets/images/projects/preview_portfoliocinelc.jpg',
+      link: 'https://portfoliocinelc.fr',
+      tags: ['node.js', 'ejs', 'bootstrap 3.3.7'],
+      description: 'Portfolio personnel de Laurie Coutin.  \nHébergé sur serveur dédié.',
+      iconLink: '',
+      date: 'Mai 2017',
+      source: '***privée***',
       show: true
     });
   });
@@ -88,7 +98,7 @@ Otherproject.find({}).removeAsync()
       iconLink: '/assets/images/projects/favicon_matchbaking.ico',
       date: 'Mars 2016',
       source: '* serveur : [https://github.com/Ilshidur/matchbaking](https://github.com/Ilshidur/matchbaking)  \n* client : [https://github.com/Ilshidur/matchbaking-client](https://github.com/Ilshidur/matchbaking-client)',
-      show: true
+      show: false
     }, {
       name: 'Tribute page (FCC)',
       previewLink: '/assets/images/projects/preview_tribute.jpg',
