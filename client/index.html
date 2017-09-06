@@ -1,217 +1,136 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Concours CSS</title>
-    <link rel="stylesheet" type="text/css" href="concours.css" tppabs="http://luc-damas.fr/concours-css/realisations/taf/coutinn/css/concours.css" />
-</head>
-
-<body>
-    <div id="wrapper">
-        <div id="all">
-
-            <div id="header">
-                <div id="headleft" class="headpart">
-                    <h1>Concours CSS</h1>
-                </div>
-                <div id="headcenter" class="headpart"></div>
-                <div id="headright" class="headpart">AP3-2013</div>
-
-                <div id="auth">
-                    <form action="http://luc-damas.fr/concours-css/realisations/taf/coutinn/realisations/actions.php" method="post">
-                        <p>
-                            <label for='login'>Identifiant </label><input type='text' name='login' id='login' />
-                        </p>
-                        <p>
-                            <label for='password'>Mot de passe </label><input type='password' name='password' id='password' />
-                        </p>
-                        <p>
-                            <label for='action'></label><input type="submit" name='action' value="Connexion" id='action' />
-                        </p>
-                    </form>
-                </div>
-                <!-- auth -->
-
-            </div>
-            <!-- header -->
-
-            <div id="content">
-
-                <div id="objectifs" class="part">
-                    <h1>Objectif</h1>
-                    <p>
-                        Réaliser une mise en forme <span class='css'>CSS</span> pour un fichier <span class='html'>HTML</span> donné !
-                    </p>
-                </div>
-                <!-- objectifs -->
-
-                <div id="lots" class="part">
-                    <h1>De nombreux lots à gagner</h1>
-                    <table>
-                        <tr>
-                            <th>Classement</th>
-                            <th>Lot</th>
-                        </tr>
-                        <tr id="premier">
-                            <td>La meilleure mise en forme</td>
-                            <td>Un gateau maison au choix :
-                                <ul>
-                                    <li>Tarte au citron meringuée</li>
-                                    <li>Crumble aux pommes</li>
-                                    <li>Gateau au chocolat et café</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr id="second">
-                            <td>La 2<span class="eme">ème</span> meilleure</td>
-                            <td>Un stylo 4 couleurs</td>
-                        </tr>
-                        <tr id="troisieme">
-                            <td>La 3<span class="eme">ème</span> meilleure</td>
-                            <td>Un paquet de MM's</td>
-                        </tr>
-                        <tr id="quatrieme">
-                            <td>La 4<span class="eme">ème</span> meilleure</td>
-                            <td>Un paquet de Fisherman's friends</td>
-                        </tr>
-                        <tr id="cinquieme">
-                            <td>La 5<span class="eme">ème</span> meilleure</td>
-                            <td>Une canette de Redbull</td>
-                        </tr>
-                        <tr id="original">
-                            <td>Le grand prix de l'originalité</td>
-                            <td><span class="title">"H2G2" T1</span>, <span class="author">Douglas Adams</span></td>
-                        </tr>
-                        <tr id="technique">
-                            <td>Le grand prix de la technicité</td>
-                            <td><span class="title">"La cité des permutants"</span>, <span class="author">Greg Egan</span></td>
-                        </tr>
-                        <tr id="piment">
-                            <td>Le grand prix du "qui pique les yeux"</td>
-                            <td>Un piment</td>
-                        </tr>
-                        <tr id="girly">
-                            <td>Le grand prix du girly</td>
-                            <td>Un pot de Nutella</td>
-                        </tr>
-                        <tr id="jury">
-                            <td>Le prix spécial du jury</td>
-                            <td>Une caricature</td>
-                        </tr>
-                    </table>
-
-                    <p id="realisations">
-                        Les réalisations seront visibles : <a href="javascript:if(confirm('http://luc-damas.fr/concours-css/realisations/taf/coutinn/realisations  \n\nThis file was not retrieved by Teleport Pro, because the server reports that this file cannot be found.  \n\nDo you want to open it from the server?'))window.location='http://luc-damas.fr/concours-css/realisations/taf/coutinn/realisations'"
-                            tppabs="http://luc-damas.fr/concours-css/realisations/taf/coutinn/realisations">ICI</a> !
-                    </p>
-
-                </div>
-                <!-- lots -->
-
-                <div id="fichier" class="part">
-                    <h1>Fichier</h1>
-                    <p>
-                        Le fichier HTML à mettre en forme est... <span id='source'>celui-ci</span> !<br/> Affichez le <span class='code'>code source</span>, copiez, collez !
-                    </p>
-                </div>
-                <!-- objectifs -->
-
-                <div id="criteres" class="part">
-                    <h1>Critères d'évaluation</h1>
-                    <p>
-                        Les différents critères suivant serviront de base à l'évaluation. Certains peuvent être antinomiques (Par exemple, l'orginalité peut aller à l'encontre de l'ergonomie). A vous de choisir ! <span class="important">Tous ne sont pas obligatoire</span>                        !!
-                    </p>
-                    <ul>
-                        <li>Technicité</li>
-                        <li>Esthétique (subjectif)</li>
-                        <li>Originalité</li>
-                        <li>Ergonomie</li>
-                        <li>Qualité du code</li>
-                        <li>CSS3</li>
-                        <li>Validation W3C : <a href="javascript:if(confirm('http://validator.w3.org/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://validator.w3.org/'"
-                                tppabs="http://validator.w3.org/">validator.w3.org</a></li>
-                        <li>Compatibilité avec les différents navigateurs</li>
-                        <li>Compatibilité avec IE (facultatif)</li>
-                    </ul>
-                    <p>
-                        En plus des prix cités ci-dessus, la réalisation sera notée et comptera dans la moyenne d'AP3. Ceci est donc un travail <span class="important">Obligatoire</span>.
-                    </p>
-                </div>
-                <!-- Critères -->
-
-                <div id="rules" class="part">
-                    <h1>Règles</h1>
-                    <ul>
-                        <li>Interdiction formelle de toucher au code <span class='html'>HTML</span>
-                            <p>Des demandes (justifiées !) de mofication peuvent être faites par mail : <a href="mailto:luc.damas@univ-savoie.fr">luc.damas@univ-savoie.fr</a>.</p>
-                        </li>
-                        <li>L'intégralité du contenu doit être accessible. Il peut être caché par défaut.</li>
-                        <li>Pas de politique, pas de religion, pas de porno</li>
-                    </ul>
-                </div>
-                <!-- Règles -->
-
-                <div id="soumission" class="part">
-                    <h1>Soumettre un style</h1>
-                    <p>
-                        Connectez vous et suivez les instructions.
-                    </p>
-                    <form action="http://luc-damas.fr/concours-css/realisations/taf/coutinn/realisations/actions.php" method="post">
-                        <p>
-                            <label for='login2'>Identifiant </label><input type='text' name='login' id='login2' />
-                        </p>
-                        <p>
-                            <label for='password2'>Mot de passe </label><input type='password' name='password' id='password2' />
-                        </p>
-                        <p>
-                            <label for='action2'></label><input type="submit" name='action' value="Connexion" id='action2' />
-                        </p>
-                    </form>
-                </div>
-                <!-- Soumission -->
-
-            </div>
-            <!-- content -->
-
-            <div id="footer">
-                <p id="droits">Mars 2013 - <a href="javascript:if(confirm('http://www.luc-damas.fr/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.luc-damas.fr/'"
-                        tppabs="http://www.luc-damas.fr/">Luc Damas</a></p>
-                <p id="validationxhtml">
-                    <a href="javascript:if(confirm('http://validator.w3.org/check?uri=referer  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://validator.w3.org/check?uri=referer'"
-                        tppabs="http://validator.w3.org/check?uri=referer"><img src="valid-xhtml10.png" tppabs="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
-                </p>
-            </div>
-
-            <div id="extra0" class="extra"></div>
-            <div id="extra1" class="extra"></div>
-            <div id="extra2" class="extra"></div>
-            <div id="extra3" class="extra"></div>
-            <div id="extra4" class="extra"></div>
-            <div id="extra5" class="extra"></div>
-            <div id="extra6" class="extra"></div>
-            <div id="extra7" class="extra"></div>
-
-        </div>
-        <!-- all -->
-
-    </div>
-    <!-- wrapper -->
-
-    <div id="outer"></div>
-    <div id="outer"></div>
-    <div id="outer1"></div>
-
-    <!-- Google Analytics : the only thing that I added in the HTML content -->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html ng-app="nicolasCoutinFrApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <base href="/">
+    <title ng-bind="($title || &apos;Accueil&apos;) + &apos; - Nicolas COUTIN&apos;">Nicolas COUTIN</title>
+    <meta name="description" content="Nicolas COUTIN - D&#xE9;veloppeur JavaScript et .NET">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Nicolas COUTIN">
+    <meta property="og:title" content="Nicolas COUTIN - D&#xE9;veloppeur JavaScript et .NET">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nicolas-coutin.fr">
+    <meta property="og:description" content="Nicolas COUTIN - CV, projets et blog ...">
+    <meta property="fb:admins" content="100001093118785">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=pggNYQp33P" color="#5bbad5">
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+      <link rel="stylesheet" href="app/app.css">
+      <!-- injector:css -->
+      <!-- endinjector -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/latest/superhero/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2bbqja3GAP" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=2bbqja3GAP">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=2bbqja3GAP">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=2bbqja3GAP">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=2bbqja3GAP">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=2bbqja3GAP">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=2bbqja3GAP">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=2bbqja3GAP">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=2bbqja3GAP">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=2bbqja3GAP">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=2bbqja3GAP" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=2bbqja3GAP" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png?v=2bbqja3GAP" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=2bbqja3GAP" sizes="16x16">
+    <link rel="manifest" href="/manifest.json?v=2bbqja3GAP">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2bbqja3GAP" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico?v=2bbqja3GAP">
+    <meta name="msapplication-TileColor" content="#4e5d6c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=2bbqja3GAP">
+    <meta name="theme-color" content="#000000">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div ui-view=""></div>
+    <!-- Google Analytics -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-62226552-2');
-        ga('send', 'pageview');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-62226552-2');
+      ga('send', 'pageview');
     </script>
-
-</body>
-
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
+      <script src="bower_components/angular-ui-router-title/angular-ui-router-title.js"></script>
+      <script src="bower_components/marked/lib/marked.js"></script>
+      <script src="bower_components/angular-marked/dist/angular-marked.js"></script>
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js(.tmp) app/app.js -->
+      <script src="app/app.js"></script>
+      <!-- injector:js -->
+      <script src="app/admin/admin.module.js"></script>
+      <script src="components/auth/auth.module.js"></script>
+      <script src="components/util/util.module.js"></script>
+      <script src="app/flappy/flappy.js"></script>
+      <script src="app/account/account.js"></script>
+      <script src="app/account/login/login.controller.js"></script>
+      <script src="app/account/settings/settings.controller.js"></script>
+      <script src="app/account/signup/signup.controller.js"></script>
+      <script src="app/admin/admin.controller.js"></script>
+      <script src="app/CSS-contest/CSS-contest.controller.js"></script>
+      <script src="app/admin/admin.router.js"></script>
+      <script src="app/app.constant.js"></script>
+      <script src="app/blog/blog.controller.js"></script>
+      <script src="app/blog/blog.js"></script>
+      <script src="app/contact/contact.controller.js"></script>
+      <script src="app/contact/contact.js"></script>
+      <script src="app/cv-old/cv-old.controller.js"></script>
+      <script src="app/cv-old/cv-old.js"></script>
+      <script src="app/cv/cv.controller.js"></script>
+      <script src="app/cv/cv.js"></script>
+      <script src="app/flappy/flappy.controller.js"></script>
+      <script src="app/CSS-contest/CSS-contest.js"></script>
+      <script src="app/main/main.controller.js"></script>
+      <script src="app/main/main.js"></script>
+      <script src="app/matchbaking/matchbaking.controller.js"></script>
+      <script src="app/matchbaking/matchbaking.js"></script>
+      <script src="app/projects/projects.controller.js"></script>
+      <script src="app/projects/projects.js"></script>
+      <script src="app/about/about.controller.js"></script>
+      <script src="components/auth/auth.service.js"></script>
+      <script src="components/auth/interceptor.service.js"></script>
+      <script src="components/auth/router.decorator.js"></script>
+      <script src="components/auth/user.service.js"></script>
+      <script src="components/footer/footer.directive.js"></script>
+      <script src="components/modal/modal.service.js"></script>
+      <script src="components/mongoose-error/mongoose-error.directive.js"></script>
+      <script src="components/navbar/navbar.controller.js"></script>
+      <script src="components/navbar/navbar.directive.js"></script>
+      <script src="components/oauth-buttons/oauth-buttons.controller.js"></script>
+      <script src="components/oauth-buttons/oauth-buttons.directive.js"></script>
+      <script src="app/about/about.js"></script>
+      <script src="components/util/util.service.js"></script>
+      <!-- endinjector -->
+    <!-- endbuild -->
+  </body>
+</html>
 </html>
