@@ -59,7 +59,7 @@ Project.find({}).removeAsync()
       previewLink: '/assets/images/projects/preview_lisg.jpg',
       link: 'https://lol-item-sets-generator.org/',
       tags: ['mongodb 3.2', 'meteor 1.4', 'bootstrap 3.3.6', 'C#', 'winforms', 'node.js'],
-      description: 'Un outil de statistiques sur le jeu vidéo *League of Legends*. Il propose de télécharger des contenus générés depuis une [API RESTful](https://developer.riotgames.com/api-methods) (Riot Games). Ces contenus sont utilisables dans le jeu.  \nUne application permet de mettre à jour ces données automatiquement.  \nComptabilise **plus d\'un million de téléchargement**.  \nHébergé sur serveur dédié.',
+      description: 'Un outil de statistiques sur le jeu vidéo *League of Legends*. Il propose de télécharger des contenus générés depuis une [API RESTful](https://developer.riotgames.com/api-methods) (Riot Games). Ces contenus sont utilisables dans le jeu.  \nUne application permet de mettre à jour ces données automatiquement.  \nComptabilise **plus d\'un million de téléchargements**.  \nHébergé sur serveur dédié.',
       iconLink: '/assets/images/projects/favicon_lisg.ico',
       date: 'Depuis Mars 2015',
       source: '* site : [https://github.com/Ilshidur/lol-item-sets-generator.org](https://github.com/Ilshidur/lol-item-sets-generator.org)  \n* générateur : [https://github.com/Ilshidur/feeder.lol-item-sets-generator.org](https://github.com/Ilshidur/feeder.lol-item-sets-generator.org)  \n* application Windows : [https://github.com/Ilshidur/LoL-item-sets](https://github.com/Ilshidur/LoL-item-sets)',
