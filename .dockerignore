@@ -1,0 +1,14 @@
+.editorconfig
+.git*
+.jscrc
+.travis.yml
+.yo-r.json
+circle.yml
+deploy.sh
+Dockerfile
+ecosystem.*
+karma.conf.js
+mocha.conf.js
+protractor.conf.js
+README.md
+*.log
