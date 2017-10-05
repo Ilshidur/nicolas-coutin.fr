@@ -1,0 +1,5 @@
+node_modules/
+.gitignore
+CRA-README.md
+Dockerfile
+README.md
