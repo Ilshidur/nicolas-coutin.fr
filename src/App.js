@@ -4,6 +4,10 @@ import githubLogo from './img/icons/github-icon.svg';
 import stackshareLogo from './img/icons/stackshare-icon.svg';
 import npmLogo from './img/icons/npm-icon.svg';
 import dataxplorerLogo from './img/dataxplorer-logo.png';
+import timetLogo from './img/timet-logo.png';
+import cciLogo from './img/cci-logo.png';
+import renePerrinLogo from './img/lycee-rene-perrin-logo.png';
+import iutLogo from './img/iut-logo.jpeg';
 import './App.css';
 import './timeline.css';
 
@@ -29,7 +33,7 @@ class App extends Component {
                   </p>
                   <p>
                     J'ai appris à manier JavaScript majoritairement en autodidacte.
-                    Féru de développement, j'aime découvrir et apprendre de nouvelles technologies, créer de nouveaux projets persos ...
+                    Féru de développement, j'aime découvrir et apprendre de nouvelles technologies, créer de nouveaux projets persos...
                     Je cherche toujours à m'améliorer.
                     La volonté d'évoluer est pour moi un atout primordial pour un bon développeur.
                   </p>
@@ -44,7 +48,7 @@ class App extends Component {
             </div>
             <div id="social-buttons" className="row">
               <a href="https://github.com/Ilshidur" className="App-social-icon">
-                <img src={githubLogo} alt="GitHub" className="App-social-icon__image" />
+                <img src={githubLogo} alt="GitHub" className="App-social-icon__image App-social-icon__image--GitHub" />
               </a>
               <a href="https://stackshare.io/Ilshidur/personal-stack" className="App-social-icon">
                 <img src={stackshareLogo} alt="Stackshare" className="App-social-icon__image" />
@@ -63,95 +67,109 @@ class App extends Component {
             </div>
             <ul class="timeline">
               <li>
-                <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                <div class="timeline-badge warning"><i class="glyphicon glyphicon-briefcase"></i></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4 class="timeline-title">Développeur front end (CDI)</h4>
+                    <h4 class="timeline-title">Développeur front end</h4>
+                    <p><i>CDI</i> (59200, Tourcoing)</p>
                     <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Novembre 2016 - toujours en poste</small></p>
                   </div>
                   <div class="timeline-body">
                     <p>
-                      <img src={dataxplorerLogo} alt="DataXplorer" className="App-company-logo" />
+                      <a href="https://dataxplorer.fr" target="blank" rel="noopener">
+                        <img src={dataxplorerLogo} alt="DataXplorer" className="App-company-logo" />
+                      </a>
                     </p>
                     <ul>
                       <li>3 mois de développement et de maintenance du site <a href="https://www.rapid-flyer.com">Rapid Flyer</a></li>
-                      <li>développement d'interfaces d'analyse de données et de data mining</li>
+                      <li>Développement d'interfaces d'analyse de données et de data mining</li>
                     </ul>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
-                <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                <div class="timeline-badge success"><i class="glyphicon glyphicon-briefcase"></i></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <h4 class="timeline-title">Développeur .NET</h4>
+                    <p><i>Stage + alternance + CDD</i> (73400, Ugine)</p>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Avril 2014 - Décembre 2015</small></p>
                   </div>
                   <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                      Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere
-                      pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+                    <p>
+                      <a href="http://www.timet.com" target="blank" rel="noopener">
+                        <img src={timetLogo} alt="TIMET Savoie" className="App-company-logo" />
+                      </a>
+                    </p>
+                    <ul>
+                      <li>Développement d'un logiciel d'aide à l'optimisation/déçision</li>
+                      <li>Développement d'un MES (Manufacturing Execution System)</li>
+                    </ul>
+                    <p>Stage de 2 mois, apprentissage de 1 an puis CDD de 6 mois</p>
                   </div>
                 </div>
               </li>
               <li>
-                <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                <div class="timeline-badge danger"><i class="glyphicon glyphicon-education"></i></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <h4 class="timeline-title">License Pro. <i>DIM</i></h4>
+                    <p><i>Bac +3</i> (74000, Annecy)</p>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre 2014 - Juin 2015</small></p>
                   </div>
                   <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                      Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    <a href="http://www.formation-cci.fr/formations-diplomantes-en-alternance/nos-formations-en-alternance/digital/4-licence-professionnelle-developpeur-informatique-multisupports-dim">
+                      <img src={cciLogo} alt="CCI Formation Multimédia" className="App-company-logo" />
+                    </a>
+                    <p>
+                      Licence professionnelle <i>Développeur Informatique Multisupports</i>
+                    </p>
+                    <ul>
+                      <li>Alternance d'une année chez TIMET Savoie</li>
+                      <li>Programmation Web et mobile : Java, C, Javascript + Node.js, HTML5, CSS3, PHP + Symfony, MySQL, Postgres...</li>
+                      <li>Algorythmie, UML, bases de données, sécurité</li>
+                      <li>Communication, gestion de projets</li>
+                      <li>Projet collectif de fin d'année</li>
+                    </ul>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
+              <div class="timeline-badge info"><i class="glyphicon glyphicon-education"></i></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <h4 class="timeline-title">DUT Informatique</h4>
+                    <p><i>Bac +2</i> (74940, Annecy-le-Vieux / Université de Savoie)</p>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre 2012 - Mars 2014</small></p>
                   </div>
                   <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                      Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    <a href="https://www.iut-acy.univ-smb.fr/departement_info/le_departement_info">
+                      <img src={iutLogo} alt="IUT Annecy"/>
+                    </a>
+                    <ul>
+                      <li>To do</li>
+                    </ul>
                   </div>
                 </div>
               </li>
               <li>
-                <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+                <div class="timeline-badge warning"><i class="glyphicon glyphicon-education"></i></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <h4 class="timeline-title">Bac. STI Génie Électronique</h4>
+                    <p>(73400, Ugine)</p>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre 2009 - Juin 2012</small></p>
                   </div>
                   <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                      Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    <hr />
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                        <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="">Action</a></li>
-                        <li><a href="">Another action</a></li>
-                        <li><a href="">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="">Separated link</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                      Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    <a href="http://rene-perrin.elycee.rhonealpes.fr">
+                      <img src={renePerrinLogo} alt="Lycée René Perrin" className="App-company-logo" />
+                    </a>
+                    <ul>
+                      <li>To do</li>
+                    </ul>
+                    <span className="text-center">
+                      Mention Bien.
+                    </span>
                   </div>
                 </div>
               </li>

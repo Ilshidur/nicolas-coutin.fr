@@ -22,6 +22,9 @@
 .App-social-icon__image {
   height: 40px;
 }
+.App-social-icon__image--GitHub {
+  filter: invert(1);
+}
 
 .App-company-logo {
   width: 100%;
