@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-scroll';
 import moment from 'moment';
 import githubLogo from './img/icons/github-icon.svg';
 import stackshareLogo from './img/icons/stackshare-icon.svg';
@@ -60,21 +61,46 @@ class App extends Component {
           </div>
         </header>
 
+        <nav className="App-nav">
+          <ul className="App-nav__list">
+            <li className="App-nav__link">
+              <Link activeClass="App-nav__link--active" to="curriculum" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
+                Mon parcours
+              </Link>
+            </li>
+            <li className="App-nav__link">
+              <Link activeClass="App-nav__link--active" to="projects" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
+                Mes projets
+              </Link>
+            </li>
+            <li className="App-nav__link">
+              <Link activeClass="App-nav__link--active" to="stack" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
+              Mes outils
+              </Link>
+            </li>
+            <li className="App-nav__link">
+              <Link activeClass="App-nav__link--active" to="contact" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
         <div id="curriculum" className="App-section">
-          <div class="container">
-            <div class="page-header">
+          <div className="container">
+            <div className="page-header">
               <h1 id="timeline">Mon parcours professionnel</h1>
             </div>
-            <ul class="timeline">
+            <ul className="timeline">
               <li>
-                <div class="timeline-badge warning"><i class="glyphicon glyphicon-briefcase"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Développeur front end</h4>
+                <div className="timeline-badge warning"><i className="glyphicon glyphicon-briefcase"></i></div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h4 className="timeline-title">Développeur front end</h4>
                     <p><i>CDI</i> (59200, Tourcoing)</p>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Novembre 2016 - toujours en poste</small></p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Novembre 2016 - toujours en poste</small></p>
                   </div>
-                  <div class="timeline-body">
+                  <div className="timeline-body">
                     <p>
                       <a href="https://dataxplorer.fr" target="blank" rel="noopener">
                         <img src={dataxplorerLogo} alt="DataXplorer" className="App-company-logo" />
@@ -87,15 +113,15 @@ class App extends Component {
                   </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
-                <div class="timeline-badge success"><i class="glyphicon glyphicon-briefcase"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Développeur .NET</h4>
+              <li className="timeline-inverted">
+                <div className="timeline-badge success"><i className="glyphicon glyphicon-briefcase"></i></div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h4 className="timeline-title">Développeur .NET</h4>
                     <p><i>Stage + alternance + CDD</i> (73400, Ugine)</p>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Avril 2014 - Décembre 2015</small></p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Avril 2014 - Décembre 2015</small></p>
                   </div>
-                  <div class="timeline-body">
+                  <div className="timeline-body">
                     <p>
                       <a href="http://www.timet.com" target="blank" rel="noopener">
                         <img src={timetLogo} alt="TIMET Savoie" className="App-company-logo" />
@@ -110,14 +136,14 @@ class App extends Component {
                 </div>
               </li>
               <li>
-                <div class="timeline-badge danger"><i class="glyphicon glyphicon-education"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">License Pro. <i>DIM</i></h4>
+                <div className="timeline-badge danger"><i className="glyphicon glyphicon-education"></i></div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h4 className="timeline-title">License Pro. <i>DIM</i></h4>
                     <p><i>Bac +3</i> (74000, Annecy)</p>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre 2014 - Juin 2015</small></p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Septembre 2014 - Juin 2015</small></p>
                   </div>
-                  <div class="timeline-body">
+                  <div className="timeline-body">
                     <a href="http://www.formation-cci.fr/formations-diplomantes-en-alternance/nos-formations-en-alternance/digital/4-licence-professionnelle-developpeur-informatique-multisupports-dim">
                       <img src={cciLogo} alt="CCI Formation Multimédia" className="App-company-logo" />
                     </a>
@@ -127,45 +153,52 @@ class App extends Component {
                     <ul>
                       <li>Alternance d'une année chez TIMET Savoie</li>
                       <li>Programmation Web et mobile : Java, C, Javascript + Node.js, HTML5, CSS3, PHP + Symfony, MySQL, Postgres...</li>
-                      <li>Algorythmie, UML, bases de données, sécurité</li>
+                      <li>Algorithmie, UML, bases de données, sécurité</li>
                       <li>Communication, gestion de projets</li>
+                      <li>Anglais</li>
                       <li>Projet collectif de fin d'année</li>
                     </ul>
                   </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
-              <div class="timeline-badge info"><i class="glyphicon glyphicon-education"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">DUT Informatique</h4>
+              <li className="timeline-inverted">
+              <div className="timeline-badge info"><i className="glyphicon glyphicon-education"></i></div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h4 className="timeline-title">DUT Informatique</h4>
                     <p><i>Bac +2</i> (74940, Annecy-le-Vieux / Université de Savoie)</p>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre 2012 - Mars 2014</small></p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Septembre 2012 - Mars 2014</small></p>
                   </div>
-                  <div class="timeline-body">
+                  <div className="timeline-body">
                     <a href="https://www.iut-acy.univ-smb.fr/departement_info/le_departement_info">
                       <img src={iutLogo} alt="IUT Annecy"/>
                     </a>
                     <ul>
-                      <li>To do</li>
+                      <li>Algorithmie, programmation, réseaux</li>
+                      <li>Bases de données, sécurité</li>
+                      <li>Communication, gestion de projets</li>
+                      <li>Mathématiques, anglais</li>
+                      <li>Projet tutoré</li>
                     </ul>
                   </div>
                 </div>
               </li>
               <li>
-                <div class="timeline-badge warning"><i class="glyphicon glyphicon-education"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Bac. STI Génie Électronique</h4>
+                <div className="timeline-badge warning"><i className="glyphicon glyphicon-education"></i></div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h4 className="timeline-title">Bac. STI Génie Électronique</h4>
                     <p>(73400, Ugine)</p>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre 2009 - Juin 2012</small></p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Septembre 2009 - Juin 2012</small></p>
                   </div>
-                  <div class="timeline-body">
+                  <div className="timeline-body">
                     <a href="http://rene-perrin.elycee.rhonealpes.fr">
                       <img src={renePerrinLogo} alt="Lycée René Perrin" className="App-company-logo" />
                     </a>
                     <ul>
-                      <li>To do</li>
+                      <li>Programmation C, Basic</li>
+                      <li>Architecture matérielle, électronique, mécanique</li>
+                      <li>Mathématiques, anglais</li>
                     </ul>
                     <span className="text-center">
                       Mention Bien.
@@ -180,6 +213,7 @@ class App extends Component {
 
         <div id="projects" className="App-section">
           <h1>Mes projets</h1>
+          <p className="text-center">Section à venir ...</p>
         </div>
 
         <div id="stack" className="App-section">
@@ -193,6 +227,7 @@ class App extends Component {
 
         <div id="contact" className="App-section">
           <h1>Contact</h1>
+          <p className="text-center">Section à venir ...</p>
         </div>
       </div>
     );
