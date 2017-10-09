@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
+import Headroom from 'react-headroom';
 import moment from 'moment';
 import githubLogo from './img/icons/github-icon.svg';
 import stackshareLogo from './img/icons/stackshare-icon.svg';
@@ -19,6 +20,33 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Headroom style={{ zIndex: 200, backgroundColor: '#222' }}>
+          <nav className="App-nav">
+            <ul className="App-nav__list">
+              <li className="App-nav__link">
+                <Link activeClass="App-nav__link--active" to="curriculum" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
+                  Mon parcours
+                </Link>
+              </li>
+              <li className="App-nav__link">
+                <Link activeClass="App-nav__link--active" to="projects" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
+                  Mes projets
+                </Link>
+              </li>
+              <li className="App-nav__link">
+                <Link activeClass="App-nav__link--active" to="stack" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
+                Mes outils
+                </Link>
+              </li>
+              <li className="App-nav__link">
+                <Link activeClass="App-nav__link--active" to="contact" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </Headroom>
+
         <header className="App-header App-section">
           <div className="container">
             <div id="description" className="row">
@@ -60,31 +88,6 @@ class App extends Component {
             </div>
           </div>
         </header>
-
-        <nav className="App-nav">
-          <ul className="App-nav__list">
-            <li className="App-nav__link">
-              <Link activeClass="App-nav__link--active" to="curriculum" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
-                Mon parcours
-              </Link>
-            </li>
-            <li className="App-nav__link">
-              <Link activeClass="App-nav__link--active" to="projects" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
-                Mes projets
-              </Link>
-            </li>
-            <li className="App-nav__link">
-              <Link activeClass="App-nav__link--active" to="stack" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
-              Mes outils
-              </Link>
-            </li>
-            <li className="App-nav__link">
-              <Link activeClass="App-nav__link--active" to="contact" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
 
         <div id="curriculum" className="App-section">
           <div className="container">
@@ -228,6 +231,7 @@ class App extends Component {
         <div id="contact" className="App-section">
           <h1>Contact</h1>
           <p className="text-center">Section à venir ...</p>
+          <p className="text-center">En attendant, vous pouvez me contacter sur mon addresse : <i>nicolas-coutin [at] outlook [dot] com</i>.</p>
         </div>
       </div>
     );

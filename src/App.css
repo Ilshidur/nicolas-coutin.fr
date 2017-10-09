@@ -5,12 +5,8 @@
   padding: 40px;
 }
 .App-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
   height: 60px;
   background-color: #222;
-  z-index: 200;
 }
 .App-nav__list {
   display: flex;
@@ -36,9 +32,8 @@
   font-style: bold;
   text-decoration: underline;
 }
-
 .App-header {
-  padding: 60px 30px 30px 30px;
+  padding: 30px;
   background-color: #222;
   color: white;
 }
