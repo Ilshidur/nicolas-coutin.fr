@@ -62,6 +62,19 @@
   margin: 10px;
 }
 
+.App-projects {
+  display: flex;
+}
+.App-project {
+  flex: 1;
+}
+.App-project__name {
+
+}
+.App-project__preview {
+
+}
+
 #description {
   display: flex;
   margin-bottom: 20px;
@@ -70,9 +83,10 @@
   background-color: #9ED6E2;
 }
 #projects {
-  height: 400px;
   background-color: #171717;
   color: white;
+  padding-left: 0;
+  padding-right: 0;
 }
 #stack {
   background-color: #fff;

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 import Headroom from 'react-headroom';
 import moment from 'moment';
+
 import githubLogo from './img/icons/github-icon.svg';
 import stackshareLogo from './img/icons/stackshare-icon.svg';
 import npmLogo from './img/icons/npm-icon.svg';
@@ -10,8 +11,23 @@ import timetLogo from './img/timet-logo.png';
 import cciLogo from './img/cci-logo.png';
 import renePerrinLogo from './img/lycee-rene-perrin-logo.png';
 import iutLogo from './img/iut-logo.jpeg';
+import previewLISG from './img/preview-lisg.jpg';
+import previewBlog from './img/preview-blog.jpg';
+import previewCssContext from './img/preview-css-contest.jpg';
+
 import './App.css';
 import './timeline.css';
+
+const projects = [{
+  name: 'LoL Item Sets Generator',
+  img: previewLISG
+}, {
+  name: 'Mon blog',
+  img: previewBlog
+}, {
+  name: 'CSS context',
+  img: previewCssContext
+}];
 
 class App extends Component {
   render() {
@@ -216,7 +232,14 @@ class App extends Component {
 
         <div id="projects" className="App-section">
           <h1>Mes projets</h1>
-          <p className="text-center">Section à venir ...</p>
+          <div className="App-projects">
+            {projects.map(project =>
+              <div className="App-project">
+                <p className="App-project__name">{project.name}</p>
+                <img className="App-project__preview" src={project.img} alt={project.name} />
+              </div>
+            )}
+          </div>
         </div>
 
         <div id="stack" className="App-section">
