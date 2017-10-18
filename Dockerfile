@@ -1,35 +1,30 @@
-FROM mhart/alpine-node:7.9.0
+# ==== Build
 
-RUN \
-  adduser -h /sass -s /sbin/nologin -D sass && \
-  apk add --no-cache \
-    ruby \
-    dumb-init \
-    libsass \
-    sassc && \
-  rm -f /tmp/* /etc/apk/cache/*
+FROM mhart/alpine-node:8.5.0 as builder
+
+RUN mkdir -p /usr/src
+WORKDIR /usr/src
+
+COPY package.json yarn.lock ./
+RUN yarn
+
+COPY . .
+RUN yarn build
+
+# ==== Run
+
+FROM mhart/alpine-node:8.5.0
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-RUN npm i -g pm2@2.7.0 snyk
-RUN snyk auth $SNYK_TOKEN
+RUN npm i -g pm2@2.7.0
 
-COPY package.json ./
+COPY --from=builder /usr/src/build build
+COPY --from=builder /usr/src/ecosystem.config.js /usr/src/package.json ./
 
-RUN npm install && bower install
-
-COPY .snyk .
-COPY tools tools
-COPY src src
-
-RUN grunt build --production
-COPY build build
-
-ENV PORT 3000
 ENV NODE_ENV production
-ENV DOMAIN nicolas-coutin.fr
 
-CMD ["pm2-docker", "start", "dist/server/index.js", "--", "--release"]
+CMD ["pm2-docker", "start", "ecosystem.config.js"]
 
 EXPOSE 3000
