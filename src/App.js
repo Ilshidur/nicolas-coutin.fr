@@ -18,7 +18,7 @@ import './timeline.css';
 
 class App extends Component {
   render() {
-    const birthday = new Date(1995, 1, 24);
+    const birthday = new Date(1995, 1, 24); // Hardcoded birthday date \o/
     const age = moment().diff(birthday, 'years', false);
 
     return (
@@ -220,14 +220,14 @@ class App extends Component {
         <div id="projects" className="App-section">
           <h1>Mes projets</h1>
           <div className="App-projects row">
-            {projects.filter(project => project.show).map(project =>
-              <div className="App-project col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            {projects.filter(project => project.show).map((project, index) =>
+              <div key={index} className="App-project col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <img className="App-project__preview img-responsive" src={project.img} alt={project.name} />
-                <a href={project.img} class="App-project__link">
-                    <div class="App-project__box">
+                <a href={project.img} className="App-project__link">
+                    <div className="App-project__box">
                         <h2 className="App-project__name">{project.name}</h2>
                         <p>{project.summary}</p>
-                        <i class="fa fa-plus-circle"></i>
+                        <i className="fa fa-plus-circle"></i>
                     </div>
                 </a>
               </div>
@@ -239,7 +239,7 @@ class App extends Component {
           <h1>Mes outils du quotidien</h1>
           <div className="container">
             <div className="App-stack">
-              <a frameborder="0" data-theme="dark" data-stack-embed="true" data-layers="1,2,3,4" href="https://embed.stackshare.io/stacks/embed/654e809fa0b6235b129efd854398a8">My stack</a>
+              <a frameBorder="0" data-theme="dark" data-stack-embed="true" data-layers="1,2,3,4" href="https://embed.stackshare.io/stacks/embed/654e809fa0b6235b129efd854398a8">My stack</a>
             </div>
           </div>
         </div>
