@@ -63,16 +63,52 @@
 }
 
 .App-projects {
-  display: flex;
+  margin: 20px 0 0 0;
 }
 .App-project {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
 }
 .App-project__name {
-
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-style: bold;
 }
 .App-project__preview {
-
+}
+.App-project__link {
+  color: #337ab7;
+  text-decoration: none;
+  background-color: transparent;
+}
+.App-project .App-project__preview {
+  transition: 1s;
+}
+.App-project:hover .App-project__preview {
+  transform: rotate(-10deg) scale(1.5);
+}
+.App-project__box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(56, 123, 128, 0.7);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+.App-project:hover .App-project__box {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 #description {
@@ -87,6 +123,7 @@
   color: white;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 0;
 }
 #stack {
   background-color: #fff;
