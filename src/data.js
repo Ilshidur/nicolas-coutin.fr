@@ -6,7 +6,7 @@ import previewPizzaPaiFid from './img/preview-pizzapai-fid.jpg';
 
 const projects = [{
   name: 'LoL Item Sets Generator',
-  summary: 'Contenus téléchargeables pour le jeu League of Legengds',
+  summary: 'Contenus téléchargeables pour le jeu League of Legends',
   description: 'Outil qui propose du contenu téléchargeable pour le jeu vidéo League of Legends. Les contenus sont générés à partir de l\'API REST du jeu. Une application permet de mettre à jour ces données automatiquement et comptabilise plus d\'un million de téléchargements. Hébergé sur server dédié.',
   img: previewLISG,
   link: 'https://lol-item-sets-generator.org',
