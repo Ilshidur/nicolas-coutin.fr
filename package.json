@@ -8,6 +8,7 @@
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^16.0.0",
+    "react-ga": "^2.3.5",
     "react-headroom": "^2.2.1",
     "react-scripts": "1.0.14",
     "react-scroll": "^1.5.5"
