@@ -17,7 +17,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Parse application/json
 app.use(bodyParser.json());
 
-// TODO: Controllers
 app.use('/api', require('./controllers/api'));
 
 if (process.env.NODE_ENV === 'production') {
