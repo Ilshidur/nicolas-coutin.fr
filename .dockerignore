@@ -1,6 +1,12 @@
 *.log
+client/node_modules/
+client/.gitignore
+client/CRA-README.md
+client/start.js
 node_modules/
+server/node_modules/
+server/.gitignore
+.editorconfig
 .gitignore
-CRA-README.md
 Dockerfile
 README.md

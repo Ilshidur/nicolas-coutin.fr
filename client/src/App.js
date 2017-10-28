@@ -1,5 +1,7 @@
+import axios from 'axios';
 import moment from 'moment';
 import React, { Component } from 'react';
+import AlertContainer from 'react-alert'
 import { Link } from 'react-scroll';
 import Headroom from 'react-headroom';
 import Recaptcha from 'react-recaptcha';
@@ -18,13 +20,104 @@ import iutLogo from './img/iut-logo.jpeg';
 import './App.css';
 import './timeline.css';
 
+const sitekey = '6LfcRDYUAAAAAE96MzPjUwFcAvs06fTnGWiC4Vp7';
+
+let captcha;
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.captchaLoaded = this.captchaLoaded.bind(this);
+    this.captchaExpired = this.captchaExpired.bind(this);
+    this.captchaVerified = this.captchaVerified.bind(this);
+    this.submitEmail = this.submitEmail.bind(this);
+
+    this.state = {
+      captchaLoaded: false,
+      captchaExpired: false,
+      captchaVerified: false,
+      contactFormMessage: null
+    };
+  }
+
+  showError = (msg) => {
+    this.msg.show(msg, {
+      time: 2000,
+      type: 'error'
+    })
+  }
+
+  captchaLoaded() {
+    this.setState({
+      captchaLoaded: true
+    });
+  }
+  captchaExpired() {
+    this.setState({
+      captchaExpired: true
+    });
+  }
+  captchaVerified(token) {
+    this.setState({
+      captchaVerified: true,
+      captchaToken: token
+    });
+  }
+  resetRecaptcha() {
+    captcha.reset();
+  };
+
+  alertOptions = {
+    offset: 14,
+    position: 'bottom right',
+    theme: 'dark',
+    time: 10000,
+    transition: 'scale'
+  }
+
+  async submitEmail() {
+    const {
+      contactName,
+      contactEmail,
+      contactContent,
+      captchaToken
+    } = this.state;
+    try {
+      const response = await axios.post('/api/email', {
+        name: contactName,
+        email: contactEmail,
+        content: contactContent,
+        'g-recaptcha-response': captchaToken
+      });
+      const { message } = response.data;
+      this.setState({
+        contactFormMessage: message
+      });
+    } catch(e) {
+      const { response: { data : { message } } } = e;
+      console.error(message);
+      this.showError(message);
+      this.resetRecaptcha();
+      return;
+    }
+  }
+
   render() {
     const birthday = new Date(1995, 1, 24); // Hardcoded birthday date \o/
     const age = moment().diff(birthday, 'years', false);
 
+    const {
+      captchaLoaded,
+      captchaExpired,
+      captchaVerified,
+      contactFormMessage
+    } = this.state;
+    const contactButtonReady = captchaLoaded && !captchaExpired && captchaVerified;
+
     return (
       <div className="App">
+        <AlertContainer ref={a => this.msg = a} {...this.alertOptions} />
+
         <Headroom style={{ zIndex: 200, backgroundColor: '#222' }}>
           <nav className="App-nav">
             <ul className="App-nav__list">
@@ -250,23 +343,69 @@ class App extends Component {
           <div className="container">
             <h1>Contact</h1>
             <div className="App-contact__form row">
-              <div className="col-md-6">
-                <input className="App-contact__field form-control" name="name" type="text" placeholder="Votre prénom" required="" />
-              </div>
-              <div className="col-md-6">
-                <input className="App-contact__field form-control" name="email" type="email" placeholder="Votre adresse e-mail" required="" />
-              </div>
-              <div className="col-md-12">
-                <textarea className="App-contact__field form-control" name="message" placeholder="Votre message"></textarea>
-              </div>
-              <div className="col-md-12 form-actions">
-                <button className="btn btn-large btn-default" type="submit">Envoyer</button>
-              </div>
-              {/* <Recaptcha
-                sitekey="xxxxxxxxxxxxxxxxxxxx"
-                render="explicit"
-                onloadCallback={callback}
-              />*/}
+              {!contactFormMessage
+                ? (
+                <div>
+                  <div className="col-md-6">
+                    <input
+                      className="App-contact__field form-control"
+                      name="name"
+                      type="text"
+                      placeholder="Votre prénom"
+                      required=""
+                      ref={el => this.contactName = el}
+                      onChange={e => this.setState({ contactName: e.target.value })}
+                    />
+                  </div>
+                  <div className="col-md-6">
+                    <input
+                      className="App-contact__field form-control"
+                      name="email"
+                      type="email"
+                      placeholder="Votre adresse e-mail"
+                      required=""
+                      onChange={e => this.setState({ contactEmail: e.target.value })}
+                    />
+                  </div>
+                  <div className="col-md-12">
+                    <textarea
+                      className="App-contact__field form-control"
+                      name="message"
+                      placeholder="Votre message"
+                      onChange={e => this.setState({ contactContent: e.target.value })}
+                    ></textarea>
+                  </div>
+                  <div className="col-md-12" style={{ marginBottom: '20px' }}>
+                    <Recaptcha
+                      sitekey={sitekey}
+                      render="explicit"
+                      verifyCallback={this.captchaVerified}
+                      onloadCallback={this.captchaLoaded}
+                      expiredCallback={this.captchaExpired}
+                      theme="dark"
+                    />
+                  </div>
+                  <div className="col-md-12 form-actions">
+                    <button
+                      className={'btn btn-large btn-default ' + (!contactButtonReady ? 'disabled' : '') }
+                      type="submit"
+                      disabled={!contactButtonReady}
+                      onClick={this.submitEmail}
+                    >
+                      Envoyer
+                    </button>
+                    {captchaExpired
+                      ? <p className="text-center">Le captcha a expiré.</p>
+                      : null
+                    }
+                  </div>
+                </div>
+                ) : (
+                <p className="text-center">
+                  {contactFormMessage}
+                </p>
+              )
+            }
             </div>
           </div>
         </div>

@@ -1,0 +1,26 @@
+{
+  "name": "nicolas-coutin.fr",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1",
+    "react": "^16.0.0",
+    "react-alert": "^2.4.0",
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^16.0.0",
+    "react-ga": "^2.3.5",
+    "react-headroom": "^2.2.1",
+    "react-recaptcha": "^2.3.5",
+    "react-scripts": "1.0.14",
+    "react-scroll": "^1.5.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
