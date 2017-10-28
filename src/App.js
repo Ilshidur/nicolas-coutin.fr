@@ -1,7 +1,9 @@
+import moment from 'moment';
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 import Headroom from 'react-headroom';
-import moment from 'moment';
+import Recaptcha from 'react-recaptcha';
+
 import { projects } from './data';
 
 import githubLogo from './img/icons/github-icon.svg';
@@ -245,9 +247,28 @@ class App extends Component {
         </div>
 
         <div id="contact" className="App-section">
-          <h1>Contact</h1>
-          <p className="text-center">Section à venir ...</p>
-          <p className="text-center">En attendant, vous pouvez me contacter sur mon addresse : <i>nicolas-coutin [at] outlook [dot] com</i>.</p>
+          <div className="container">
+            <h1>Contact</h1>
+            <div className="App-contact__form row">
+              <div className="col-md-6">
+                <input className="App-contact__field form-control" name="name" type="text" placeholder="Votre prénom" required="" />
+              </div>
+              <div className="col-md-6">
+                <input className="App-contact__field form-control" name="email" type="email" placeholder="Votre adresse e-mail" required="" />
+              </div>
+              <div className="col-md-12">
+                <textarea className="App-contact__field form-control" name="message" placeholder="Votre message"></textarea>
+              </div>
+              <div className="col-md-12 form-actions">
+                <button className="btn btn-large btn-default" type="submit">Envoyer</button>
+              </div>
+              {/* <Recaptcha
+                sitekey="xxxxxxxxxxxxxxxxxxxx"
+                render="explicit"
+                onloadCallback={callback}
+              />*/}
+            </div>
+          </div>
         </div>
       </div>
     );

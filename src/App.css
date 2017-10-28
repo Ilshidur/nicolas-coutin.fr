@@ -1,3 +1,52 @@
+/* Overriding Bootstrap styles */
+.btn {
+  width: 140px;
+  height: 50px;
+  padding: 0;
+  color: #222;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 0;
+  background-repeat: repeat;
+  background-image: none;
+  background-position: 0% 0%;
+}
+.btn-default {
+  color: #fff;
+  background-color: #387b80;
+  border: none;
+}
+.btn-default:hover {
+  color: #fff;
+  background-color: #292d33;
+}
+.form-control {
+  height: 45px;
+  margin: 0 0 20px;
+  padding: 6px 0;
+  background-color: transparent;
+  border: 1px solid #387b80;
+  border-width: 0 0 1px;
+  border-radius: 0;
+}
+input {
+  background-repeat: repeat;
+  background-image: none;
+  background-position: 0% 0%;
+}
+textarea {
+  background-repeat: repeat;
+  background-image: none;
+  background-position: 0% 0%;
+  padding: 10px;
+}
+::selection {
+  background-color: #387b80;
+  color: #fff;
+}
+
 .App {
   text-align: center;
 }
@@ -111,6 +160,19 @@
   transition-delay: 0s;
 }
 
+.App-contact__form {
+  margin-top: 20px;
+}
+.App-contact__field {
+  height: 45px;
+  margin: 0 0 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #387b80;
+  border-width: 0 0 1px;
+  border-radius: 0;
+}
+
 #description {
   display: flex;
   margin-bottom: 20px;
@@ -129,7 +191,6 @@
   background-color: #fff;
 }
 #contact {
-  height: 400px;
   background-color: #171717;
   color: white;
 }
