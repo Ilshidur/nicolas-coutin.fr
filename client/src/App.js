@@ -318,7 +318,7 @@ class App extends Component {
             {projects.filter(project => project.show).map((project, index) =>
               <div key={index} className="App-project col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <img className="App-project__preview img-responsive" src={project.img} alt={project.name} />
-                <a href={project.link} className="App-project__link">
+                <a href={project.link} target="_blank" className="App-project__link" >
                     <div className="App-project__box">
                         <h2 className="App-project__name">{project.name}</h2>
                         <p>{project.summary}</p>
