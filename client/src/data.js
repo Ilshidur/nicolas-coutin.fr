@@ -24,7 +24,7 @@ const projects = [{
   description: 'Concours organisé par un professeur. L\'objectif étant de mettre en page un document HTML uniquement à l\'aide de CSS. Ce CSS visait la mention spéciale : "pique-les-yeux".',
   img: previewCssContext,
   link: 'https://css-contest.nicolas-coutin.fr',
-  show: true
+  show: false
 }, {
   name: 'Portfolio Laurie Coutin',
   summary: 'Portfolio créé pour Laurie Coutin',
@@ -37,7 +37,7 @@ const projects = [{
   summary: 'Site fidélité de Pizza Paï (cadre professionnel).',
   description: '',
   img: previewPizzaPaiFid,
-  link: null,
+  link: 'https://espacefidelite.pizzapai.fr',
   show: true
 }, {
   name: 'MJo Peintures',
