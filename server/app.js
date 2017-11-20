@@ -1,5 +1,6 @@
 const bodyParser = require('body-parser');
 const express = require('express');
+const helmet = require('helmet');
 const path = require('path');
 
 const config = require('./config');
@@ -11,6 +12,8 @@ if (module.parent) {
 const app = express();
 
 app.set('port', config.port);
+
+app.use(helmet());
 
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
