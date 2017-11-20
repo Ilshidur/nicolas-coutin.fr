@@ -11,6 +11,7 @@ import { projects } from './data';
 import githubLogo from './img/icons/github-icon.svg';
 import stackshareLogo from './img/icons/stackshare-icon.svg';
 import npmLogo from './img/icons/npm-icon.svg';
+import stackOverflowLogo from './img/icons/stackoverflow-icon.svg';
 import dataxplorerLogo from './img/dataxplorer-logo.png';
 import timetLogo from './img/timet-logo.png';
 import cciLogo from './img/cci-logo.png';
@@ -182,6 +183,9 @@ class App extends Component {
               </a>
               <a href="https://www.npmjs.com/~ilshidur" target="blank" rel="noopener" className="App-social-icon">
                 <img src={npmLogo} alt="npm" className="App-social-icon__image" />
+              </a>
+              <a href="https://stackoverflow.com/story/nicolas-coutin" target="blank" rel="noopener" className="App-social-icon">
+                <img src={stackOverflowLogo} alt="StackOverflow" className="App-social-icon__image" />
               </a>
             </div>
           </div>
