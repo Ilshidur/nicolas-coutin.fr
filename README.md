@@ -1,5 +1,16 @@
 # [nicolas-coutin.fr](https://nicolas-coutin.fr)
 
+## Development
+
+**Node.js**, **Yarn** required.
+
+```bash
+yarn
+(cd server && yarn)
+(cd client && yarn)
+yarn start
+```
+
 ## Run
 
 **Docker** required.
