@@ -20,7 +20,7 @@ import iutLogo from './img/iut-logo.jpeg';
 import './App.css';
 import './timeline.css';
 
-const sitekey = '6LfcRDYUAAAAAE96MzPjUwFcAvs06fTnGWiC4Vp7';
+const reCaptchaSitekey = '6LfcRDYUAAAAAE96MzPjUwFcAvs06fTnGWiC4Vp7';
 
 let captcha;
 
@@ -377,7 +377,7 @@ class App extends Component {
                   </div>
                   <div className="col-md-12" style={{ marginBottom: '20px' }}>
                     <Recaptcha
-                      sitekey={sitekey}
+                      sitekey={reCaptchaSitekey}
                       render="explicit"
                       verifyCallback={this.captchaVerified}
                       onloadCallback={this.captchaLoaded}
