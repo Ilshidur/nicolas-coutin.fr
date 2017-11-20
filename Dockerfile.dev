@@ -1,0 +1,22 @@
+FROM mhart/alpine-node:8.5.0
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY package.json yarn.lock ./
+RUN yarn
+
+COPY server/package.json server/yarn.lock ./server/
+RUN (cd server && yarn)
+
+COPY client/package.json client/yarn.lock ./client/
+RUN (cd client && yarn)
+
+COPY . .
+
+ENV NODE_ENV development
+ENV PORT 3000
+
+CMD ["yarn", "start"]
+
+EXPOSE 3000
