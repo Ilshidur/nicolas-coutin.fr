@@ -174,13 +174,13 @@ class App extends Component {
               </div>
             </div>
             <div id="social-buttons" className="row">
-              <a href="https://github.com/Ilshidur" className="App-social-icon">
+              <a href="https://github.com/Ilshidur" target="blank" rel="noopener" className="App-social-icon">
                 <img src={githubLogo} alt="GitHub" className="App-social-icon__image App-social-icon__image--GitHub" />
               </a>
-              <a href="https://stackshare.io/Ilshidur/personal-stack" className="App-social-icon">
+              <a href="https://stackshare.io/Ilshidur/personal-stack" target="blank" rel="noopener" className="App-social-icon">
                 <img src={stackshareLogo} alt="Stackshare" className="App-social-icon__image" />
               </a>
-              <a href="https://www.npmjs.com/~ilshidur" className="App-social-icon">
+              <a href="https://www.npmjs.com/~ilshidur" target="blank" rel="noopener" className="App-social-icon">
                 <img src={npmLogo} alt="npm" className="App-social-icon__image" />
               </a>
             </div>
