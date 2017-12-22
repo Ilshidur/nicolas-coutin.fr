@@ -203,7 +203,7 @@ class App extends Component {
                   <div className="timeline-heading">
                     <h4 className="timeline-title">Développeur front end</h4>
                     <p><i>CDI</i> (59200, Tourcoing)</p>
-                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Novembre 2016 - toujours en poste</small></p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Novembre 2016 - Janvier 2018</small></p>
                   </div>
                   <div className="timeline-body">
                     <p>
@@ -213,8 +213,11 @@ class App extends Component {
                     </p>
                     <ul>
                       <li>3 mois de développement et de maintenance du site <a href="https://www.rapid-flyer.com">Rapid Flyer</a></li>
-                      <li>Développement d'interfaces d'analyse de données et de data mining</li>
+                      <li>Développement d'interfaces d'analyse de données et de data mining (Data Management Platform)</li>
+                      <li>Intégration de maquettes</li>
+                      <li>Développement de la partie Front du site <a href="https://espacefidelite.pizzapai.fr" target="_blank" rel="noopener">Pizza Paï - Fidélité</a></li>
                     </ul>
+                    <p>HTML5, CSS3 (SCSS) + Bootstrap/Materialize, ES6, jQuery, Grunt</p>
                   </div>
                 </div>
               </li>
@@ -236,6 +239,7 @@ class App extends Component {
                       <li>Développement d'un logiciel d'aide à l'optimisation/déçision</li>
                       <li>Développement d'un MES (Manufacturing Execution System)</li>
                     </ul>
+                    <p>VB .NET, MSSQL, WinForms</p>
                     <p>Stage de 2 mois, apprentissage de 1 an puis CDD de 6 mois</p>
                   </div>
                 </div>
