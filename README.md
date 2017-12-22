@@ -1,6 +1,6 @@
 # [nicolas-coutin.fr](https://nicolas-coutin.fr)
 
-## Development
+## Development
 
 **Node.js**, **Yarn** required.
 
