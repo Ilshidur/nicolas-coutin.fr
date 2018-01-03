@@ -37,6 +37,7 @@ class App extends Component {
       captchaLoaded: false,
       captchaExpired: false,
       captchaVerified: false,
+      captchaToken: null,
       contactFormMessage: null
     };
   }
@@ -55,12 +56,14 @@ class App extends Component {
   }
   captchaExpired() {
     this.setState({
-      captchaExpired: true
+      captchaExpired: true,
+      captchaToken: null
     });
   }
   captchaVerified(token) {
     this.setState({
       captchaVerified: true,
+      captchaExpired: false,
       captchaToken: token
     });
   }
@@ -68,6 +71,11 @@ class App extends Component {
     if (captcha) {
       captcha.reset();
     }
+    this.setState({
+      captchaVerified: false,
+      captchaExpired: false,
+      captchaToken: null
+    });
   };
 
   alertOptions = {
