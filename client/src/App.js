@@ -65,7 +65,9 @@ class App extends Component {
     });
   }
   resetRecaptcha() {
-    captcha.reset();
+    if (captcha) {
+      captcha.reset();
+    }
   };
 
   alertOptions = {
