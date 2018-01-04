@@ -189,13 +189,13 @@ class App extends Component {
                 <img src={githubLogo} alt="GitHub" className="App-social-icon__image App-social-icon__image--GitHub" />
               </a>
               <a href="https://stackshare.io/Ilshidur/personal-stack" target="blank" rel="noopener" className="App-social-icon">
-                <img src={stackshareLogo} alt="Stackshare" className="App-social-icon__image" />
+                <img src={stackshareLogo} alt="Stackshare" className="App-social-icon__image App-social-icon__image--Stackshare" />
               </a>
               <a href="https://www.npmjs.com/~ilshidur" target="blank" rel="noopener" className="App-social-icon">
-                <img src={npmLogo} alt="npm" className="App-social-icon__image" />
+                <img src={npmLogo} alt="npm" className="App-social-icon__image App-social-icon__image--Npm" />
               </a>
               <a href="https://stackoverflow.com/story/nicolas-coutin" target="blank" rel="noopener" className="App-social-icon">
-                <img src={stackOverflowLogo} alt="StackOverflow" className="App-social-icon__image" />
+                <img src={stackOverflowLogo} alt="StackOverflow" className="App-social-icon__image App-social-icon__image--StackOverflow" />
               </a>
             </div>
           </div>
