@@ -82,7 +82,7 @@ textarea {
   text-decoration: underline;
 }
 .App-header {
-  padding: 30px;
+  padding: 30px 30px 10px 30px;
   background-color: #222;
   color: white;
 }
@@ -100,6 +100,14 @@ textarea {
 }
 .App-social-icon__image--GitHub {
   filter: invert(1);
+}
+.App-social-icon__image--Stackshare {
+}
+.App-social-icon__image--Npm {
+  margin-top: 3px;
+}
+.App-social-icon__image--StackOverflow {
+  margin-bottom: 20px;
 }
 
 .App-company-logo {
@@ -175,7 +183,6 @@ textarea {
 
 #description {
   display: flex;
-  margin-bottom: 20px;
 }
 #curriculum {
   background-color: #9ED6E2;
