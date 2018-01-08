@@ -38,6 +38,9 @@ class App extends Component {
       captchaExpired: false,
       captchaVerified: false,
       captchaToken: null,
+      contactName: null,
+      contactEmail: null,
+      contactContent: null,
       contactFormMessage: null
     };
   }
@@ -93,7 +96,7 @@ class App extends Component {
       contactContent,
       captchaToken
     } = this.state;
-    if (!contactName || !contactEmail || !contactContent || !captchaToken) {
+    if (!contactName || contactName === '' || !contactEmail || contactEmail === '' || !contactContent || contactContent === '' || !captchaToken) {
       this.showError('Veuillez remplir tous les champs.');
       return;
     }
