@@ -93,6 +93,10 @@ class App extends Component {
       contactContent,
       captchaToken
     } = this.state;
+    if (!contactName || !contactEmail || !contactContent || !captchaToken) {
+      this.showError('Veuillez remplir tous les champs.');
+      return;
+    }
     try {
       const response = await axios.post('/api/email', {
         name: contactName,
