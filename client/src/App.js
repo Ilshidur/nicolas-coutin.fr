@@ -14,6 +14,7 @@ import npmLogo from './img/icons/npm-icon.svg';
 import stackOverflowLogo from './img/icons/stackoverflow-icon.svg';
 import dataxplorerLogo from './img/dataxplorer-logo.png';
 import timetLogo from './img/timet-logo.png';
+import nijiLogo from './img/niji-logo.png';
 import cciLogo from './img/cci-logo.png';
 import renePerrinLogo from './img/lycee-rene-perrin-logo.png';
 import iutLogo from './img/iut-logo.jpeg';
@@ -214,6 +215,27 @@ class App extends Component {
               <h1 id="timeline">Mon parcours professionnel</h1>
             </div>
             <ul className="timeline">
+              <li className="timeline-inverted">
+                <div className="timeline-badge success"><i className="glyphicon glyphicon-briefcase"></i></div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h4 className="timeline-title">Développeur back end</h4>
+                    <p><i>CDI</i> (59000, Lille)</p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Janvier 2018</small></p>
+                  </div>
+                  <div className="timeline-body">
+                    <p>
+                      <a href="http://www.niji.fr" target="blank" rel="noopener">
+                        <img src={nijiLogo} alt="Niji" className="App-company-logo" />
+                      </a>
+                    </p>
+                    <ul>
+                      <li>Développement d'une infrastructure de gestion de média affichés sur des bornes publiques</li>
+                    </ul>
+                    <p>Node.js, ES6</p>
+                  </div>
+                </div>
+              </li>
               <li>
                 <div className="timeline-badge warning"><i className="glyphicon glyphicon-briefcase"></i></div>
                 <div className="timeline-panel">
