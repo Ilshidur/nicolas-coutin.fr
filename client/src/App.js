@@ -1,10 +1,10 @@
 import axios from 'axios';
 import moment from 'moment';
 import React, { Component } from 'react';
-import AlertContainer from 'react-alert'
 import { Link } from 'react-scroll';
 import Headroom from 'react-headroom';
 import Recaptcha from 'react-recaptcha';
+import { withAlert } from 'react-alert';
 
 import { projects } from './data';
 
@@ -47,10 +47,10 @@ class App extends Component {
   }
 
   showError = (msg) => {
-    this.msg.show(msg, {
-      time: 2000,
+    this.props.alert.show(msg, {
+      timeout: 2000,
       type: 'error'
-    })
+    });
   }
 
   captchaLoaded() {
@@ -81,14 +81,6 @@ class App extends Component {
       captchaToken: null
     });
   };
-
-  alertOptions = {
-    offset: 14,
-    position: 'bottom right',
-    theme: 'dark',
-    time: 10000,
-    transition: 'scale'
-  }
 
   async submitEmail() {
     const {
@@ -135,8 +127,6 @@ class App extends Component {
 
     return (
       <div className="App">
-        <AlertContainer ref={a => this.msg = a} {...this.alertOptions} />
-
         <Headroom style={{ zIndex: 200, backgroundColor: '#222' }}>
           <nav className="App-nav">
             <ul className="App-nav__list">
@@ -216,23 +206,23 @@ class App extends Component {
             </div>
             <ul className="timeline">
               <li className="timeline-inverted">
-                <div className="timeline-badge success"><i className="glyphicon glyphicon-briefcase"></i></div>
+                <div className="timeline-badge primary"><i className="glyphicon glyphicon-briefcase"></i></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h4 className="timeline-title">Développeur back end</h4>
                     <p><i>CDI</i> (59000, Lille)</p>
-                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Janvier 2018</small></p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Janvier 2018 - En cours de contrat</small></p>
                   </div>
                   <div className="timeline-body">
-                    <p>
-                      <a href="http://www.niji.fr" target="blank" rel="noopener">
+                    <p class="row">
+                      <a href="http://www.niji.fr" target="blank" rel="noopener" class="col-md-4 col-md-offset-4">
                         <img src={nijiLogo} alt="Niji" className="App-company-logo" />
                       </a>
                     </p>
                     <ul>
                       <li>Développement d'une infrastructure de gestion de média affichés sur des bornes publiques</li>
                     </ul>
-                    <p>Node.js, ES6</p>
+                    <p>Node.js, ES6, jQuery</p>
                   </div>
                 </div>
               </li>
@@ -254,7 +244,7 @@ class App extends Component {
                       <li>3 mois de développement et de maintenance du site <a href="https://www.rapid-flyer.com">Rapid Flyer</a></li>
                       <li>Développement d'interfaces d'analyse de données et de data mining (Data Management Platform)</li>
                       <li>Intégration de maquettes</li>
-                      <li>Développement de la partie Front du site <a href="https://espacefidelite.pizzapai.fr" target="_blank" rel="noopener">Pizza Paï - Fidélité</a></li>
+                      <li>Développement de la partie Front du site <a href="https://espacefidelite.pizzapai.fr" target="_blank" rel="noopener noreferrer">Pizza Paï - Fidélité</a></li>
                     </ul>
                     <p>HTML5, CSS3 (SCSS) + Bootstrap/Materialize, ES6, jQuery, Grunt</p>
                   </div>
@@ -461,4 +451,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withAlert(App);
