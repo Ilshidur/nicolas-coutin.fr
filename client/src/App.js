@@ -209,7 +209,7 @@ class App extends Component {
                 <div className="timeline-badge primary"><i className="glyphicon glyphicon-briefcase"></i></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h4 className="timeline-title">Développeur back end</h4>
+                    <h4 className="timeline-title">Ingénieur d'études</h4>
                     <p><i>CDI</i> (59000, Lille)</p>
                     <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Janvier 2018 - En cours de contrat</small></p>
                   </div>
