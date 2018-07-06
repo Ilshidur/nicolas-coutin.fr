@@ -80,6 +80,7 @@ textarea {
 }
 .App-nav__link {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex: 1;
   padding: 20px;
@@ -212,7 +213,10 @@ textarea {
 #description {
 }
 #social-buttons {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
 }
 #curriculum {
   background-color: #9ED6E2;

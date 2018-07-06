@@ -176,27 +176,27 @@ class App extends Component {
                   <p>
                     Je m'intéresse au Back end (Node.js), mais aussi beaucoup au Front end (React, +/- Angular), ainsi qu'à l'administration système (sur Ubuntu/Debian), au domaine DevOps et également à l'open source.
                   </p>
-                  <div  className="text-right">
+                  <div className="text-right">
                     <small>
                       <i>"Javascript enthusiat pushing buttons for a living."</i>
                     </small>
                   </div>
+                  <div id="social-buttons" className="row">
+                    <a href="https://github.com/Ilshidur" target="blank" rel="noopener" className="App-social-icon">
+                      <img src={githubLogo} alt="GitHub" className="App-social-icon__image App-social-icon__image--GitHub" />
+                    </a>
+                    <a href="https://stackshare.io/Ilshidur/personal-stack" target="blank" rel="noopener" className="App-social-icon">
+                      <img src={stackshareLogo} alt="Stackshare" className="App-social-icon__image App-social-icon__image--Stackshare" />
+                    </a>
+                    <a href="https://www.npmjs.com/~ilshidur" target="blank" rel="noopener" className="App-social-icon">
+                      <img src={npmLogo} alt="npm" className="App-social-icon__image App-social-icon__image--Npm" />
+                    </a>
+                    <a href="https://stackoverflow.com/story/nicolas-coutin" target="blank" rel="noopener" className="App-social-icon">
+                      <img src={stackOverflowLogo} alt="StackOverflow" className="App-social-icon__image App-social-icon__image--StackOverflow" />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div id="social-buttons" className="row">
-              <a href="https://github.com/Ilshidur" target="blank" rel="noopener" className="App-social-icon">
-                <img src={githubLogo} alt="GitHub" className="App-social-icon__image App-social-icon__image--GitHub" />
-              </a>
-              <a href="https://stackshare.io/Ilshidur/personal-stack" target="blank" rel="noopener" className="App-social-icon">
-                <img src={stackshareLogo} alt="Stackshare" className="App-social-icon__image App-social-icon__image--Stackshare" />
-              </a>
-              <a href="https://www.npmjs.com/~ilshidur" target="blank" rel="noopener" className="App-social-icon">
-                <img src={npmLogo} alt="npm" className="App-social-icon__image App-social-icon__image--Npm" />
-              </a>
-              <a href="https://stackoverflow.com/story/nicolas-coutin" target="blank" rel="noopener" className="App-social-icon">
-                <img src={stackOverflowLogo} alt="StackOverflow" className="App-social-icon__image App-social-icon__image--StackOverflow" />
-              </a>
             </div>
           </div>
         </header>
