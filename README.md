@@ -23,7 +23,7 @@ yarn start
 **Docker** required.
 
 ```
-docker build --rm -t nicolas-coutin.fr:latest .
+docker pull ilshidur/nicolas-coutin.fr
 docker run --rm -it -p 3000:3000 \
   -e DOMAIN=nicolas-coutin.fr \
   -e RECAPTCHA_KEY=KEY \
@@ -31,7 +31,7 @@ docker run --rm -it -p 3000:3000 \
   -e MAILGUN_API_KEY=API_KEY \
   -e MAILGUN_DOMAIN=DOMAIN \
   -e MY_EMAIL=email@email.com \
-  nicolas-coutin.fr:latest
+  ilshidur/nicolas-coutin.fr
 ```
 
 Env vars :
@@ -44,6 +44,30 @@ Env vars :
 * `MAILGUN_API_KEY`
 * `MAILGUN_DOMAIN`
 * `MY_EMAIL`
+
+## License
+
+MIT License
+
+Copyright (c) 2015-2018 **Nicolas Coutin**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 [vulnerabilities-badge]: https://snyk.io/test/github/Ilshidur/nicolas-coutin.fr/badge.svg
 [vulnerabilities-url]: https://snyk.io/test/github/Ilshidur/nicolas-coutin.fr
