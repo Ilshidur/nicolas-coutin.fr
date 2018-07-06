@@ -157,13 +157,13 @@ class App extends Component {
         <header className="App-header App-section">
           <div className="container">
             <div id="description" className="row">
-              <div className="col-sm-5 col-md-4 col-lg-3">
+              <div className="col-sm-12 col-md-3 col-lg-3">
                 <div className="LI-profile-badge" data-version="v1" data-size="medium" data-locale="fr_FR" data-type="vertical" data-theme="dark" data-vanity="nicolascoutin">
                   <a className="LI-simple-link" href='https://fr.linkedin.com/in/nicolascoutin?trk=profile-badge'>Nicolas Coutin</a>
                 </div>
               </div>
-              <div className="App-description col-sm-7 col-md-8 col-lg-9">
-                <div className="">
+              <div className="App-description col-sm-12 col-md-9 col-lg-9">
+                <div>
                   <p>
                     Je m'appelle Nicolas, j'ai {age} ans.
                   </p>
@@ -174,11 +174,13 @@ class App extends Component {
                     La volonté d'évoluer est pour moi un atout primordial pour un bon développeur.
                   </p>
                   <p>
-                    Je m'intéresse au Front end (React, +/- Angular), mais aussi beaucoup au Back end (Node.js), ainsi qu'à l'administration système (sur Ubuntu/Debian), au domaine DevOps et également à l'open source.
+                    Je m'intéresse au Back end (Node.js), mais aussi beaucoup au Front end (React, +/- Angular), ainsi qu'à l'administration système (sur Ubuntu/Debian), au domaine DevOps et également à l'open source.
                   </p>
-                  <small>
-                    <i>"Javascript enthusiat pushing buttons for a living."</i>
-                  </small>
+                  <div  className="text-right">
+                    <small>
+                      <i>"Javascript enthusiat pushing buttons for a living."</i>
+                    </small>
+                  </div>
                 </div>
               </div>
             </div>
@@ -214,15 +216,17 @@ class App extends Component {
                     <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Janvier 2018 - En cours de contrat</small></p>
                   </div>
                   <div className="timeline-body">
-                    <p class="row">
-                      <a href="http://www.niji.fr" target="blank" rel="noopener" class="col-md-4 col-md-offset-4">
-                        <img src={nijiLogo} alt="Niji" className="App-company-logo" />
+                    <p className="row">
+                      <a href="http://www.niji.fr" target="blank" rel="noopener" className="col-md-4 col-md-offset-4">
+                        <img src={nijiLogo} alt="Niji" className="App-company-logo img-responsive" />
                       </a>
                     </p>
                     <ul>
                       <li>Développement d'une infrastructure de gestion de média affichés sur des bornes publiques</li>
                     </ul>
-                    <p>Node.js, ES6, jQuery</p>
+                    <div className="App-company-stack">
+                      <p>Node.js, ES8, MongoDB, Redis, Docker, nginx - jQuery, Babel, gulp</p>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -237,16 +241,18 @@ class App extends Component {
                   <div className="timeline-body">
                     <p>
                       <a href="https://dataxplorer.fr" target="blank" rel="noopener">
-                        <img src={dataxplorerLogo} alt="DataXplorer" className="App-company-logo" />
+                        <img src={dataxplorerLogo} alt="DataXplorer" className="App-company-logo img-responsive" />
                       </a>
                     </p>
                     <ul>
-                      <li>3 mois de développement et de maintenance du site <a href="https://www.rapid-flyer.com">Rapid Flyer</a></li>
+                      <li>Développement et de maintenance du site <a href="https://www.rapid-flyer.com">Rapid Flyer</a> (3 mois)</li>
                       <li>Développement d'interfaces d'analyse de données et de data mining (Data Management Platform)</li>
                       <li>Intégration de maquettes</li>
-                      <li>Développement de la partie Front du site <a href="https://espacefidelite.pizzapai.fr" target="_blank" rel="noopener noreferrer">Pizza Paï - Fidélité</a></li>
+                      <li>Développement de la partie Front du site <a href="https://espacefidelite.pizzapai.fr" target="_blank" rel="noopener noreferrer">Pizza Paï - Fidélité</a> (2 mois)</li>
                     </ul>
-                    <p>HTML5, CSS3 (SCSS) + Bootstrap/Materialize, ES6, jQuery, Grunt</p>
+                    <div className="App-company-stack">
+                      <p>PHP, Symfony 3, Memcached, MySQL, MongoDB<br/>SCSS + Bootstrap/Materialize, ES6, jQuery, Babel, Grunt</p>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -261,14 +267,16 @@ class App extends Component {
                   <div className="timeline-body">
                     <p>
                       <a href="http://www.timet.com" target="blank" rel="noopener">
-                        <img src={timetLogo} alt="TIMET Savoie" className="App-company-logo" />
+                        <img src={timetLogo} alt="TIMET Savoie" className="App-company-logo img-responsive" />
                       </a>
                     </p>
                     <ul>
-                      <li>Développement d'un logiciel d'aide à l'optimisation/déçision</li>
-                      <li>Développement d'un MES (Manufacturing Execution System)</li>
+                      <li>Développement d'un logiciel d'aide à l'optimisation/déçision (4 mois)</li>
+                      <li>Développement d'un <i>Manufacturing Execution System</i> (+ d'1 an)</li>
                     </ul>
-                    <p>VB .NET, MSSQL, WinForms</p>
+                    <div className="App-company-stack">
+                      <p>VB .NET, MSSQL, WinForms</p>
+                    </div>
                     <p>Stage de 2 mois, apprentissage de 1 an puis CDD de 6 mois</p>
                   </div>
                 </div>
@@ -283,7 +291,7 @@ class App extends Component {
                   </div>
                   <div className="timeline-body">
                     <a href="http://www.formation-cci.fr/formations-diplomantes-en-alternance/nos-formations-en-alternance/digital/4-licence-professionnelle-developpeur-informatique-multisupports-dim">
-                      <img src={cciLogo} alt="CCI Formation Multimédia" className="App-company-logo" />
+                      <img src={cciLogo} alt="CCI Formation Multimédia" className="App-company-logo img-responsive" />
                     </a>
                     <p>
                       Licence professionnelle <i>Développeur Informatique Multisupports</i>
@@ -309,7 +317,7 @@ class App extends Component {
                   </div>
                   <div className="timeline-body">
                     <a href="https://www.iut-acy.univ-smb.fr/departement_info/le_departement_info">
-                      <img src={iutLogo} alt="IUT Annecy"/>
+                      <img src={iutLogo} alt="IUT Annecy" className="App-company-logo img-responsive" />
                     </a>
                     <ul>
                       <li>Algorithmie, programmation, réseaux</li>
@@ -331,7 +339,7 @@ class App extends Component {
                   </div>
                   <div className="timeline-body">
                     <a href="http://rene-perrin.elycee.rhonealpes.fr">
-                      <img src={renePerrinLogo} alt="Lycée René Perrin" className="App-company-logo" />
+                      <img src={renePerrinLogo} alt="Lycée René Perrin" className="App-company-logo img-responsive" />
                     </a>
                     <ul>
                       <li>Programmation C, Basic</li>

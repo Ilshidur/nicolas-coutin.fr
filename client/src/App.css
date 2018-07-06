@@ -53,19 +53,35 @@ textarea {
 .App-section {
   padding: 40px;
 }
+@media screen and (max-width: 767px) {
+  .App-section {
+    padding: 40px 20px;
+  }
+}
 .App-nav {
+  display: flex;
+  justify-content: flex-end;
   height: 60px;
   background-color: #222;
 }
 .App-nav__list {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  width: 50%;
   margin: 0 50px 0 0;
   padding: 0;
   list-style-type: none;
 }
+@media screen and (max-width: 767px) {
+  .App-nav__list {
+    width: 100%;
+    margin: 0;
+  }
+}
 .App-nav__link {
+  display: flex;
+  align-items: center;
+  flex: 1;
   padding: 20px;
 }
 .App-nav__link a {
@@ -92,6 +108,11 @@ textarea {
   text-align: left;
   font-size: large;
 }
+@media screen and (max-width: 991px) {
+  .App-description {
+    margin-top: 20px;
+  }
+}
 .App-social-icon {
   margin: 0 10px;
 }
@@ -113,6 +134,13 @@ textarea {
 .App-company-logo {
   width: 100%;
   margin-bottom: 10px;
+  max-width: 290px;
+  margin: 0 auto;
+}
+
+.App-company-stack {
+  text-align: center;
+  font-style: italic;
 }
 
 .App-stack {
@@ -182,7 +210,9 @@ textarea {
 }
 
 #description {
-  display: flex;
+}
+#social-buttons {
+  margin-top: 20px;
 }
 #curriculum {
   background-color: #9ED6E2;

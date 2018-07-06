@@ -8,7 +8,7 @@ import { Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
 
 ReactGA.initialize('UA-62226552-2', {
   debug: process.env.NODE_ENV !== 'production'
@@ -17,7 +17,7 @@ ReactGA.set({ page: window.location.pathname + window.location.search });
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const alertOptions = {
-  offset: 14,
+  offset: '14px',
   position: 'bottom right',
   theme: 'dark',
   time: 10000,
@@ -30,4 +30,5 @@ ReactDOM.render(
   </AlertProvider>,
   document.getElementById('root'),
 );
-registerServiceWorker();
+
+unregister();
