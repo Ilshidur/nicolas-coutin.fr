@@ -184,7 +184,7 @@ class App extends Component {
                   </div>
                 </div>
               </div>
-              <div id="curriculum-vitae-download" className="col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
+              <div id="curriculum-vitae-download" className="col-sm-3 col-md-3 col-lg-3">
                 <a href="/pdf/cv.pdf">
                   <img src={pdfLogo} alt="Mon curriculum Vitae" />
                 </a>
