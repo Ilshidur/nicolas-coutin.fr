@@ -8,6 +8,7 @@ import { withAlert } from 'react-alert';
 
 import { projects } from './data';
 
+import pdfLogo from './img/pdf-logo.png';
 import githubLogo from './img/icons/github-icon.svg';
 import stackshareLogo from './img/icons/stackshare-icon.svg';
 import npmLogo from './img/icons/npm-icon.svg';
@@ -181,21 +182,26 @@ class App extends Component {
                       <i>"Javascript enthusiat pushing buttons for a living."</i>
                     </small>
                   </div>
-                  <div id="social-buttons" className="row">
-                    <a href="https://github.com/Ilshidur" target="blank" rel="noopener" className="App-social-icon">
-                      <img src={githubLogo} alt="GitHub" className="App-social-icon__image App-social-icon__image--GitHub" />
-                    </a>
-                    <a href="https://stackshare.io/Ilshidur/personal-stack" target="blank" rel="noopener" className="App-social-icon">
-                      <img src={stackshareLogo} alt="Stackshare" className="App-social-icon__image App-social-icon__image--Stackshare" />
-                    </a>
-                    <a href="https://www.npmjs.com/~ilshidur" target="blank" rel="noopener" className="App-social-icon">
-                      <img src={npmLogo} alt="npm" className="App-social-icon__image App-social-icon__image--Npm" />
-                    </a>
-                    <a href="https://stackoverflow.com/story/nicolas-coutin" target="blank" rel="noopener" className="App-social-icon">
-                      <img src={stackOverflowLogo} alt="StackOverflow" className="App-social-icon__image App-social-icon__image--StackOverflow" />
-                    </a>
-                  </div>
                 </div>
+              </div>
+              <div id="curriculum-vitae-download" className="col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
+                <a href="/pdf/cv.pdf">
+                  <img src={pdfLogo} alt="Mon curriculum Vitae" />
+                </a>
+              </div>
+              <div id="social-buttons" className="col-sm-6 col-md-6 col-lg-6">
+                <a href="https://github.com/Ilshidur" target="blank" rel="noopener" className="App-social-icon">
+                  <img src={githubLogo} alt="GitHub" className="App-social-icon__image App-social-icon__image--GitHub" />
+                </a>
+                <a href="https://stackshare.io/Ilshidur/personal-stack" target="blank" rel="noopener" className="App-social-icon">
+                  <img src={stackshareLogo} alt="Stackshare" className="App-social-icon__image App-social-icon__image--Stackshare" />
+                </a>
+                <a href="https://www.npmjs.com/~ilshidur" target="blank" rel="noopener" className="App-social-icon">
+                  <img src={npmLogo} alt="npm" className="App-social-icon__image App-social-icon__image--Npm" />
+                </a>
+                <a href="https://stackoverflow.com/story/nicolas-coutin" target="blank" rel="noopener" className="App-social-icon">
+                  <img src={stackOverflowLogo} alt="StackOverflow" className="App-social-icon__image App-social-icon__image--StackOverflow" />
+                </a>
               </div>
             </div>
           </div>

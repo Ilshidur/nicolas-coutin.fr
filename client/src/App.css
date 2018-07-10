@@ -214,9 +214,13 @@ textarea {
 }
 #social-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 70px;
+}
+#curriculum-vitae-download {
+  display: flex;
+  justify-content: flex-start;
 }
 #curriculum {
   background-color: #9ED6E2;
