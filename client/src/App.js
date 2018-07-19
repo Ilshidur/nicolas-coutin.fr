@@ -175,7 +175,7 @@ class App extends Component {
                     La volonté d'évoluer est pour moi un atout primordial pour un bon développeur.
                   </p>
                   <p>
-                    Je m'intéresse au Back end (Node.js), mais aussi beaucoup au Front end (React, +/- Angular), ainsi qu'à l'administration système (sur Ubuntu/Debian), au domaine DevOps et également à l'open source.
+                    Je m'intéresse au Back end (Node.js), mais aussi beaucoup au Front end (React), ainsi qu'à l'administration système (sur Ubuntu/Debian), au domaine DevOps et également à l'open source.
                   </p>
                   <div className="text-right">
                     <small>
