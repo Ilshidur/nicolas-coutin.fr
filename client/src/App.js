@@ -228,7 +228,7 @@ class App extends Component {
                       </a>
                     </p>
                     <ul>
-                      <li>Développement d'une infrastructure de gestion de média affichés sur des bornes publiques</li>
+                      <li>Mise en place d'une solution de gestion de régie publicitaire (flux vidéos, images, pdf...)</li>
                     </ul>
                     <div className="App-company-stack">
                       <p>Node.js, ES8, MongoDB, Redis, Docker, nginx - jQuery, Babel, gulp</p>
