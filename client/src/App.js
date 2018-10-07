@@ -219,7 +219,7 @@ class App extends Component {
                   <div className="timeline-heading">
                     <h4 className="timeline-title">Ingénieur d'études</h4>
                     <p><i>CDI</i> (59000, Lille)</p>
-                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Janvier 2018 - En cours de contrat</small></p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Janvier 2018 - Octobre 2018</small></p>
                   </div>
                   <div className="timeline-body">
                     <p className="row">
@@ -228,10 +228,12 @@ class App extends Component {
                       </a>
                     </p>
                     <ul>
-                      <li>Mise en place d'une solution de gestion de régie publicitaire (flux vidéos, images, pdf...)</li>
+                      <li>Mise en place d'une solution de gestion de régie publicitaire (flux vidéos, images, pdf...) pour <a href="https://www.cotep.fr">Cotep</a></li>
+                      <li>Intégrations pour la refonte du site <a href="http://www.cma-cgm.fr">cma-cgm.fr</a></li>
+                      <li>Corrections sur des intégrations Vue</li>
                     </ul>
                     <div className="App-company-stack">
-                      <p>Node.js, ES8, MongoDB, Redis, Docker, nginx - jQuery, Babel, gulp</p>
+                      <p>Node.js, ES8, MongoDB, Redis, Docker, Traefik, nginx - React, Vue, jQuery, gulp</p>
                     </div>
                   </div>
                 </div>
