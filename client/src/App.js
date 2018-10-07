@@ -175,11 +175,11 @@ class App extends Component {
                     La volonté d'évoluer est pour moi un atout primordial pour un bon développeur.
                   </p>
                   <p>
-                    Je m'intéresse au Back end (Node.js), mais aussi beaucoup au Front end (React), ainsi qu'à l'administration système (sur Ubuntu/Debian), au domaine DevOps et également à l'open source.
+                    Je m'intéresse au Back end (Node.js), mais aussi beaucoup au Front end (Vue, React), ainsi qu'à l'administration système (sur Ubuntu/Debian), au domaine DevOps et également à l'open source.
                   </p>
                   <div className="text-right">
                     <small>
-                      <i>"Javascript enthusiat pushing buttons for a living."</i>
+                      <i>"Javascript enthusiast pushing buttons for a living."</i>
                     </small>
                   </div>
                 </div>
@@ -190,16 +190,16 @@ class App extends Component {
                 </a>
               </div>
               <div id="social-buttons" className="col-sm-6 col-md-6 col-lg-6">
-                <a href="https://github.com/Ilshidur" target="blank" rel="noopener" className="App-social-icon">
+                <a href="https://github.com/Ilshidur" target="_blank" rel="noopener noreferrer" className="App-social-icon">
                   <img src={githubLogo} alt="GitHub" className="App-social-icon__image App-social-icon__image--GitHub" />
                 </a>
-                <a href="https://stackshare.io/Ilshidur/personal-stack" target="blank" rel="noopener" className="App-social-icon">
+                <a href="https://stackshare.io/Ilshidur/personal-stack" target="_blank" rel="noopener noreferrer" className="App-social-icon">
                   <img src={stackshareLogo} alt="Stackshare" className="App-social-icon__image App-social-icon__image--Stackshare" />
                 </a>
-                <a href="https://www.npmjs.com/~ilshidur" target="blank" rel="noopener" className="App-social-icon">
+                <a href="https://www.npmjs.com/~ilshidur" target="_blank" rel="noopener noreferrer" className="App-social-icon">
                   <img src={npmLogo} alt="npm" className="App-social-icon__image App-social-icon__image--Npm" />
                 </a>
-                <a href="https://stackoverflow.com/story/nicolas-coutin" target="blank" rel="noopener" className="App-social-icon">
+                <a href="https://stackoverflow.com/story/nicolas-coutin" target="_blank" rel="noopener noreferrer" className="App-social-icon">
                   <img src={stackOverflowLogo} alt="StackOverflow" className="App-social-icon__image App-social-icon__image--StackOverflow" />
                 </a>
               </div>
@@ -223,13 +223,13 @@ class App extends Component {
                   </div>
                   <div className="timeline-body">
                     <p className="row">
-                      <a href="http://www.niji.fr" target="blank" rel="noopener" className="col-md-4 col-md-offset-4">
+                      <a href="http://www.niji.fr" target="_blank" rel="noopener noreferrer" className="col-md-4 col-md-offset-4">
                         <img src={nijiLogo} alt="Niji" className="App-company-logo img-responsive" />
                       </a>
                     </p>
                     <ul>
-                      <li>Mise en place d'une solution de gestion de régie publicitaire (flux vidéos, images, pdf...) pour <a href="https://www.cotep.fr">Cotep</a></li>
-                      <li>Intégrations pour la refonte du site <a href="http://www.cma-cgm.fr">cma-cgm.fr</a></li>
+                      <li>Mise en place d'une solution de gestion de régie publicitaire (flux vidéos, images, pdf...) pour <a href="https://www.cotep.fr" target="_blank" rel="noopener noreferrer">Cotep</a></li>
+                      <li>Intégrations pour la refonte du site <a href="http://www.cma-cgm.fr" target="_blank" rel="noopener noreferrer">CMA CGM</a></li>
                       <li>Corrections sur des intégrations Vue</li>
                     </ul>
                     <div className="App-company-stack">
@@ -248,12 +248,12 @@ class App extends Component {
                   </div>
                   <div className="timeline-body">
                     <p>
-                      <a href="https://dataxplorer.fr" target="blank" rel="noopener">
+                      <a href="https://dataxplorer.fr" target="_blank" rel="noopener noreferrer">
                         <img src={dataxplorerLogo} alt="DataXplorer" className="App-company-logo img-responsive" />
                       </a>
                     </p>
                     <ul>
-                      <li>Développement et de maintenance du site <a href="https://www.rapid-flyer.com">Rapid Flyer</a> (3 mois)</li>
+                      <li>Développement et de maintenance du site <a href="https://www.rapid-flyer.com" target="_blank" rel="noopener noreferrer">Rapid Flyer</a> (3 mois)</li>
                       <li>Développement d'interfaces d'analyse de données et de data mining (Data Management Platform)</li>
                       <li>Intégration de maquettes</li>
                       <li>Développement de la partie Front du site <a href="https://espacefidelite.pizzapai.fr" target="_blank" rel="noopener noreferrer">Pizza Paï - Fidélité</a> (2 mois)</li>
@@ -274,7 +274,7 @@ class App extends Component {
                   </div>
                   <div className="timeline-body">
                     <p>
-                      <a href="http://www.timet.com" target="blank" rel="noopener">
+                      <a href="http://www.timet.com" target="_blank" rel="noopener noreferrer">
                         <img src={timetLogo} alt="TIMET Savoie" className="App-company-logo img-responsive" />
                       </a>
                     </p>
@@ -298,7 +298,7 @@ class App extends Component {
                     <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Septembre 2014 - Juin 2015</small></p>
                   </div>
                   <div className="timeline-body">
-                    <a href="http://www.formation-cci.fr/formations-diplomantes-en-alternance/nos-formations-en-alternance/digital/4-licence-professionnelle-developpeur-informatique-multisupports-dim">
+                    <a href="http://www.formation-cci.fr/formations-diplomantes-en-alternance/nos-formations-en-alternance/digital/4-licence-professionnelle-developpeur-informatique-multisupports-dim" target="_blank" rel="noopener noreferrer">
                       <img src={cciLogo} alt="CCI Formation Multimédia" className="App-company-logo img-responsive" />
                     </a>
                     <p>
@@ -324,7 +324,7 @@ class App extends Component {
                     <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Septembre 2012 - Mars 2014</small></p>
                   </div>
                   <div className="timeline-body">
-                    <a href="https://www.iut-acy.univ-smb.fr/departement_info/le_departement_info">
+                    <a href="https://www.iut-acy.univ-smb.fr/departement_info/le_departement_info" target="_blank" rel="noopener noreferrer">
                       <img src={iutLogo} alt="IUT Annecy" className="App-company-logo img-responsive" />
                     </a>
                     <ul>
@@ -346,7 +346,7 @@ class App extends Component {
                     <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Septembre 2009 - Juin 2012</small></p>
                   </div>
                   <div className="timeline-body">
-                    <a href="http://rene-perrin.elycee.rhonealpes.fr">
+                    <a href="http://rene-perrin.elycee.rhonealpes.fr" target="_blank" rel="noopener noreferrer">
                       <img src={renePerrinLogo} alt="Lycée René Perrin" className="App-company-logo img-responsive" />
                     </a>
                     <ul>
@@ -371,12 +371,12 @@ class App extends Component {
             {projects.filter(project => project.show).map((project, index) =>
               <div key={index} className="App-project col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <img className="App-project__preview img-responsive" src={project.img} alt={project.name} />
-                <a href={project.link} target="_blank" className="App-project__link" >
-                    <div className="App-project__box">
-                        <h2 className="App-project__name">{project.name}</h2>
-                        <p>{project.summary}</p>
-                        <i className="fa fa-plus-circle"></i>
-                    </div>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="App-project__link" >
+                  <div className="App-project__box">
+                    <h2 className="App-project__name">{project.name}</h2>
+                    <p>{project.summary}</p>
+                    <i className="fa fa-plus-circle"></i>
+                  </div>
                 </a>
               </div>
             )}
