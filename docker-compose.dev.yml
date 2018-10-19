@@ -1,0 +1,37 @@
+# Development configuration
+
+version: '3.4'
+
+services:
+  nicolas-coutin-fr-nginx:
+    image: nginx:alpine
+    volumes:
+      - ./nginx/development.conf:/etc/nginx/conf.d/default.conf
+    labels:
+      - traefik.frontend.rule=Host:nicolas-coutin.fr.docker.localhost
+
+  nicolas-coutin-fr-api:
+    image: mhart/alpine-node:10.11.0
+    working_dir: /home/app/api
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/home/app
+    networks:
+      - internal
+    labels:
+      - traefik.frontend.rule=Host:api.nicolas-coutin.fr.docker.localhost
+    command: ["npm", "start"]
+
+  nicolas-coutin-fr-frontend:
+    image: mhart/alpine-node:10.11.0
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/home/app
+    networks:
+      - proxy
+      - internal
+    depends_on:
+      - nicolas-coutin-fr-api
+    command: ["npm", "run", "develop"]

@@ -1,0 +1,60 @@
+# Production configuration
+
+version: '3.4'
+
+services:
+  nicolas-coutin-fr-nginx:
+    image: registry.gitlab.com/ilshidur/nicolas-coutin.fr/nginx
+    container_name: nicolas-coutin-fr-nginx
+    # volumes:
+    #   - nicolas-coutin-fr-static:/var/www/html # Client files
+    depends_on:
+      - nicolas-coutin-fr-frontend
+    networks:
+      - proxy
+      - internal
+    labels:
+      - traefik.enable=true
+      - traefik.backend=nicolas-coutin-fr-nginx
+      - traefik.frontend.rule=Host:nicolas-coutin.fr
+      - traefik.docker.network=${TRAEFIK_NETWORK}
+      - traefik.port=80
+
+  nicolas-coutin-fr-api:
+    image: registry.gitlab.com/ilshidur/nicolas-coutin.fr/api
+    container_name: nicolas-coutin-fr-api
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: always
+    networks:
+      - internal
+    labels:
+      - traefik.enable=true
+      - traefik.backend=nicolas-coutin-fr-nginx
+      - traefik.frontend.rule=Host:api.nicolas-coutin.fr
+      - traefik.docker.network=${TRAEFIK_NETWORK}
+      - traefik.port=80
+
+  nicolas-coutin-fr-frontend:
+    container_name: nicolas-coutin-fr-frontend
+    working_dir: /home/app/frontend
+    environment:
+      - NODE_ENV=production
+    networks:
+      - proxy
+      - internal
+    depends_on:
+      - nicolas-coutin-fr-api
+    labels:
+      - traefik.enable=false
+
+volumes:
+  mjopeintures-fr-static: # TODO: How to map ONLY between 2 volumes (not putting it here)
+
+networks:
+  internal:
+    external: false
+  proxy:
+    external:
+      name: ${TRAEFIK_NETWORK}
