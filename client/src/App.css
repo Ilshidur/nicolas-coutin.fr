@@ -134,9 +134,8 @@ textarea {
 
 .App-company-logo {
   width: 100%;
-  margin-bottom: 10px;
+  margin: 0 auto 30px auto;
   max-width: 290px;
-  margin: 0 auto;
 }
 
 .App-company-stack {

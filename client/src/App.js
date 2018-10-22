@@ -8,17 +8,18 @@ import { withAlert } from 'react-alert';
 
 import { projects } from './data';
 
-import pdfLogo from './img/pdf-logo.png';
-import githubLogo from './img/icons/github-icon.svg';
-import stackshareLogo from './img/icons/stackshare-icon.svg';
-import npmLogo from './img/icons/npm-icon.svg';
-import stackOverflowLogo from './img/icons/stackoverflow-icon.svg';
-import dataxplorerLogo from './img/dataxplorer-logo.png';
-import timetLogo from './img/timet-logo.png';
-import nijiLogo from './img/niji-logo.png';
 import cciLogo from './img/cci-logo.png';
-import renePerrinLogo from './img/lycee-rene-perrin-logo.png';
+import dataxplorerLogo from './img/dataxplorer-logo.png';
+import githubLogo from './img/icons/github-icon.svg';
 import iutLogo from './img/iut-logo.jpeg';
+import nijiLogo from './img/niji-logo.png';
+import npmLogo from './img/icons/npm-icon.svg';
+import pdfLogo from './img/pdf-logo.png';
+import renePerrinLogo from './img/lycee-rene-perrin-logo.png';
+import scalairLogo from './img/scalair-logo.png';
+import stackOverflowLogo from './img/icons/stackoverflow-icon.svg';
+import stackshareLogo from './img/icons/stackshare-icon.svg';
+import timetLogo from './img/timet-logo.png';
 
 import './App.css';
 import './timeline.css';
@@ -213,6 +214,29 @@ class App extends Component {
               <h1 id="timeline">Mon parcours professionnel</h1>
             </div>
             <ul className="timeline">
+              <li>
+                <div className="timeline-badge primary"><i className="glyphicon glyphicon-briefcase"></i></div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h4 className="timeline-title">Ingénieur Recherche et Innovation</h4>
+                    <p><i>CDI</i> (59510, Hem)</p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Depuis Octobre 2018</small></p>
+                  </div>
+                  <div className="timeline-body">
+                    <p className="row">
+                      <a href="https://www.scalair.fr" target="_blank" rel="noopener noreferrer" className="col-md-8 col-md-offset-2">
+                        <img src={scalairLogo} alt="Scalair" className="App-company-logo img-responsive" />
+                      </a>
+                    </p>
+                    <ul>
+                      <li>Refonte de <a href="https://status.scalair.fr" target="_blank" rel="noopener noreferrer">status.scalair.fr</a></li>
+                    </ul>
+                    <div className="App-company-stack">
+                      <p>Node.js, ES8, MongoDB, Redis, Docker - Vue</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li className="timeline-inverted">
                 <div className="timeline-badge primary"><i className="glyphicon glyphicon-briefcase"></i></div>
                 <div className="timeline-panel">
@@ -223,7 +247,7 @@ class App extends Component {
                   </div>
                   <div className="timeline-body">
                     <p className="row">
-                      <a href="http://www.niji.fr" target="_blank" rel="noopener noreferrer" className="col-md-4 col-md-offset-4">
+                      <a href="https://www.niji.fr" target="_blank" rel="noopener noreferrer" className="col-md-4 col-md-offset-4">
                         <img src={nijiLogo} alt="Niji" className="App-company-logo img-responsive" />
                       </a>
                     </p>
@@ -362,7 +386,6 @@ class App extends Component {
               </li>
             </ul>
           </div>
-
         </div>
 
         <div id="projects" className="App-section">
