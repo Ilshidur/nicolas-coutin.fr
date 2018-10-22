@@ -215,7 +215,7 @@ class App extends Component {
             </div>
             <ul className="timeline">
               <li>
-                <div className="timeline-badge primary"><i className="glyphicon glyphicon-briefcase"></i></div>
+                <div className="timeline-badge info"><i className="glyphicon glyphicon-briefcase"></i></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h4 className="timeline-title">Ingénieur Recherche et Innovation</h4>
