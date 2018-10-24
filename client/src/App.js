@@ -277,7 +277,7 @@ class App extends Component {
                       </a>
                     </p>
                     <ul>
-                      <li>Développement et de maintenance du site <a href="https://www.rapid-flyer.com" target="_blank" rel="noopener noreferrer">Rapid Flyer</a> (3 mois)</li>
+                      <li>Maintenance du site <a href="https://www.rapid-flyer.com" target="_blank" rel="noopener noreferrer">Rapid Flyer</a> (3 mois)</li>
                       <li>Développement d'interfaces d'analyse de données et de data mining (Data Management Platform)</li>
                       <li>Intégration de maquettes</li>
                       <li>Développement de la partie Front du site <a href="https://espacefidelite.pizzapai.fr" target="_blank" rel="noopener noreferrer">Pizza Paï - Fidélité</a> (2 mois)</li>
