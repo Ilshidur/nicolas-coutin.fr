@@ -902,9 +902,9 @@ readable-stream@2:
     string_decoder "~1.0.3"
     util-deprecate "~1.0.1"
 
-recaptcha2@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/recaptcha2/-/recaptcha2-1.3.2.tgz#892c4a5a4db25c63a7abe6fca857aadb706d84f8"
+recaptcha2@1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/recaptcha2/-/recaptcha2-1.3.3.tgz#50e24c9ce7cfe35bcc72e61c8a2c8e9a841ab73c"
   dependencies:
     request "2.x"
 
