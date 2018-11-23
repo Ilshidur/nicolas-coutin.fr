@@ -17,7 +17,9 @@ services:
     labels:
       - traefik.enable=true
       - traefik.backend=nicolas-coutin-fr
-      - traefik.frontend.rule=Host:${DOMAIN}
+      - traefik.frontend.rule=Host:${DOMAIN},www.${DOMAIN}
+      - traefik.frontend.redirect.regex=^https?://www.${DOMAIN}/(.*)
+      - traefik.frontend.redirect.replacement=https://${DOMAIN}/$${1}
       - traefik.docker.network=${TRAEFIK_NETWORK}
       - traefik.port=3000
 
