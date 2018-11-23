@@ -3,7 +3,7 @@ version: '3'
 services:
   nicolas-coutin-fr:
     image: ilshidur/nicolas-coutin.fr
-    container-name: nicolas-coutin-fr
+    container_name: nicolas-coutin-fr
     restart: always
     networks:
       - proxy
