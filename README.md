@@ -20,9 +20,11 @@ yarn start
 
 ## Run
 
+### Without docker-compose
+
 **Docker** required.
 
-```
+```bash
 docker pull ilshidur/nicolas-coutin.fr
 docker run --rm -it -p 3000:3000 \
   -e DOMAIN=nicolas-coutin.fr \
@@ -33,6 +35,14 @@ docker run --rm -it -p 3000:3000 \
   -e MY_EMAIL=email@email.com \
   ilshidur/nicolas-coutin.fr
 ```
+
+### With docker-compose
+
+*Docker & docker-compose* required.
+
+1) Copy `.env.dist` to `.env` and fill the env vars.
+2) `docker-compose pull`
+3) `docker-compose up -d`
 
 Env vars :
 

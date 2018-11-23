@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  nicolas-coutin-fr:
+    image: ilshidur/nicolas-coutin.fr
+    container-name: nicolas-coutin-fr
+    restart: always
+    networks:
+      - proxy
+    environment:
+      - DOMAIN
+      - RECAPTCHA_KEY
+      - RECAPTCHA_SECRET
+      - MAILGUN_API_KEY
+      - MAILGUN_DOMAIN
+      - MY_EMAIL
+    labels:
+      - traefik.enable=true
+      - traefik.backend=nicolas-coutin-fr
+      - traefik.frontend.rule=Host:${DOMAIN}
+      - traefik.docker.network=${TRAEFIK_NETWORK}
+      - traefik.port=3000
+
+networks:
+  proxy:
+    external:
+      name: ${TRAEFIK_NETWORK}
