@@ -292,7 +292,7 @@ class App extends Component {
                 <div className="timeline-badge success"><i className="glyphicon glyphicon-briefcase"></i></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h4 className="timeline-title">Développeur .NET</h4>
+                    <h4 className="timeline-title">Analyste développeur</h4>
                     <p><i>Stage + alternance + CDD</i> (73400, Ugine)</p>
                     <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Avril 2014 - Décembre 2015</small></p>
                   </div>
