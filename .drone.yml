@@ -2,7 +2,7 @@ kind: pipeline
 name: default
 
 steps:
-- name: docker  
+- name: build  
   image: plugins/docker
   settings:
     repo: ilshidur/nicolas-coutin.fr
@@ -11,12 +11,26 @@ steps:
       from_secret: docker_username
     password:
       from_secret: docker_password
-- name: ssh  
+- name: deploy  
   image: appleboy/drone-ssh
   host: evoli.nicolas-coutin.fr
   port: 22
-  secrets: [ ssh_username, ssh_password ]
-  envs: [ TRAEFIK_NETWORK, RECAPTCHA_KEY, RECAPTCHA_SECRET, MAILGUN_API_KEY, MAILGUN_DOMAIN, MY_EMAIL ]
+  secrets:
+    - ssh_username
+    - ssh_password
+  environment:
+    TRAEFIK_NETWORK:
+      from_secret: TRAEFIK_NETWORK
+    RECAPTCHA_KEY:
+      from_secret: RECAPTCHA_KEY
+    RECAPTCHA_SECRET:
+      from_secret: RECAPTCHA_SECRET
+    MAILGUN_API_KEY:
+      from_secret: MAILGUN_API_KEY
+    MAILGUN_DOMAIN:
+      from_secret: MAILGUN_DOMAIN
+    MY_EMAIL:
+      from_secret: MY_EMAIL
   script:
     - export DOMAIN=nicolas-coutin.fr
     - export TRAEFIK_NETWORK=$TRAEFIK_NETWORK
