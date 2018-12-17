@@ -13,11 +13,11 @@ steps:
       from_secret: docker_password
 - name: deploy  
   image: appleboy/drone-ssh
-  host: evoli.nicolas-coutin.fr
+  host: ${HOST}
   port: 22
   secrets:
-    - ssh_username
-    - ssh_password
+    - username: [ssh_username]
+    - password: [ssh_password]
   environment:
     TRAEFIK_NETWORK:
       from_secret: TRAEFIK_NETWORK
