@@ -33,10 +33,10 @@ action "Deploy" {
   uses = "maddox/actions/ssh@75d2243"
   needs = ["Push to registry"]
   secrets = [
+    "HOST",
+    "USER",
     "PRIVATE_KEY",
     "PUBLIC_KEY",
-    "USER",
-    "HOST",
   ]
   args = "./deploy.sh"
 }
