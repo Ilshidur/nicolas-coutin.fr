@@ -20,6 +20,8 @@ yarn start
 
 ## Run
 
+*Note : the website is deployed after every commits on the `master` branch.*
+
 ### Without docker-compose
 
 **Docker** required.
