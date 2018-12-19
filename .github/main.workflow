@@ -19,8 +19,8 @@ action "Build image" {
 
 action "Log into registry" {
   uses = "actions/docker/login@76ff57a"
-  secrets = ["DOCKER_USERNAME", "DOCKER_PASSWORD"]
   needs = ["Build image"]
+  secrets = ["DOCKER_USERNAME", "DOCKER_PASSWORD"]
 }
 
 action "Push to registry" {
