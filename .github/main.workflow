@@ -1,6 +1,6 @@
 workflow "Deployment" {
   on = "push"
-  resolves = ["maddox/actions/ssh@master"]
+  resolves = ["maddox/actions/ssh@75d2243"]
 }
 
 action "Build image" {
@@ -20,9 +20,16 @@ action "Push to registry" {
   args = "push ilshidur/nicolas-coutin.fr"
 }
 
-action "maddox/actions/ssh@master" {
-  uses = "maddox/actions/ssh@master"
+action "maddox/actions/ssh@75d2243" {
+  uses = "maddox/actions/ssh@75d2243"
   needs = ["Push to registry"]
-  secrets = ["PRIVATE_KEY", "PUBLIC_KEY", "USER", "HOST"]
+  secrets = [
+    "PRIVATE_KEY",
+    "PUBLIC_KEY",
+    "USER",
+    "HOST",
+    "DOCKER_PASSWORD",
+    "DOCKER_USERNAME",
+  ]
   args = "./deploy.sh"
 }
