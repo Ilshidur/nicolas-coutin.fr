@@ -47,5 +47,5 @@ action "Slack notification" {
   needs = ["Deploy"]
   needs = ["Deploy"]
   secrets = ["SLACK_WEBHOOK"]
-  args = "A new commit has been pushed to Ilshidur/actions."
+  args = "Successful deploy : https://nicolas-coutin.fr"
 }
