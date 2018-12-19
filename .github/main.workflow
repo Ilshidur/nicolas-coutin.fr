@@ -3,6 +3,7 @@ workflow "Deployment" {
   resolves = [
     "On branch 'master'",
     "Deploy",
+    "Slack notification",
   ]
 }
 
@@ -39,4 +40,12 @@ action "Deploy" {
     "PUBLIC_KEY",
   ]
   args = "./deploy.sh"
+}
+
+action "Slack notification" {
+  uses = "Ilshidur/actions/slack@master"
+  needs = ["Deploy"]
+  needs = ["Deploy"]
+  secrets = ["SLACK_WEBHOOK"]
+  args = "A new commit has been pushed to Ilshidur/actions."
 }
