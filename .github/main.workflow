@@ -1,11 +1,20 @@
 workflow "Deployment" {
   on = "push"
-  resolves = ["maddox/actions/ssh@75d2243"]
+  resolves = [
+    "On branch 'master'",
+    "Deploy",
+  ]
+}
+
+action "On branch 'master'" {
+  uses = "actions/bin/filter@e96fd9a"
+  args = "branch master"
 }
 
 action "Build image" {
   uses = "actions/docker/cli@76ff57a"
   args = "build -t ilshidur/nicolas-coutin.fr ."
+  needs = ["On branch 'master'"]
 }
 
 action "Log into registry" {
@@ -20,7 +29,7 @@ action "Push to registry" {
   args = "push ilshidur/nicolas-coutin.fr"
 }
 
-action "maddox/actions/ssh@75d2243" {
+action "Deploy" {
   uses = "maddox/actions/ssh@75d2243"
   needs = ["Push to registry"]
   secrets = [
@@ -28,8 +37,6 @@ action "maddox/actions/ssh@75d2243" {
     "PUBLIC_KEY",
     "USER",
     "HOST",
-    "DOCKER_PASSWORD",
-    "DOCKER_USERNAME",
   ]
   args = "./deploy.sh"
 }
