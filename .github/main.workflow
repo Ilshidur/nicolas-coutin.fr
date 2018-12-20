@@ -20,13 +20,13 @@ action "Build image" {
 
 action "Log into registry" {
   uses = "actions/docker/login@76ff57a"
-  needs = ["Build image"]
+  needs = ["On branch 'master'"]
   secrets = ["DOCKER_USERNAME", "DOCKER_PASSWORD"]
 }
 
 action "Push to registry" {
   uses = "actions/docker/cli@76ff57a"
-  needs = ["Log into registry"]
+  needs = ["Build image", "Log into registry"]
   args = "push ilshidur/nicolas-coutin.fr"
 }
 
