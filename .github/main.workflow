@@ -43,7 +43,7 @@ action "Deploy" {
 }
 
 action "Wait for HTTP 200 (1m)" {
-  uses = "maddox/actions/wait-for-200@f196820c"
+  uses = "maddox/actions/wait-for-200@b21dcdc"
   needs = ["Deploy"]
   env = {
     URL = "https://nicolas-coutin.fr"
