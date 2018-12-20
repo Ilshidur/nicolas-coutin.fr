@@ -2,8 +2,8 @@ workflow "Deployment" {
   on = "push"
   resolves = [
     "On branch 'master'",
-    "Deploy",
     "Slack notification",
+    "Wait for HTTP 200 (1m)",
   ]
 }
 
@@ -42,10 +42,19 @@ action "Deploy" {
   args = "./deploy.sh"
 }
 
+action "Wait for HTTP 200 (1m)" {
+  uses = "maddox/actions/wait-for-200@f196820c"
+  needs = ["Deploy"]
+  env = {
+    URL = "https://nicolas-coutin.fr"
+    SECONDS_BETWEEN_CHECKS = "10"
+    MAX_TRIES = "6"
+  }
+}
+
 action "Slack notification" {
   uses = "Ilshidur/actions/slack@master"
-  needs = ["Deploy"]
-  needs = ["Deploy"]
+  needs = ["Wait for HTTP 200 (1m)"]
   secrets = ["SLACK_WEBHOOK"]
   args = "Successful deploy : https://nicolas-coutin.fr"
 }
