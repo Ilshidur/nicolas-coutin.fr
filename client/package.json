@@ -5,7 +5,7 @@
   "proxy": "http://localhost:3001",
   "dependencies": {
     "axios": "0.18.0",
-    "bootstrap": "3.3.7",
+    "bootstrap": "3.4.0",
     "moment": "2.23.0",
     "react": "16.7.0",
     "react-alert": "4.0.4",
