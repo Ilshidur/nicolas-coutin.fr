@@ -731,9 +731,9 @@ nodemailer-mailgun-transport@1.4.0:
     lodash.startswith "^4.0.1"
     mailgun-js "^0.18.0"
 
-nodemailer@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-5.0.0.tgz#bcb409eca613114e85de42646d0ce7f1fa70b716"
+nodemailer@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-5.1.0.tgz#e1d3056222fa8b10c6cceafa10a967a13113023d"
 
 oauth-sign@~0.8.2:
   version "0.8.2"
