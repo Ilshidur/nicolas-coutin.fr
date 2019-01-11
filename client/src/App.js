@@ -230,6 +230,8 @@ class App extends Component {
                     </p>
                     <ul>
                       <li>Refonte de <a href="https://status.scalair.fr" target="_blank" rel="noopener noreferrer">status.scalair.fr</a></li>
+                      <li>API de monitoring des VMs</li>
+                      <li>Maintenance d'outils internes</li>
                     </ul>
                     <div className="App-company-stack">
                       <p>Node.js, ES8, MongoDB, Redis, Docker - Vue</p>
