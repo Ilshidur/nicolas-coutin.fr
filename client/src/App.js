@@ -230,6 +230,7 @@ class App extends Component {
                     </p>
                     <ul>
                       <li>Refonte de <a href="https://status.scalair.fr" target="_blank" rel="noopener noreferrer">status.scalair.fr</a></li>
+                      <li>Refonte de <a href="https://dashboard.cloudsystem.fr" target="_blank" rel="noopener noreferrer">dashboard.cloudsystem.fr</a></li>
                       <li>API de monitoring des VMs</li>
                       <li>Maintenance d'outils internes</li>
                     </ul>
