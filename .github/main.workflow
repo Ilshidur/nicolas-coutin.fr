@@ -53,7 +53,7 @@ action "Wait for HTTP 200 (1m)" {
 }
 
 action "Slack notification" {
-  uses = "Ilshidur/actions/slack@master"
+  uses = "Ilshidur/action-slack@master"
   needs = ["Wait for HTTP 200 (1m)"]
   secrets = ["SLACK_WEBHOOK"]
   args = "Successful deploy : https://nicolas-coutin.fr"
