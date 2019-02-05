@@ -170,14 +170,15 @@ class App extends Component {
                     Je m'appelle Nicolas, j'ai {age} ans.
                   </p>
                   <p>
-                    J'ai appris à manier JavaScript majoritairement en autodidacte.
-                    Féru de développement, j'aime découvrir et apprendre de nouvelles technologies, créer de nouveaux projets persos...
-                    Je cherche toujours à m'améliorer.
-                    La volonté d'évoluer est pour moi un atout primordial pour un bon développeur.
+                    Je suis développeur back end (node.js) avec un passé de full stack (Vue, +/- React, PHP).<br/>
+                    La modernité, c'est mon dada. Je fais beaucoup de veille en participant à des meetups/conférences pour toujours être à jour sur les technos de demain. Ma lubie du moment : les architectures cloud.<br/>
+                    Mon objectif ultime : toujours monter en compétences.
                   </p>
                   <p>
-                    Je m'intéresse au Back end (Node.js), mais aussi beaucoup au Front end (Vue, React), ainsi qu'à l'administration système (sur Ubuntu/Debian), au domaine DevOps et également à l'open source.
+                    Je m'intéresse aussi au domaine DevOps (Docker, Kubernetes sur Debian) et à l'open source.<br/>
+                    Je suis plutôt touche-à-tout, je développe souvent de l'intérêt pour les domaines proches aux miens et j'aime agrandir ma zone de confort. J'accepte les responsabilités et prends tous les challenges.
                   </p>
+                  <p>J'aspire à obtenir le poste d'architecte cloud dans un futur lointain.</p>
                   <div className="text-right">
                     <small>
                       <i>"Javascript enthusiast pushing buttons for a living."</i>
