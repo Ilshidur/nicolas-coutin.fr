@@ -7256,9 +7256,9 @@ react-alert-template-basic@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/react-alert-template-basic/-/react-alert-template-basic-1.0.0.tgz#89bcf35095faf5ebdd25e1e7c300e6b4234b5ba1"
 
-react-alert@4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/react-alert/-/react-alert-4.0.4.tgz#ccd7201e16cd800305625e888ae345c181071ab5"
+react-alert@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-alert/-/react-alert-5.0.0.tgz#8f1278200a6599da3fe840df5f355da5ac2c2caa"
 
 react-app-polyfill@^0.2.0:
   version "0.2.0"
