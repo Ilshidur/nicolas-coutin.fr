@@ -3,14 +3,14 @@ FROM mhart/alpine-node:8.15.0
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-COPY package.json yarn.lock ./
-RUN yarn
+COPY package.json package-lock.json ./
+RUN npm ci
 
 COPY client client
-RUN (cd client && yarn && yarn build && rm -rf src)
+RUN (cd client && npm ci && npm run build && rm -rf src)
 
 COPY server server
-RUN (cd server && yarn)
+RUN (cd server && npm ci)
 
 ENV NODE_ENV production
 ENV PORT 3000

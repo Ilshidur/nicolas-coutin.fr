@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 import Headroom from 'react-headroom';
 import Recaptcha from 'react-recaptcha';
-import { withAlert } from 'react-alert';
+import { useAlert } from 'react-alert';
 
 import { projects } from './data';
 
@@ -49,7 +49,8 @@ class App extends Component {
   }
 
   showError = (msg) => {
-    this.props.alert.show(msg, {
+    const alert = useAlert();
+    alert.show(msg, {
       timeout: 2000,
       type: 'error'
     });
@@ -494,4 +495,4 @@ class App extends Component {
   }
 }
 
-export default withAlert(App);
+export default App;

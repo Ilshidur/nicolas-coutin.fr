@@ -9,13 +9,13 @@
 
 ## Development
 
-**Node.js**, **Yarn** required.
+**Node.js** required.
 
 ```bash
-yarn
-(cd server && yarn)
-(cd client && yarn)
-yarn start
+npm ci
+(cd server && npm ci)
+(cd client && npm ci)
+npm start
 ```
 
 ## Run
