@@ -2,8 +2,9 @@ workflow "Deployment" {
   on = "push"
   resolves = [
     "On branch 'master'",
-    "Slack notification",
-    "Wait for HTTP 200 (1m)",
+    "Slack notif. pending",
+    "Slack notif. done",
+    "Wait for HTTP 200 (1m)"
   ]
 }
 
@@ -26,7 +27,7 @@ action "Log into registry" {
 
 action "Push to registry" {
   uses = "actions/docker/cli@76ff57a"
-  needs = ["Build image", "Log into registry"]
+  needs = ["Tag image", "Log into registry"]
   args = "push ilshidur/nicolas-coutin.fr"
 }
 
@@ -42,6 +43,13 @@ action "Deploy" {
   args = "./deploy.sh"
 }
 
+action "Slack notif. pending" {
+  uses = "Ilshidur/action-slack@master"
+  needs = ["Push to registry"]
+  secrets = ["SLACK_WEBHOOK"]
+  args = "Deploying : https://nicolas-coutin.fr"
+}
+
 action "Wait for HTTP 200 (1m)" {
   uses = "maddox/actions/wait-for-200@b21dcdc"
   needs = ["Deploy"]
@@ -52,9 +60,17 @@ action "Wait for HTTP 200 (1m)" {
   }
 }
 
-action "Slack notification" {
+action "Slack notif. done" {
   uses = "Ilshidur/action-slack@master"
   needs = ["Wait for HTTP 200 (1m)"]
   secrets = ["SLACK_WEBHOOK"]
   args = "Successful deploy : https://nicolas-coutin.fr"
+}
+
+action "Tag image" {
+  uses = "actions/docker/tag@8cdf801"
+  needs = [
+    "Build image"
+  ]
+  args = "ilshidur/nicolas-coutin.fr ilshidur/nicolas-coutin.fr"
 }
