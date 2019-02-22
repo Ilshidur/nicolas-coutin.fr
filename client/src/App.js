@@ -234,6 +234,7 @@ class App extends Component {
                       <li>Refonte de <a href="https://status.scalair.fr" target="_blank" rel="noopener noreferrer">status.scalair.fr</a></li>
                       <li>Refonte de <a href="https://dashboard.cloudsystem.fr" target="_blank" rel="noopener noreferrer">dashboard.cloudsystem.fr</a></li>
                       <li>API de monitoring des VMs</li>
+                      <li>Mise en place de <a href="https://konghq.com" target="_blank" rel="noopener noreferrer">Kong</a></li>
                       <li>Maintenance d'outils internes</li>
                     </ul>
                     <div className="App-company-stack">
