@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  nicolas-coutin-fr:
-    image: ilshidur/nicolas-coutin.fr
-    container_name: nicolas-coutin-fr
+  nicolas-coutin-com:
+    image: ilshidur/nicolas-coutin.com
+    container_name: nicolas-coutin-com
     restart: always
     networks:
       - proxy
@@ -16,7 +16,7 @@ services:
       - MY_EMAIL
     labels:
       - traefik.enable=true
-      - traefik.backend=nicolas-coutin-fr
+      - traefik.backend=nicolas-coutin-com
       - traefik.frontend.rule=Host:${DOMAIN},www.${DOMAIN}
       - traefik.frontend.redirect.regex=^https?://www.${DOMAIN}/(.*)
       - traefik.frontend.redirect.replacement=https://${DOMAIN}/$${1}

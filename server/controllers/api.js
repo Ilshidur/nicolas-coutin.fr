@@ -54,7 +54,7 @@ router.post('/email', async (req, res, next) => {
   const mailOpts = {
     from: email,
     to: config.myEmail,
-    subject: `Message from ${name} <${email}> (nicolas-coutin.fr) via Mailgun`,
+    subject: `Message from ${name} <${email}> (nicolas-coutin.com) via Mailgun`,
     text: content,
     replyTo: email
   };

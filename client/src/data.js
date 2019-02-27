@@ -16,14 +16,14 @@ const projects = [{
   summary: 'Blog personnel',
   description: '',
   img: previewBlog,
-  link: 'https://blog.nicolas-coutin.fr',
+  link: 'https://blog.nicolas-coutin.com',
   show: true
 }, {
   name: 'CSS context',
   summary: 'Concours "CSS pique-les-yeux" de l\'IUT d\'Annecy',
   description: 'Concours organisé par un professeur. L\'objectif étant de mettre en page un document HTML uniquement à l\'aide de CSS. Ce CSS visait la mention spéciale : "pique-les-yeux".',
   img: previewCssContext,
-  link: 'https://css-contest.nicolas-coutin.fr',
+  link: 'https://css-contest.nicolas-coutin.com',
   show: false
 }, {
   name: 'Portfolio Laurie Coutin',

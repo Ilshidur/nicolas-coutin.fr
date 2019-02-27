@@ -15,7 +15,7 @@ action "On branch 'master'" {
 
 action "Build image" {
   uses = "actions/docker/cli@76ff57a"
-  args = "build -t ilshidur/nicolas-coutin.fr ."
+  args = "build -t ilshidur/nicolas-coutin.com ."
   needs = ["On branch 'master'"]
 }
 
@@ -28,7 +28,7 @@ action "Log into registry" {
 action "Push to registry" {
   uses = "actions/docker/cli@76ff57a"
   needs = ["Tag image", "Log into registry"]
-  args = "push ilshidur/nicolas-coutin.fr"
+  args = "push ilshidur/nicolas-coutin.com"
 }
 
 action "Deploy" {
@@ -47,14 +47,14 @@ action "Slack notif. pending" {
   uses = "Ilshidur/action-slack@master"
   needs = ["Push to registry"]
   secrets = ["SLACK_WEBHOOK"]
-  args = "Deploying : https://nicolas-coutin.fr"
+  args = "Deploying : https://nicolas-coutin.com"
 }
 
 action "Wait for HTTP 200 (1m)" {
   uses = "maddox/actions/wait-for-200@b21dcdc"
   needs = ["Deploy"]
   env = {
-    URL = "https://nicolas-coutin.fr"
+    URL = "https://nicolas-coutin.com"
     SECONDS_BETWEEN_CHECKS = "10"
     MAX_TRIES = "6"
   }
@@ -64,7 +64,7 @@ action "Slack notif. done" {
   uses = "Ilshidur/action-slack@master"
   needs = ["Wait for HTTP 200 (1m)"]
   secrets = ["SLACK_WEBHOOK"]
-  args = "Successful deploy : https://nicolas-coutin.fr"
+  args = "Successful deploy : https://nicolas-coutin.com"
 }
 
 action "Tag image" {
@@ -72,5 +72,5 @@ action "Tag image" {
   needs = [
     "Build image"
   ]
-  args = "ilshidur/nicolas-coutin.fr ilshidur/nicolas-coutin.fr"
+  args = "ilshidur/nicolas-coutin.com ilshidur/nicolas-coutin.com"
 }
