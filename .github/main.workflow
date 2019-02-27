@@ -4,7 +4,7 @@ workflow "Deployment" {
     "On branch 'master'",
     "Slack notif. pending",
     "Slack notif. done",
-    "Wait for HTTP 200 (1m)"
+    "Wait for HTTP 200 (1m)",
   ]
 }
 
@@ -35,10 +35,10 @@ action "Deploy" {
   uses = "maddox/actions/ssh@75d2243"
   needs = ["Push to registry"]
   secrets = [
-    "HOST",
-    "USER",
     "PRIVATE_KEY",
     "PUBLIC_KEY",
+    "HOST",
+    "USER",
   ]
   args = "./deploy.sh"
 }
@@ -70,7 +70,7 @@ action "Slack notif. done" {
 action "Tag image" {
   uses = "actions/docker/tag@8cdf801"
   needs = [
-    "Build image"
+    "Build image",
   ]
   args = "ilshidur/nicolas-coutin.com ilshidur/nicolas-coutin.com"
 }
