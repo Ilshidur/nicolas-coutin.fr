@@ -1,4 +1,4 @@
-# [nicolas-coutin.fr](https://nicolas-coutin.fr)
+# [nicolas-coutin.com](https://nicolas-coutin.com)
 
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
 
@@ -27,15 +27,15 @@ npm start
 **Docker** required.
 
 ```bash
-docker pull ilshidur/nicolas-coutin.fr
+docker pull ilshidur/nicolas-coutin.com
 docker run --rm -it -p 3000:3000 \
-  -e DOMAIN=nicolas-coutin.fr \
+  -e DOMAIN=nicolas-coutin.com \
   -e RECAPTCHA_KEY=KEY \
   -e RECAPTCHA_SECRET=SECRET \
   -e MAILGUN_API_KEY=API_KEY \
   -e MAILGUN_DOMAIN=DOMAIN \
   -e MY_EMAIL=email@email.com \
-  ilshidur/nicolas-coutin.fr
+  ilshidur/nicolas-coutin.com
 ```
 
 ### With docker-compose
@@ -81,11 +81,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[vulnerabilities-badge]: https://snyk.io/test/github/Ilshidur/nicolas-coutin.fr/badge.svg
-[vulnerabilities-url]: https://snyk.io/test/github/Ilshidur/nicolas-coutin.fr
-[dependency-badge]: https://david-dm.org/Ilshidur/nicolas-coutin.fr/status.svg?path=server
-[dependency-url]: https://david-dm.org/Ilshidur/nicolas-coutin.fr?path=server
-[devdependency-badge]: https://david-dm.org/Ilshidur/nicolas-coutin.fr/dev-status.svg?path=server
-[devdependency-url]: https://david-dm.org/Ilshidur/nicolas-coutin.fr?path=server&type=dev
+[vulnerabilities-badge]: https://snyk.io/test/github/Ilshidur/nicolas-coutin.com/badge.svg
+[vulnerabilities-url]: https://snyk.io/test/github/Ilshidur/nicolas-coutin.com
+[dependency-badge]: https://david-dm.org/Ilshidur/nicolas-coutin.com/status.svg?path=server
+[dependency-url]: https://david-dm.org/Ilshidur/nicolas-coutin.com?path=server
+[devdependency-badge]: https://david-dm.org/Ilshidur/nicolas-coutin.com/dev-status.svg?path=server
+[devdependency-url]: https://david-dm.org/Ilshidur/nicolas-coutin.com?path=server&type=dev
 [maintainability-badge]: https://api.codeclimate.com/v1/badges/3f3e6503aac7ba77765f/maintainability
-[maintainability-url]: https://codeclimate.com/github/Ilshidur/nicolas-coutin.fr/maintainability
+[maintainability-url]: https://codeclimate.com/github/Ilshidur/nicolas-coutin.com/maintainability
