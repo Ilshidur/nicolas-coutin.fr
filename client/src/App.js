@@ -259,7 +259,7 @@ class App extends Component {
                     </p>
                     <ul>
                       <li>Mise en place d'une solution de gestion de régie publicitaire (flux vidéos, images, pdf...) pour <a href="https://www.cotep.fr" target="_blank" rel="noopener noreferrer">Cotep</a></li>
-                      <li>Intégrations pour la refonte du site <a href="http://www.cma-cgm.fr" target="_blank" rel="noopener noreferrer">CMA CGM</a></li>
+                      <li>Intégrations pour la refonte du site <a href="https://www.cmacgm-group.com" target="_blank" rel="noopener noreferrer">CMA CGM</a></li>
                       <li>Corrections sur des intégrations Vue</li>
                     </ul>
                     <div className="App-company-stack">
