@@ -238,7 +238,7 @@ class App extends Component {
                       <li>Maintenance d'outils internes</li>
                     </ul>
                     <div className="App-company-stack">
-                      <p>Node.js, ES8, MongoDB, Redis, Docker - Vue</p>
+                      <p>Node.js, ES8, MongoDB, Redis, Docker, Kubernetes - Vue</p>
                     </div>
                   </div>
                 </div>
