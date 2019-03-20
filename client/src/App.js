@@ -168,7 +168,7 @@ class App extends Component {
               <div className="App-description col-sm-12 col-md-9 col-lg-9">
                 <div>
                   <p>
-                    Je m'appelle Nicolas, j'ai {age} ans.
+                    My name is Nicolas, and I'm {age}.
                   </p>
                   <p>
                     I'm a full stack developer. I mainly use Node.js and Vue, and formerly used React, PHP & jQuery.<br/>
@@ -213,7 +213,7 @@ class App extends Component {
         <div id="curriculum" className="App-section">
           <div className="container">
             <div className="page-header">
-              <h1 id="timeline">Mon parcours professionnel</h1>
+              <h1 id="timeline">My career</h1>
             </div>
             <ul className="timeline">
               <li>
@@ -395,7 +395,7 @@ class App extends Component {
         </div>
 
         <div id="projects" className="App-section">
-          <h1>Mes projets</h1>
+          <h1>My projects</h1>
           <div className="App-projects row">
             {projects.filter(project => project.show).map((project, index) =>
               <div key={index} className="App-project col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -413,7 +413,7 @@ class App extends Component {
         </div>
 
         <div id="stack" className="App-section">
-          <h1>Mes outils du quotidien</h1>
+          <h1>My everyday tools</h1>
           <div className="container">
             <div className="App-stack">
               <a frameBorder="0" data-theme="dark" data-stack-embed="true" data-layers="1,2,3,4" href="https://embed.stackshare.io/stacks/embed/654e809fa0b6235b129efd854398a8">My stack</a>
