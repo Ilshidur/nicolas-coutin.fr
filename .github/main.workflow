@@ -32,13 +32,13 @@ action "Push to registry" {
 }
 
 action "Deploy" {
-  uses = "maddox/actions/ssh@75d2243"
+  uses = "maddox/actions/ssh@35394c5"
   needs = ["Push to registry"]
   secrets = [
-    "PRIVATE_KEY",
-    "PUBLIC_KEY",
     "HOST",
     "USER",
+    "PUBLIC_KEY",
+    "PRIVATE_KEY",
   ]
   args = "./deploy.sh"
 }
