@@ -11,8 +11,8 @@ services:
       - DOMAIN
       - RECAPTCHA_KEY
       - RECAPTCHA_SECRET
-      - MAILGUN_API_KEY
-      - MAILGUN_DOMAIN
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
       - MY_EMAIL
     labels:
       - traefik.enable=true

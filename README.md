@@ -32,8 +32,8 @@ docker run --rm -it -p 3000:3000 \
   -e DOMAIN=nicolas-coutin.com \
   -e RECAPTCHA_KEY=KEY \
   -e RECAPTCHA_SECRET=SECRET \
-  -e MAILGUN_API_KEY=API_KEY \
-  -e MAILGUN_DOMAIN=DOMAIN \
+  -e AWS_ACCESS_KEY_ID=KEY \
+  -e AWS_SECRET_ACCESS_KEY=KEY \
   -e MY_EMAIL=email@email.com \
   ilshidur/nicolas-coutin.com
 ```
@@ -53,8 +53,8 @@ Env vars :
 * `DOMAIN`
 * `RECAPTCHA_KEY`
 * `RECAPTCHA_SECRET`
-* `MAILGUN_API_KEY`
-* `MAILGUN_DOMAIN`
+* `AWS_ACCESS_KEY_ID`
+* `AWS_SECRET_ACCESS_KEY`
 * `MY_EMAIL`
 
 ## License
