@@ -6,7 +6,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.428.0",
+    "aws-sdk": "2.428.0",
     "body-parser": "1.18.3",
     "express": "4.16.4",
     "helmet": "3.16.0",
@@ -19,6 +19,6 @@
     "start": "nodemon -r dotenv/config app.js dotenv_config_path=../.env"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "1.18.10"
   }
 }
