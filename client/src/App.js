@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 import Headroom from 'react-headroom';
 import Recaptcha from 'react-recaptcha';
-import { useAlert } from 'react-alert';
+import { withAlert } from 'react-alert';
 
 import { projects } from './data';
 
@@ -49,9 +49,8 @@ class App extends Component {
   }
 
   showError = (msg) => {
-    const alert = useAlert();
-    alert.show(msg, {
-      timeout: 2000,
+    this.props.alert.show(msg, {
+      timeout: 20000,
       type: 'error'
     });
   }
@@ -107,8 +106,11 @@ class App extends Component {
       this.setState({
         contactFormMessage: message
       });
-    } catch(e) {
-      const { response: { data : { message } } } = e;
+    } catch(err) {
+      let message = err.message
+      if (err.response && err.response.data && err.response.data.message) {
+        message = err.response.data.message
+      }
       console.error(message);
       this.showError(message);
       this.resetRecaptcha();
@@ -496,4 +498,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withAlert()(App);
