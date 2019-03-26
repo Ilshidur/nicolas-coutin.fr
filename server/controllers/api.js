@@ -1,9 +1,10 @@
+const aws = require('aws-sdk');
 const express = require('express');
 const nodemailer = require('nodemailer');
-const mg = require('nodemailer-mailgun-transport');
 const reCAPTCHA = require('recaptcha2');
 const util = require('util');
 const validator = require('validator');
+
 const config = require('../config');
 
 const router = express.Router();
@@ -12,12 +13,15 @@ const recaptcha = new reCAPTCHA({
   siteKey: config.recaptcha.key,
   secretKey: config.recaptcha.secret
 });
-const mailgunAuth = {
-  auth: {
-    api_key: config.mailgun.apiKey,
-    domain: config.mailgun.domain
-  }
-};
+
+// AWS credentials are loaded from env vars.
+// See : https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-environment.html
+const transport = nodemailer.createTransport({
+  SES: new aws.SES({
+    apiVersion: '2010-12-01',
+    region: 'eu-west-1'
+  })
+});
 
 router.post('/email', async (req, res, next) => {
   try {
@@ -52,17 +56,15 @@ router.post('/email', async (req, res, next) => {
   }
 
   const mailOpts = {
-    from: email,
+    from: config.myEmail, // TODO: Use `bot@nicolas-coutin.com`
     to: config.myEmail,
-    subject: `Message from ${name} <${email}> (nicolas-coutin.com) via Mailgun`,
+    subject: `Message from ${name} <${email}> (nicolas-coutin.com) via AWS SES`,
     text: content,
     replyTo: email
   };
-  const smtpTrans = nodemailer.createTransport(mg(mailgunAuth));
-  const sendMailAsync = util.promisify(smtpTrans.sendMail.bind(smtpTrans));
 
   try {
-    await sendMailAsync(mailOpts);
+    await transport.sendMail(mailOpts);
   } catch (e) {
     const serverError = e.stack;
     console.error(serverError);
@@ -75,7 +77,7 @@ router.post('/email', async (req, res, next) => {
     return;
   }
 
-  console.log(`Email sent from : ${email}.`);
+  console.log(`Email sent from : ${config.myEmail} to ${email}.`);
   res.status(200).json({
     message: 'Merci ! Je vous contacterai dès que possible.'
   });
