@@ -222,7 +222,7 @@ class App extends Component {
                 <div className="timeline-badge info"><i className="glyphicon glyphicon-briefcase"></i></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h4 className="timeline-title">Ingénieur Recherche et Innovation</h4>
+                    <h4 className="timeline-title">Research & development engineer</h4>
                     <p><i>CDI</i> (59510, Hem)</p>
                     <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Since October 2018</small></p>
                   </div>
