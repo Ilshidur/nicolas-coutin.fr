@@ -235,8 +235,9 @@ class App extends Component {
                     <ul>
                       <li>Rework of <a href="https://status.scalair.fr" target="_blank" rel="noopener noreferrer">status.scalair.fr</a></li>
                       <li>Rework of <a href="https://dashboard.cloudsystem.fr" target="_blank" rel="noopener noreferrer">dashboard.cloudsystem.fr</a></li>
+                      <li>Setup of <a href="https://konghq.com" target="_blank" rel="noopener noreferrer">Kong</a>, Kubernetes deployments, microservices</li>
+                      <li>Monitoring with multiple <a href="https://grafana.com">Grafana</a> dashboards</li>
                       <li>Virtual machines monitoring API</li>
-                      <li>Setup of <a href="https://konghq.com" target="_blank" rel="noopener noreferrer">Kong</a>, Kubernetes deployments</li>
                       <li>Internal tools improvements</li>
                     </ul>
                     <div className="App-company-stack">
