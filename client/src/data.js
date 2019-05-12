@@ -3,7 +3,8 @@ import previewBlog from './img/preview-blog.jpg';
 import previewCssContext from './img/preview-css-contest.jpg';
 import previewPortfolioCineLC from './img/preview-portfoliocinelc.jpg';
 import previewPizzaPaiFid from './img/preview-pizzapai-fid.jpg';
-import previewSRS from './img/preview_srs.png';
+import previewSRS from './img/preview-srs.png';
+import previewWenta from './img/preview-wenta.jpg';
 
 const projects = [{
   name: 'LoL Item Sets Generator',
@@ -27,13 +28,6 @@ const projects = [{
   link: 'https://css-contest.nicolas-coutin.com',
   show: false
 }, {
-  name: 'Portfolio Laurie Coutin',
-  summary: 'Portfolio créé pour Laurie Coutin',
-  description: '',
-  img: previewPortfolioCineLC,
-  link: 'https://portfoliocinelc.fr',
-  show: false
-}, {
   name: 'Pizza Paï fidélité',
   summary: 'Site fidélité de Pizza Paï (cadre professionnel)',
   description: '',
@@ -48,13 +42,6 @@ const projects = [{
   link: 'https://mjopeintures.com',
   show: false
 }, {
-  name: 'Wenta.fr',
-  summary: 'Site vitrine commissioné par M. Wenta, traducteur',
-  description: '',
-  img: null,
-  link: 'https://wenta.fr',
-  show: false
-}, {
   name: 'MinEevee\'s blog',
   summary: 'Blog d\'une dessinatrice',
   description: '',
@@ -67,6 +54,13 @@ const projects = [{
   description: 'Refonte du site',
   img: previewSRS,
   link: 'https://status.scalair.fr',
+  show: true
+}, {
+  name: 'Wenta.fr',
+  summary: 'Site vitrine commissioné par M. Wenta, traducteur',
+  description: `Traducteur – interprète assermenté langue polonaise, expert près la Cour d'Appel de REIMS`,
+  img: previewWenta,
+  link: 'https://wenta.fr',
   show: true
 }];
 

@@ -401,7 +401,7 @@ class App extends Component {
           <h1>My projects</h1>
           <div className="App-projects row">
             {projects.filter(project => project.show).map((project, index) =>
-              <div key={index} className="App-project col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div key={index} className="App-project col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <img className="App-project__preview img-responsive" src={project.img} alt={project.name} />
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="App-project__link" >
                   <div className="App-project__box">
