@@ -17,18 +17,22 @@
     "react-recaptcha": "2.3.10",
     "react-scripts": "3.0.1",
     "react-scroll": "1.7.11",
-    "react-transition-group": "2.9.0"
+    "react-transition-group": "2.9.0",
+    "snyk": "^1.166.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
