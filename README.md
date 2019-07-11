@@ -9,59 +9,25 @@
 
 ## Development
 
-**Node.js** required.
+**Docker 18.06.0+ + Traefik 1.7+** required.
 
 ```bash
-npm ci
-(cd server && npm ci)
-(cd client && npm ci)
-npm start
+docker network create traefik
+cp .env.dist .env
+# Fill in all the required env vars.
+docker-compose up --build
+# Go to http://nicolas-coutin-com.lvh.me.
 ```
 
-## Run
+## Production
 
-*Note : the website is deployed after every commits on the `master` branch.*
-
-### Without docker-compose
-
-**Docker** required.
-
-```bash
-docker pull ilshidur/nicolas-coutin.com
-docker run --rm -it -p 3000:3000 \
-  -e DOMAIN=nicolas-coutin.com \
-  -e RECAPTCHA_KEY=KEY \
-  -e RECAPTCHA_SECRET=SECRET \
-  -e AWS_ACCESS_KEY_ID=KEY \
-  -e AWS_SECRET_ACCESS_KEY=KEY \
-  -e MY_EMAIL=email@email.com \
-  ilshidur/nicolas-coutin.com
-```
-
-### With docker-compose
-
-*Docker & docker-compose* required.
-
-1) Copy `.env.dist` to `.env` and fill the env vars.
-2) `docker-compose pull`
-3) `docker-compose up -d`
-
-Env vars :
-
-* `NODE_ENV` (default : `'production'`)
-* `PORT` (default : `3000`)
-* `DOMAIN`
-* `RECAPTCHA_KEY`
-* `RECAPTCHA_SECRET`
-* `AWS_ACCESS_KEY_ID`
-* `AWS_SECRET_ACCESS_KEY`
-* `MY_EMAIL`
+The website is deployed after every commits on the `master` branch.
 
 ## License
 
 MIT License
 
-Copyright (c) 2015-2018 **Nicolas Coutin**
+Copyright (c) 2015-2019 **Nicolas Coutin**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

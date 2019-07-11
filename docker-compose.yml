@@ -1,19 +1,15 @@
-version: '3'
+version: '3.7'
 
 services:
+
   nicolas-coutin-com:
-    image: ilshidur/nicolas-coutin.com
+    build:
+      context: .
     container_name: nicolas-coutin-com
     restart: always
     networks:
       - proxy
-    environment:
-      - DOMAIN
-      - RECAPTCHA_KEY
-      - RECAPTCHA_SECRET
-      - AWS_ACCESS_KEY_ID
-      - AWS_SECRET_ACCESS_KEY
-      - MY_EMAIL
+    env_file: .env
     labels:
       - traefik.enable=true
       - traefik.backend=nicolas-coutin-com
