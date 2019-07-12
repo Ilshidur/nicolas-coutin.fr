@@ -32,15 +32,15 @@ action "Push to registry" {
 }
 
 action "Deploy" {
-  uses = "maddox/actions/ssh@35394c5"
+  uses = "maddox/actions/ssh@c4cccb5"
   needs = ["Push to registry"]
   secrets = [
     "HOST",
     "USER",
-    "PUBLIC_KEY",
     "PRIVATE_KEY",
+    "PUBLIC_KEY",
   ]
-  args = "./deploy.sh"
+  args = "docker pull ilshidur/nicolas-coutin.com && docker restart nicolas-coutin-com"
 }
 
 action "Slack notif. pending" {
