@@ -1,6 +1,7 @@
 # [nicolas-coutin.com](https://nicolas-coutin.com)
 
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
+[![Build Status][build-badge]][build-url]
 
 [![Known Vulnerabilities][vulnerabilities-badge]][vulnerabilities-url]
 [![dependency status][dependency-badge]][dependency-url]
@@ -47,6 +48,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+[build-badge]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FIlshidur%2Fnicolas-coutin.com%2Fbadge&style=flat
+[build-url]: https://actions-badge.atrox.dev/Ilshidur/nicolas-coutin.com/goto
 [vulnerabilities-badge]: https://snyk.io/test/github/Ilshidur/nicolas-coutin.com/badge.svg
 [vulnerabilities-url]: https://snyk.io/test/github/Ilshidur/nicolas-coutin.com
 [dependency-badge]: https://david-dm.org/Ilshidur/nicolas-coutin.com/status.svg?path=server
