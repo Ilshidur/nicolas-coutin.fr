@@ -234,12 +234,12 @@ class App extends Component {
                     </p>
                     <ul>
                       <li>Rework of <a href="https://status.scalair.fr" target="_blank" rel="noopener noreferrer">status.scalair.fr</a></li>
-                      <li>Rework of <a href="https://dashboard.cloudsystem.fr" target="_blank" rel="noopener noreferrer">dashboard.cloudsystem.fr</a></li>
-                      <li>Setup of <a href="https://konghq.com" target="_blank" rel="noopener noreferrer">Kong</a>, Kubernetes deployments, microservices</li>
-                      <li>Monitoring with <a href="https://prometheus.io">Prometheus</a> + <a href="https://grafana.com">Grafana</a></li>
-                      <li>Gitlab CI/CD</li>
-                      <li>Virtual machines monitoring API</li>
-                      <li>Internal tools improvements</li>
+                      <li>Rework of <a href="https://dashboard.scalair.fr" target="_blank" rel="noopener noreferrer">dashboard.scalair.fr</a></li>
+                      <li>Setup of <a href="https://konghq.com" target="_blank" rel="noopener noreferrer">Kong</a> & custom plugins, microservices</li>
+                      <li>Services monitoring with <a href="https://prometheus.io">Prometheus</a> + <a href="https://grafana.com">Grafana</a></li>
+                      <li>Gitlab CI/CD, Kubernetes deployments</li>
+                      <li>Authentication/permissions, VMs monitoring/configuration API</li>
+                      <li>Internal tools</li>
                     </ul>
                     <div className="App-company-stack">
                       <p>Node.js, Lua, MongoDB, Redis, Mercure, Prometheus, Grafana, Docker, Kubernetes - Vue</p>
