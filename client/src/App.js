@@ -174,14 +174,14 @@ class App extends Component {
                   </p>
                   <p>
                     I'm a full stack developer. I mainly use Node.js and Vue, and formerly used React, PHP & jQuery.<br/>
-                    Modernity is a special interest of mine, so I keep myself updated by attending multiple public events like meetups or conferences. My current whim is cloud architectures.<br/>
+                    Modernity is a special interest of mine, so I keep myself updated by attending multiple public events like meetups or conferences. My current whim is cloud architectures and distributed systems.<br/>
                     My ultimate goal is to keep aiming for better skills and continuously improve.
                   </p>
                   <p>
                     I'm also interrested by the DevOps philosophy, that I practice on Terraform, Ansible & Kubernetes.<br/>
                     I consider myself a Jack of all trades, as I often develop interests in areas close to mine and I like expanding my confort zone. I accept responsibilities and all challenges.
                   </p>
-                  <p>I aspire to be a cloud architect some day.</p>
+                  <p>I aspire to be a solution architect some day.</p>
                   <div className="text-right">
                     <small>
                       <i>"Javascript enthusiast pushing buttons for a living."</i>
