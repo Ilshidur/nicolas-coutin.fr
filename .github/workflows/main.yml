@@ -7,17 +7,17 @@ on:
 
 jobs:
   deploy:
-    name: Build + Push ilshidur/nicolas-coutin.com image
+    name: Build + Push ilshidur/nicolas-coutin.com/app image
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - name: Log into Docker registry
       # run: echo ${{ secrets.GITHUB_TOKEN }} | docker login -u nologin --password-stdin rg.fr-par.scw.cloud/wenta
       run: echo ${{ secrets.GITHUB_TOKEN }} | docker login -u Ilshidur --password-stdin docker.pkg.github.com
-    - name: Build docker.pkg.github.com/ilshidur/nicolas-coutin.com image
-      run: docker build -t docker.pkg.github.com/ilshidur/nicolas-coutin.com .
-    - name: Push docker.pkg.github.com/ilshidur/nicolas-coutin.com image
-      run: docker push docker.pkg.github.com/ilshidur/nicolas-coutin.com
+    - name: Build docker.pkg.github.com/ilshidur/nicolas-coutin.com/app image
+      run: docker build -t docker.pkg.github.com/ilshidur/nicolas-coutin.com/app .
+    - name: Push docker.pkg.github.com/ilshidur/nicolas-coutin.com/app image
+      run: docker push docker.pkg.github.com/ilshidur/nicolas-coutin.com/app
     - name: Slack notif. error
       if: failure()
       env:
