@@ -77,7 +77,7 @@ router.post('/email', async (req, res, next) => {
     return;
   }
 
-  console.log(`Email sent from : ${config.myEmail} to ${email}.`);
+  console.log(`Email sent to ${config.myEmail}.`);
   res.status(200).json({
     message: 'Merci ! Je vous contacterai dès que possible.'
   });
