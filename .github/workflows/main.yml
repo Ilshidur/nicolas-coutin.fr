@@ -1,0 +1,27 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    name: Build + Push ilshidur/nicolas-coutin.com image
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Log into Docker registry
+      # run: echo ${{ secrets.GITHUB_TOKEN }} | docker login -u nologin --password-stdin rg.fr-par.scw.cloud/wenta
+      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login -u Ilshidur --password-stdin
+    - name: Build ilshidur/nicolas-coutin.com image
+      run: docker build -t ilshidur/nicolas-coutin.com .
+    - name: Push ilshidur/nicolas-coutin.com image
+      run: docker push ilshidur/nicolas-coutin.com
+    - name: Slack notif. error
+      if: failure()
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      uses: Ilshidur/action-slack@master
+      with:
+        args: 'Error deploying : https://nicolas-coutin.com. For more informations, see https://github.com/Ilshidur/nicolas-coutin.com/actions.'
