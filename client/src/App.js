@@ -234,7 +234,7 @@ class App extends Component {
                     </p>
                     <ul>
                       <li>Rework of <a href="https://status.scalair.fr" target="_blank" rel="noopener noreferrer">status.scalair.fr</a></li>
-                      <li>Rework of <a href="https://dashboard.scalair.fr" target="_blank" rel="noopener noreferrer">dashboard.scalair.fr</a> : services</li>
+                      <li>Rework of <a href="https://dashboard.scalair.fr" target="_blank" rel="noopener noreferrer">dashboard.scalair.fr</a> and <a href="https://manager.scalair.fr" target="_blank" rel="noopener noreferrer">manager.scalair.fr</a> : services</li>
                       <li>Setup of <a href="https://konghq.com" target="_blank" rel="noopener noreferrer">Kong</a> & custom plugins, microservices</li>
                       <li>Services monitoring with <a href="https://prometheus.io">Prometheus</a> + <a href="https://grafana.com">Grafana</a></li>
                       <li>Gitlab CI/CD, Kubernetes deployments</li>
