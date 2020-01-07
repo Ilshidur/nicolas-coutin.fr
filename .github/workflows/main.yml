@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Log into Docker registry
       # run: echo ${{ secrets.GITHUB_TOKEN }} | docker login -u nologin --password-stdin rg.fr-par.scw.cloud/wenta
-      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login -u Ilshidur --password-stdin
+      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login -u Ilshidur --password-stdin docker.pkg.github.com
     - name: Build ilshidur/nicolas-coutin.com image
       run: docker build -t ilshidur/nicolas-coutin.com .
     - name: Push ilshidur/nicolas-coutin.com image
