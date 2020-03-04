@@ -178,7 +178,7 @@ class App extends Component {
                     My ultimate goal is to keep aiming for better skills and continuously improve.
                   </p>
                   <p>
-                    I'm also interrested by the DevOps philosophy, that I practice on Terraform, Ansible & Kubernetes.<br/>
+                    I'm also interested by the DevOps philosophy, that I practice on Terraform, Ansible & Kubernetes.<br/>
                     I consider myself a Jack of all trades, as I often develop interests in areas close to mine and I like expanding my confort zone. I accept responsibilities and all challenges.
                   </p>
                   <p>I aspire to be a solution architect some day.</p>
