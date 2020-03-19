@@ -238,7 +238,7 @@ class App extends Component {
                       <li>Setup of <a href="https://konghq.com" target="_blank" rel="noopener noreferrer">Kong</a> & custom plugins, microservices</li>
                       <li>Services monitoring with <a href="https://prometheus.io">Prometheus</a> + <a href="https://grafana.com">Grafana</a></li>
                       <li>Gitlab CI/CD, Kubernetes deployments</li>
-                      <li>Authentication/permissions, VMs monitoring/configuration API</li>
+                      <li>REST APIs : authentication/permissions, VMs monitoring/configuration, carts, file explorer, newsletters...</li>
                       <li>Internal tools</li>
                     </ul>
                     <div className="App-company-stack">
