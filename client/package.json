@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "0.19.2",
     "bootstrap": "3.4.1",
-    "moment": "2.25.1",
+    "moment": "2.25.3",
     "react": "16.13.1",
     "react-alert": "5.5.0",
     "react-alert-template-basic": "1.0.0",
