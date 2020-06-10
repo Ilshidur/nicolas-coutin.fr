@@ -13,7 +13,7 @@
     "morgan": "1.10.0",
     "nodemailer": "6.4.8",
     "recaptcha2": "1.3.3",
-    "validator": "13.0.0"
+    "validator": "13.1.0"
   },
   "scripts": {
     "start": "nodemon -r dotenv/config app.js dotenv_config_path=../.env"
