@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ilshidur
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nicolas-coutin.com
+  * I am ilshidur (https://keybase.io/ilshidur) on keybase.
+  * I have a public key ASA2gqHs5qRvwVMLkfgRPKaeBUsbdHhJfwnPstaC4OYs_Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01203682a1ece6a46fc1530b91f8113ca69e054b1b7478497f09cfb2d682e0e62cfc0a",
+      "host": "keybase.io",
+      "kid": "01203682a1ece6a46fc1530b91f8113ca69e054b1b7478497f09cfb2d682e0e62cfc0a",
+      "uid": "68e5cbd2d94fdfb854f4973485430319",
+      "username": "ilshidur"
+    },
+    "merkle_root": {
+      "ctime": 1592467745,
+      "hash": "23045834070d78601c8f70ed2333fac9a9c94b56c173982c86322e1e65959f8b73092860e11a77e4c4304264c9a8a431d4c450b611dc0a80a6d27600d9ccc571",
+      "hash_meta": "8d7ec71b1d156ff227ea3d6b90d615ebed89f29e93a8146c0e4850c9f831117d",
+      "seqno": 16703437
+    },
+    "service": {
+      "entropy": "I7H1CqQiADBt+Wi+0hPHRWX5",
+      "hostname": "nicolas-coutin.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.1"
+  },
+  "ctime": 1592467757,
+  "expire_in": 504576000,
+  "prev": "5977c7a5038bc248a321a38da6df1335dd268c3c4a3e78a12174a0afab856f84",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgNoKh7Oakb8FTC5H4ETymngVLG3R4SX8Jz7LWguDmLPwKp3BheWxvYWTESpcCBsQgWXfHpQOLwkijIaONpt8TNd0mjDxKPnihIXSgr6uFb4TEINeMPh8PlPfG3rxXHBjOtpc/EYlCidAWUSIF8zhCiQdRAgHCo3NpZ8RAMmUKKNV6jiCftROKxE/igtdGTgmU12S/oKk6OjpoAfjCZyoBcYTpLZTnCW/um2GDxXOu3naiF9aLuimHgTd5CKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINydDHNO6mmAyDnHs6+uCX+FVliPHXg4pK8gpyAeD8tao3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ilshidur
+
+==================================================================
