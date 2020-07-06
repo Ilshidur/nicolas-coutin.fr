@@ -223,7 +223,7 @@ class App extends Component {
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h4 className="timeline-title">Research & development engineer</h4>
-                    <p><i>CDI</i> (59510, Hem)</p>
+                    <p><i>Permanent position</i> (59510, Hem)</p>
                     <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Since October 2018</small></p>
                   </div>
                   <div className="timeline-body">
@@ -251,9 +251,9 @@ class App extends Component {
                 <div className="timeline-badge primary"><i className="glyphicon glyphicon-briefcase"></i></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h4 className="timeline-title">Ingénieur d'études</h4>
-                    <p><i>CDI</i> (59000, Lille)</p>
-                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Janvier 2018 - Octobre 2018</small></p>
+                    <h4 className="timeline-title">Research engineer</h4>
+                    <p><i>Permanent position> (59000, Lille)</p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> January 2018 - October 2018</small></p>
                   </div>
                   <div className="timeline-body">
                     <p className="row">
@@ -262,9 +262,9 @@ class App extends Component {
                       </a>
                     </p>
                     <ul>
-                      <li>Mise en place d'une solution de gestion de régie publicitaire (flux vidéos, images, pdf...) pour <a href="https://www.cotep.fr" target="_blank" rel="noopener noreferrer">Cotep</a></li>
-                      <li>Intégrations pour la refonte du site <a href="https://www.cmacgm-group.com" target="_blank" rel="noopener noreferrer">CMA CGM</a></li>
-                      <li>Corrections sur des intégrations Vue</li>
+                      <li>Set up of an advertising management & delivery system for <a href="https://www.cotep.fr" target="_blank" rel="noopener noreferrer">Cotep</a></li>
+                      <li>Front end reworking for <a href="https://www.cmacgm-group.com" target="_blank" rel="noopener noreferrer">CMA CGM</a></li>
+                      <li>Fixes on some Vue integrations</li>
                     </ul>
                     <div className="App-company-stack">
                       <p>Node.js, ES8, MongoDB, Redis, Docker, Traefik, nginx - React, Vue, jQuery, gulp</p>
@@ -277,8 +277,8 @@ class App extends Component {
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h4 className="timeline-title">Développeur front end</h4>
-                    <p><i>CDI</i> (59200, Tourcoing)</p>
-                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> Novembre 2016 - Janvier 2018</small></p>
+                    <p><i>Permanent position</i> (59200, Tourcoing)</p>
+                    <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> November 2016 - January 2018</small></p>
                   </div>
                   <div className="timeline-body">
                     <p>
@@ -287,10 +287,10 @@ class App extends Component {
                       </a>
                     </p>
                     <ul>
-                      <li>Maintenance du site <a href="https://www.rapid-flyer.com" target="_blank" rel="noopener noreferrer">Rapid Flyer</a> (3 mois)</li>
-                      <li>Développement d'interfaces d'analyse de données et de data mining (Data Management Platform)</li>
-                      <li>Intégration de maquettes</li>
-                      <li>Développement de la partie Front du site <a href="https://espacefidelite.pizzapai.fr" target="_blank" rel="noopener noreferrer">Pizza Paï - Fidélité</a> (2 mois)</li>
+                      <li>Maintenance & running of <a href="https://www.rapid-flyer.com" target="_blank" rel="noopener noreferrer">Rapid Flyer</a> (3 mois)</li>
+                      <li>Front end development of analytics & data mining user interfaces ("Data Management Platforms")</li>
+                      <li>Web designs integrations</li>
+                      <li>Front end development of <a href="https://espacefidelite.pizzapai.fr" target="_blank" rel="noopener noreferrer">Pizza Paï - Fidélité</a> (2 mois)</li>
                     </ul>
                     <div className="App-company-stack">
                       <p>PHP, Symfony 3, Memcached, MySQL, MongoDB<br/>SCSS + Bootstrap/Materialize, ES6, jQuery, Babel, Grunt</p>
