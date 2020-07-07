@@ -252,7 +252,7 @@ class App extends Component {
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h4 className="timeline-title">Research engineer</h4>
-                    <p><i>Permanent position> (59000, Lille)</p>
+                    <p><i>Permanent position</i> (59000, Lille)</p>
                     <p><small className="text-muted"><i className="glyphicon glyphicon-time"></i> January 2018 - October 2018</small></p>
                   </div>
                   <div className="timeline-body">
