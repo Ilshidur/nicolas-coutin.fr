@@ -23,4 +23,4 @@ jobs:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       uses: Ilshidur/action-discord@master
       with:
-        args: 'Error deploying : https://nicolas-coutin.com. For more informations, see https://github.com/Ilshidur/nicolas-coutin.com/actions.'
+        args: 'Error deploying : https://${{github.repository}}. For more informations, see https://github.com/Ilshidur/${{github.repository}}/actions.'
