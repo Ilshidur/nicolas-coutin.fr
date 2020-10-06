@@ -17,10 +17,10 @@ jobs:
       run: docker build -t docker.pkg.github.com/ilshidur/nicolas-coutin.com/nicolas-coutin-com .
     - name: Push docker.pkg.github.com/ilshidur/nicolas-coutin.com/nicolas-coutin-com image
       run: docker push docker.pkg.github.com/ilshidur/nicolas-coutin.com/nicolas-coutin-com
-    - name: Slack notif. error
+    - name: Discord notif. error
       if: failure()
       env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-      uses: Ilshidur/action-slack@master
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      uses: Ilshidur/action-discord@master
       with:
         args: 'Error deploying : https://nicolas-coutin.com. For more informations, see https://github.com/Ilshidur/nicolas-coutin.com/actions.'
