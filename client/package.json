@@ -16,7 +16,7 @@
     "react-headroom": "2.2.8",
     "react-recaptcha": "2.3.10",
     "react-scripts": "3.4.4",
-    "react-scroll": "1.7.16",
+    "react-scroll": "1.8.2",
     "react-transition-group": "2.9.0",
     "snyk": "1.376.0"
   },
