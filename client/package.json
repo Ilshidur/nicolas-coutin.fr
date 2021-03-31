@@ -18,7 +18,7 @@
     "react-scripts": "3.4.4",
     "react-scroll": "1.8.2",
     "react-transition-group": "2.9.0",
-    "snyk": "1.376.0"
+    "snyk": "1.518.0"
   },
   "scripts": {
     "start": "react-scripts start",
