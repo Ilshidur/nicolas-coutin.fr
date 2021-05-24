@@ -19,7 +19,7 @@ docker network create traefik
 cp .env.dist .env
 # Fill in all the required env vars.
 docker-compose up --build
-# Go to http://nicolas-coutin-com.lvh.me.
+# Go to http://nicolas-coutin-com.localhost.
 ```
 
 ## Production
