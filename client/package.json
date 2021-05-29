@@ -17,7 +17,7 @@
     "react-recaptcha": "2.3.10",
     "react-scripts": "3.4.4",
     "react-scroll": "1.8.2",
-    "react-transition-group": "2.9.0",
+    "react-transition-group": "4.4.2",
     "snyk": "1.376.0"
   },
   "scripts": {
